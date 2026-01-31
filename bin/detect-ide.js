@@ -23,7 +23,7 @@ function detectAllIDEs() {
     { name: 'kilo', path: path.join(homeDir, '.kilocode') },
     { name: 'antigravity', path: path.join(homeDir, '.gemini', 'antigravity') },
     { name: 'continue', path: path.join(homeDir, '.continue') },
-    { name: 'claude', path: path.join(cwd, '.claude') },
+    { name: 'claude-local', path: path.join(cwd, '.claude') },
     { name: 'cursor', path: path.join(cwd, '.cursor') },
     { name: 'aider', path: path.join(cwd, '.aider.conf.yml') },
   ];
