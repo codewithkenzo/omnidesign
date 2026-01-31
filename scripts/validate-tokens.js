@@ -167,7 +167,7 @@ function validate() {
     log('Error: themes directory not found', 'red');
   }
   
-  log('\n' + '='.repeat(50));
+  log(`\n${'='.repeat(50)}`);
   if (errors === 0) {
     log('✅ All tokens validated successfully', 'green');
     process.exit(0);
