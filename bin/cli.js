@@ -2,9 +2,9 @@
 import { program } from 'commander';
 import chalk from 'chalk';
 import fs from 'node:fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import os from 'os';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import os from 'node:os';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'package.json'), 'utf8'));
@@ -176,7 +176,7 @@ function getAntigravityPaths(global = false) {
   };
 }
 
-function getAiderPaths(global = false) {
+function getAiderPaths(_global = false) {
   return {
     configPath: path.join(process.cwd(), 'CONVENTIONS.md'),
     configFile: 'CONVENTIONS.md',
@@ -212,7 +212,7 @@ function detectIDE(global = false) {
   if (fs.existsSync(path.join(cwd, 'claude.md'))) return 'claude';
   if (fs.existsSync(path.join(cwd, '.cursorrules'))) return 'cursor';
   
-  if (global || true) {
+  if (global) {
     if (fs.existsSync(path.join(homedir, '.claude'))) return 'claude';
     if (fs.existsSync(path.join(homedir, '.cursor'))) return 'cursor';
     if (fs.existsSync(path.join(homedir, '.config', 'opencode'))) return 'opencode';
@@ -397,7 +397,7 @@ async function installOpenCodeSkill(skillsDir, packageDir, global) {
   }
 }
 
-async function installVSCodeSkill(skillsDir, packageDir, global) {
+async function installVSCodeSkill(_skillsDir, _packageDir, global) {
   const paths = getVSCodePaths(global);
   
   fs.mkdirSync(paths.baseDir, { recursive: true });

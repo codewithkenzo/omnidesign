@@ -45,7 +45,7 @@ function generatePaletteSVG(themeName, colors) {
   
   let rects = '';
   
-  colorEntries.forEach(([name, color], index) => {
+  colorEntries.forEach(([_name, color], index) => {
     const x = startX + index * (swatchSize + gap);
     const y = startY;
     

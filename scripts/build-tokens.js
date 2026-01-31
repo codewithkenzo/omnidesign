@@ -25,7 +25,7 @@ function log(message, color = 'reset') {
 function readJsonFile(filePath) {
   try {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
-  } catch (e) {
+  } catch (_e) {
     log(`Warning: Could not read ${filePath}`, 'yellow');
     return {};
   }
@@ -67,7 +67,7 @@ function readThemes() {
       const themeName = file.replace('.json', '');
       result[themeName] = readJsonFile(path.join(themesDir, file));
     }
-  } catch (e) {
+  } catch (_e) {
     log('Warning: Could not read themes directory', 'yellow');
   }
   
