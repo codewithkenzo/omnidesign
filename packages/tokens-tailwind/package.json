@@ -1,0 +1,47 @@
+{
+  "name": "@omnidesign/tokens-tailwind",
+  "version": "1.0.0",
+  "description": "Tailwind CSS integration for OmniDesign tokens - generates tailwind.config.js and utility class mappings",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./config": {
+      "import": "./dist/generate-config.js",
+      "types": "./dist/generate-config.d.ts"
+    },
+    "./mapping": {
+      "import": "./dist/utility-mapping.json",
+      "types": "./dist/utility-mapping.d.ts"
+    },
+    "./recipes": {
+      "import": "./dist/component-recipes.js",
+      "types": "./dist/component-recipes.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build-tailwind.js",
+    "generate": "npm run build",
+    "test": "node --test"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "design-tokens",
+    "omnidesign",
+    "css",
+    "theme",
+    "configuration"
+  ],
+  "author": "OmniDesign Team",
+  "license": "MIT",
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
