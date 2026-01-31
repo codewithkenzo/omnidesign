@@ -96,8 +96,8 @@ program
 function getClaudePaths(global = false) {
   const baseDir = global ? path.join(homedir, '.claude') : path.join(process.cwd(), '.claude');
   return {
-    configPath: path.join(baseDir, 'skills', 'omnidesign.md'),
-    configFile: path.relative(process.cwd(), path.join(baseDir, 'skills', 'omnidesign.md')),
+    configPath: path.join(baseDir, 'skills', 'omnidesign', 'SKILL.md'),
+    configFile: path.relative(process.cwd(), path.join(baseDir, 'skills', 'omnidesign', 'SKILL.md')),
     baseDir
   };
 }
@@ -105,8 +105,8 @@ function getClaudePaths(global = false) {
 function getCursorPaths(global = false) {
   const baseDir = global ? path.join(homedir, '.cursor') : path.join(process.cwd(), '.cursor');
   return {
-    configPath: path.join(baseDir, 'skills', 'omnidesign.md'),
-    configFile: path.relative(process.cwd(), path.join(baseDir, 'skills', 'omnidesign.md')),
+    configPath: path.join(baseDir, 'skills', 'omnidesign', 'SKILL.md'),
+    configFile: path.relative(process.cwd(), path.join(baseDir, 'skills', 'omnidesign', 'SKILL.md')),
     baseDir
   };
 }
@@ -116,8 +116,8 @@ function getOpenCodePaths(global = false) {
     ? path.join(homedir, '.config', 'opencode')
     : path.join(process.cwd(), '.opencode');
   return {
-    configPath: path.join(baseDir, 'skills', 'omnidesign.md'),
-    configFile: path.relative(process.cwd(), path.join(baseDir, 'skills', 'omnidesign.md')),
+    configPath: path.join(baseDir, 'skills', 'omnidesign', 'SKILL.md'),
+    configFile: path.relative(process.cwd(), path.join(baseDir, 'skills', 'omnidesign', 'SKILL.md')),
     baseDir,
     configJsonPath: path.join(baseDir, 'config.json')
   };
@@ -232,6 +232,7 @@ function detectIDE(global = false) {
 
 async function installSkill(ide, global = false) {
   const skillsDir = path.join(__dirname, '..', 'skills', ide);
+  const packageDir = path.join(__dirname, '..');
   
   if (!fs.existsSync(skillsDir)) {
     throw new Error(`Skill files for ${ide} not found`);
@@ -239,51 +240,100 @@ async function installSkill(ide, global = false) {
   
   switch (ide) {
     case 'claude':
-      await installClaudeSkill(skillsDir, global);
+      await installClaudeSkill(skillsDir, packageDir, global);
       break;
     case 'cursor':
-      await installCursorSkill(skillsDir, global);
+      await installCursorSkill(skillsDir, packageDir, global);
       break;
     case 'opencode':
-      await installOpenCodeSkill(skillsDir, global);
+      await installOpenCodeSkill(skillsDir, packageDir, global);
       break;
     case 'vscode':
-      await installVSCodeSkill(skillsDir, global);
+      await installVSCodeSkill(skillsDir, packageDir, global);
       break;
     case 'aider':
-      await installAiderSkill(skillsDir, global);
+      await installAiderSkill(skillsDir, packageDir, global);
       break;
     case 'continue':
-      await installContinueSkill(skillsDir, global);
+      await installContinueSkill(skillsDir, packageDir, global);
       break;
     case 'zed':
-      await installZedSkill(skillsDir, global);
+      await installZedSkill(skillsDir, packageDir, global);
       break;
     case 'amp':
-      await installAmpSkill(skillsDir, global);
+      await installAmpSkill(skillsDir, packageDir, global);
       break;
     case 'kilo':
-      await installKiloSkill(skillsDir, global);
+      await installKiloSkill(skillsDir, packageDir, global);
       break;
     case 'antigravity':
-      await installAntigravitySkill(skillsDir, global);
+      await installAntigravitySkill(skillsDir, packageDir, global);
       break;
     default:
       throw new Error(`Unsupported IDE: ${ide}`);
   }
 }
 
-async function installClaudeSkill(skillsDir, global) {
+function copyDirSync(src, dest) {
+  fs.mkdirSync(dest, { recursive: true });
+  const entries = fs.readdirSync(src, { withFileTypes: true });
+  
+  for (const entry of entries) {
+    const srcPath = path.join(src, entry.name);
+    const destPath = path.join(dest, entry.name);
+    
+    if (entry.isDirectory()) {
+      copyDirSync(srcPath, destPath);
+    } else {
+      fs.copyFileSync(srcPath, destPath);
+    }
+  }
+}
+
+function copySkillContent(skillDir, targetDir, packageDir) {
+  const entries = fs.readdirSync(skillDir);
+  
+  for (const entry of entries) {
+    const srcPath = path.join(skillDir, entry);
+    const destPath = path.join(targetDir, entry);
+    
+    if (fs.statSync(srcPath).isDirectory()) {
+      fs.mkdirSync(destPath, { recursive: true });
+      copyDirSync(srcPath, destPath);
+    } else {
+      fs.copyFileSync(srcPath, destPath);
+    }
+  }
+  
+  const tokensSrc = path.join(packageDir, 'tokens');
+  const tokensDest = path.join(targetDir, 'tokens');
+  if (fs.existsSync(tokensSrc)) {
+    copyDirSync(tokensSrc, tokensDest);
+    console.log(chalk.gray(`  Copied: tokens/ → ${path.relative(process.cwd(), tokensDest)}`));
+  }
+  
+  const recipesSrc = path.join(packageDir, 'recipes');
+  const recipesDest = path.join(targetDir, 'recipes');
+  if (fs.existsSync(recipesSrc)) {
+    copyDirSync(recipesSrc, recipesDest);
+    console.log(chalk.gray(`  Copied: recipes/ → ${path.relative(process.cwd(), recipesDest)}`));
+  }
+}
+
+async function installClaudeSkill(skillsDir, packageDir, global) {
   const paths = getClaudePaths(global);
+  const targetDir = path.dirname(paths.configPath);
   
-  fs.mkdirSync(path.dirname(paths.configPath), { recursive: true });
+  fs.mkdirSync(targetDir, { recursive: true });
   
-  fs.copyFileSync(
-    path.join(skillsDir, 'omnidesign.md'),
-    paths.configPath
-  );
+  copySkillContent(skillsDir, targetDir, packageDir);
   
-  console.log(chalk.gray(`  Created: ${paths.configFile}`));
+  const skillMdSource = path.join(skillsDir, 'omnidesign.md');
+  const skillMdTarget = path.join(targetDir, 'SKILL.md');
+  if (fs.existsSync(skillMdSource)) {
+    fs.copyFileSync(skillMdSource, skillMdTarget);
+    console.log(chalk.gray(`  Created: ${path.relative(process.cwd(), skillMdTarget)}`));
+  }
   
   const marketplacePath = path.join(paths.baseDir, 'marketplace.json');
   
@@ -295,8 +345,8 @@ async function installClaudeSkill(skillsDir, global) {
   if (!marketplace.plugins.find(p => p.name === 'omnidesign')) {
     marketplace.plugins.push({
       name: 'omnidesign',
-      source: './skills/omnidesign.md',
-      description: 'Universal design system with 25 themes and AI components',
+      source: './skills/omnidesign/',
+      description: 'Universal design system with 25 themes, tokens, recipes, and AI components',
       version: packageJson.version
     });
     fs.writeFileSync(marketplacePath, JSON.stringify(marketplace, null, 2));
@@ -304,30 +354,36 @@ async function installClaudeSkill(skillsDir, global) {
   }
 }
 
-async function installCursorSkill(skillsDir, global) {
+async function installCursorSkill(skillsDir, packageDir, global) {
   const paths = getCursorPaths(global);
+  const targetDir = path.dirname(paths.configPath);
   
-  fs.mkdirSync(path.dirname(paths.configPath), { recursive: true });
+  fs.mkdirSync(targetDir, { recursive: true });
   
-  fs.copyFileSync(
-    path.join(skillsDir, 'omnidesign.md'),
-    paths.configPath
-  );
+  copySkillContent(skillsDir, targetDir, packageDir);
   
-  console.log(chalk.gray(`  Created: ${paths.configFile}`));
+  const skillMdSource = path.join(skillsDir, 'omnidesign.md');
+  const skillMdTarget = path.join(targetDir, 'SKILL.md');
+  if (fs.existsSync(skillMdSource)) {
+    fs.copyFileSync(skillMdSource, skillMdTarget);
+    console.log(chalk.gray(`  Created: ${path.relative(process.cwd(), skillMdTarget)}`));
+  }
 }
 
-async function installOpenCodeSkill(skillsDir, global) {
+async function installOpenCodeSkill(skillsDir, packageDir, global) {
   const paths = getOpenCodePaths(global);
+  const targetDir = path.dirname(paths.configPath);
   
-  fs.mkdirSync(path.dirname(paths.configPath), { recursive: true });
+  fs.mkdirSync(targetDir, { recursive: true });
   
-  fs.copyFileSync(
-    path.join(skillsDir, 'omnidesign.md'),
-    paths.configPath
-  );
+  copySkillContent(skillsDir, targetDir, packageDir);
   
-  console.log(chalk.gray(`  Created: ${paths.configFile}`));
+  const skillMdSource = path.join(skillsDir, 'omnidesign.md');
+  const skillMdTarget = path.join(targetDir, 'SKILL.md');
+  if (fs.existsSync(skillMdSource)) {
+    fs.copyFileSync(skillMdSource, skillMdTarget);
+    console.log(chalk.gray(`  Created: ${path.relative(process.cwd(), skillMdTarget)}`));
+  }
   
   let config = { plugins: [] };
   if (fs.existsSync(paths.configJsonPath)) {
@@ -341,7 +397,7 @@ async function installOpenCodeSkill(skillsDir, global) {
   }
 }
 
-async function installVSCodeSkill(skillsDir, global) {
+async function installVSCodeSkill(skillsDir, packageDir, global) {
   const paths = getVSCodePaths(global);
   
   fs.mkdirSync(paths.baseDir, { recursive: true });
@@ -357,15 +413,23 @@ async function installVSCodeSkill(skillsDir, global) {
   
   fs.writeFileSync(paths.configPath, JSON.stringify(settings, null, 2));
   console.log(chalk.gray(`  Updated: ${paths.configFile}`));
+  console.log(chalk.yellow('  Note: VS Code extension coming soon. Settings configured.'));
 }
 
-async function installAiderSkill(skillsDir, global) {
+async function installAiderSkill(skillsDir, packageDir, global) {
   const paths = getAiderPaths(global);
+  const targetDir = path.join(paths.baseDir, '.omnidesign');
   
-  fs.copyFileSync(path.join(skillsDir, 'omnidesign.md'), paths.configPath);
+  fs.mkdirSync(targetDir, { recursive: true });
+  
+  copySkillContent(skillsDir, targetDir, packageDir);
+  
+  const conventionsSource = path.join(skillsDir, 'omnidesign.md');
+  fs.copyFileSync(conventionsSource, paths.configPath);
   console.log(chalk.gray(`  Created: ${paths.configFile}`));
+  console.log(chalk.gray(`  Created: ${path.relative(process.cwd(), targetDir)}/ (tokens, recipes)`));
   
-  const configPath = path.join(process.cwd(), '.aider.conf.yml');
+  const configPath = path.join(paths.baseDir, '.aider.conf.yml');
   if (fs.existsSync(configPath)) {
     let config = fs.readFileSync(configPath, 'utf8');
     if (!config.includes('CONVENTIONS.md')) {
@@ -376,20 +440,27 @@ async function installAiderSkill(skillsDir, global) {
   }
 }
 
-async function installContinueSkill(skillsDir, global) {
+async function installContinueSkill(skillsDir, packageDir, global) {
   const paths = getContinuePaths(global);
+  const targetDir = path.join(paths.baseDir, 'omnidesign');
   
-  fs.mkdirSync(paths.baseDir, { recursive: true });
+  fs.mkdirSync(targetDir, { recursive: true });
+  
+  copySkillContent(skillsDir, targetDir, packageDir);
   
   fs.copyFileSync(path.join(skillsDir, 'omnidesign.yaml'), paths.configPath);
   console.log(chalk.gray(`  Created: ${paths.configFile}`));
-  console.log(chalk.yellow('  Note: Please manually add OmniDesign to your Continue config'));
+  console.log(chalk.gray(`  Created: ${path.relative(process.cwd(), targetDir)}/ (tokens, recipes)`));
+  console.log(chalk.yellow('  Note: Add OmniDesign to your Continue config'));
 }
 
-async function installZedSkill(skillsDir, global) {
+async function installZedSkill(skillsDir, packageDir, global) {
   const paths = getZedPaths(global);
+  const targetDir = path.join(paths.baseDir, 'omnidesign');
   
-  fs.mkdirSync(paths.baseDir, { recursive: true });
+  fs.mkdirSync(targetDir, { recursive: true });
+  
+  copySkillContent(skillsDir, targetDir, packageDir);
   
   const config = {
     name: 'OmniDesign',
@@ -400,65 +471,75 @@ async function installZedSkill(skillsDir, global) {
   
   fs.writeFileSync(paths.configPath, JSON.stringify(config, null, 2));
   console.log(chalk.gray(`  Created: ${paths.configFile}`));
+  console.log(chalk.gray(`  Created: ${path.relative(process.cwd(), targetDir)}/ (tokens, recipes)`));
   console.log(chalk.yellow('  Note: Add OmniDesign to your Zed settings.json'));
 }
 
-async function installAmpSkill(skillsDir, global) {
+async function installAmpSkill(skillsDir, packageDir, global) {
   const paths = getAmpPaths(global);
+  const targetDir = path.dirname(paths.configPath);
   
-  fs.mkdirSync(path.dirname(paths.configPath), { recursive: true });
+  fs.mkdirSync(targetDir, { recursive: true });
   
-  fs.copyFileSync(
-    path.join(skillsDir, 'SKILL.md'),
-    paths.configPath
-  );
+  copySkillContent(skillsDir, targetDir, packageDir);
   
-  console.log(chalk.gray(`  Created: ${paths.configFile}`));
+  const skillMdSource = path.join(skillsDir, 'SKILL.md');
+  const skillMdTarget = paths.configPath;
+  if (fs.existsSync(skillMdSource)) {
+    fs.copyFileSync(skillMdSource, skillMdTarget);
+    console.log(chalk.gray(`  Created: ${paths.configFile}`));
+  }
   console.log(chalk.blue('  You can also use: amp skill add owner/omnidesign'));
 }
 
-async function installKiloSkill(skillsDir, global) {
+async function installKiloSkill(skillsDir, packageDir, global) {
   const paths = getKiloPaths(global);
+  const targetDir = path.dirname(paths.configPath);
   
-  fs.mkdirSync(path.dirname(paths.configPath), { recursive: true });
+  fs.mkdirSync(targetDir, { recursive: true });
   
-  fs.copyFileSync(
-    path.join(skillsDir, 'SKILL.md'),
-    paths.configPath
-  );
+  copySkillContent(skillsDir, targetDir, packageDir);
   
-  console.log(chalk.gray(`  Created: ${paths.configFile}`));
+  const skillMdSource = path.join(skillsDir, 'SKILL.md');
+  const skillMdTarget = paths.configPath;
+  if (fs.existsSync(skillMdSource)) {
+    fs.copyFileSync(skillMdSource, skillMdTarget);
+    console.log(chalk.gray(`  Created: ${paths.configFile}`));
+  }
   console.log(chalk.yellow('  Reload VS Code window to activate skill'));
 }
 
-async function installAntigravitySkill(skillsDir, global) {
+async function installAntigravitySkill(skillsDir, packageDir, global) {
   const paths = getAntigravityPaths(global);
+  const targetDir = path.dirname(paths.configPath);
   
-  fs.mkdirSync(path.dirname(paths.configPath), { recursive: true });
+  fs.mkdirSync(targetDir, { recursive: true });
   
-  fs.copyFileSync(
-    path.join(skillsDir, 'SKILL.md'),
-    paths.configPath
-  );
+  copySkillContent(skillsDir, targetDir, packageDir);
   
-  console.log(chalk.gray(`  Created: ${paths.configFile}`));
+  const skillMdSource = path.join(skillsDir, 'SKILL.md');
+  const skillMdTarget = paths.configPath;
+  if (fs.existsSync(skillMdSource)) {
+    fs.copyFileSync(skillMdSource, skillMdTarget);
+    console.log(chalk.gray(`  Created: ${paths.configFile}`));
+  }
 }
 
 async function uninstallSkill(ide, global = false) {
   switch (ide) {
     case 'claude': {
       const paths = getClaudePaths(global);
-      fs.rmSync(paths.configPath, { force: true });
+      fs.rmSync(path.dirname(paths.configPath), { force: true, recursive: true });
       break;
     }
     case 'cursor': {
       const paths = getCursorPaths(global);
-      fs.rmSync(paths.configPath, { force: true });
+      fs.rmSync(path.dirname(paths.configPath), { force: true, recursive: true });
       break;
     }
     case 'opencode': {
       const paths = getOpenCodePaths(global);
-      fs.rmSync(paths.configPath, { force: true });
+      fs.rmSync(path.dirname(paths.configPath), { force: true, recursive: true });
       break;
     }
     case 'vscode': {
@@ -473,32 +554,35 @@ async function uninstallSkill(ide, global = false) {
     }
     case 'zed': {
       const paths = getZedPaths(global);
+      fs.rmSync(path.join(paths.baseDir, 'omnidesign'), { force: true, recursive: true });
       fs.rmSync(paths.configPath, { force: true });
       break;
     }
     case 'amp': {
       const paths = getAmpPaths(global);
-      fs.rmSync(paths.configPath, { force: true, recursive: true });
+      fs.rmSync(path.dirname(paths.configPath), { force: true, recursive: true });
       break;
     }
     case 'kilo': {
       const paths = getKiloPaths(global);
-      fs.rmSync(paths.configPath, { force: true, recursive: true });
+      fs.rmSync(path.dirname(paths.configPath), { force: true, recursive: true });
       break;
     }
     case 'antigravity': {
       const paths = getAntigravityPaths(global);
-      fs.rmSync(paths.configPath, { force: true, recursive: true });
+      fs.rmSync(path.dirname(paths.configPath), { force: true, recursive: true });
       break;
     }
     case 'aider': {
       const paths = getAiderPaths(global);
       fs.rmSync(paths.configPath, { force: true });
+      fs.rmSync(path.join(paths.baseDir, '.omnidesign'), { force: true, recursive: true });
       break;
     }
     case 'continue': {
       const paths = getContinuePaths(global);
       fs.rmSync(paths.configPath, { force: true });
+      fs.rmSync(path.join(paths.baseDir, 'omnidesign'), { force: true, recursive: true });
       break;
     }
   }
