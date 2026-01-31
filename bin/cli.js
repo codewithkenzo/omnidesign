@@ -19,7 +19,7 @@ program
   .command('install')
   .description('Install OmniDesign skill for your IDE')
   .option('-i, --ide <ide>', 'Target IDE (claude, cursor, opencode, vscode, aider, continue, zed, amp, kilo, antigravity)')
-  .option('-g, --global', 'Install globally (default: project-level)')
+  .option('-g, --global', 'Install to global IDE config (~/.claude, ~/.cursor, etc.)')
   .action(async (options) => {
     console.log(chalk.blue('🎨 OmniDesign Skill Installer\n'));
     
@@ -48,11 +48,11 @@ program
 
 program
   .command('list')
-  .description('List available IDE integrations')
+  .description('List available IDE integrations and detection status')
   .option('-g, --global', 'Check global installations')
   .action((options) => {
-    console.log(chalk.blue('🎨 Supported IDEs:\n'));
-    
+    console.log(chalk.blue('🎨 OmniDesign IDE Status:\n'));
+
     const ides = [
       { name: 'Claude Code', cmd: 'claude', ...getClaudePaths(options.global) },
       { name: 'Cursor', cmd: 'cursor', ...getCursorPaths(options.global) },
@@ -65,14 +65,34 @@ program
       { name: 'Aider', cmd: 'aider', ...getAiderPaths(options.global) },
       { name: 'Continue.dev', cmd: 'continue', ...getContinuePaths(options.global) },
     ];
-    
+
     ides.forEach(ide => {
-      const installed = fs.existsSync(ide.configPath);
-      const status = installed ? chalk.green('✓ installed') : chalk.gray('not installed');
-      console.log(`  ${chalk.bold(ide.name)}: ${status}`);
-      console.log(`    Config: ${ide.configFile}`);
-      console.log();
+      const skillInstalled = fs.existsSync(ide.configPath);
+      const ideDetected = fs.existsSync(ide.baseDir);
+      const skillStatus = skillInstalled ? chalk.green('✓ skill') : chalk.gray('no skill');
+      const ideStatus = ideDetected ? chalk.blue('✓ IDE') : chalk.gray('no IDE');
+      console.log(`  ${chalk.bold(ide.name)}: ${ideStatus} / ${skillStatus}`);
     });
+
+    console.log(chalk.blue('\n🎯 Auto-detect would find:'));
+    const detected = [];
+    if (fs.existsSync(path.join(homedir, '.claude'))) detected.push('claude');
+    if (fs.existsSync(path.join(homedir, '.cursor'))) detected.push('cursor');
+    if (fs.existsSync(path.join(homedir, '.config', 'opencode'))) detected.push('opencode');
+    if (fs.existsSync(path.join(homedir, '.config', 'agents'))) detected.push('amp');
+    if (fs.existsSync(path.join(homedir, '.config', 'Code'))) detected.push('vscode');
+    if (fs.existsSync(path.join(homedir, '.config', 'zed'))) detected.push('zed');
+    if (fs.existsSync(path.join(homedir, '.kilocode'))) detected.push('kilo');
+    if (fs.existsSync(path.join(homedir, '.gemini', 'antigravity'))) detected.push('antigravity');
+    if (fs.existsSync(path.join(homedir, '.continue'))) detected.push('continue');
+
+    if (detected.length === 0) {
+      console.log(chalk.gray('  No IDEs detected in home directory'));
+    } else {
+      detected.forEach(name => console.log(chalk.green(`  ✓ ${name}`)));
+    }
+
+    console.log(chalk.gray('\nRun with --global to check global installs'));
   });
 
 program
@@ -197,37 +217,57 @@ function getContinuePaths(global = false) {
 
 function detectIDE(global = false) {
   const cwd = process.cwd();
-  
-  if (fs.existsSync(path.join(cwd, '.claude'))) return 'claude';
-  if (fs.existsSync(path.join(cwd, '.cursor'))) return 'cursor';
-  if (fs.existsSync(path.join(cwd, '.opencode'))) return 'opencode';
-  if (fs.existsSync(path.join(cwd, '.vscode'))) return 'vscode';
-  if (fs.existsSync(path.join(cwd, '.zed'))) return 'zed';
-  if (fs.existsSync(path.join(cwd, '.agents'))) return 'amp';
-  if (fs.existsSync(path.join(cwd, '.kilocode'))) return 'kilo';
-  if (fs.existsSync(path.join(cwd, '.antigravity'))) return 'antigravity';
-  if (fs.existsSync(path.join(cwd, '.agent'))) return 'antigravity';
-  if (fs.existsSync(path.join(cwd, '.aider.conf.yml'))) return 'aider';
-  if (fs.existsSync(path.join(cwd, '.continue'))) return 'continue';
-  if (fs.existsSync(path.join(cwd, 'claude.md'))) return 'claude';
-  if (fs.existsSync(path.join(cwd, '.cursorrules'))) return 'cursor';
-  
-  if (global || true) {
-    if (fs.existsSync(path.join(homedir, '.claude'))) return 'claude';
-    if (fs.existsSync(path.join(homedir, '.cursor'))) return 'cursor';
-    if (fs.existsSync(path.join(homedir, '.config', 'opencode'))) return 'opencode';
-    if (fs.existsSync(path.join(homedir, '.kilocode'))) return 'kilo';
-    if (fs.existsSync(path.join(homedir, '.gemini', 'antigravity'))) return 'antigravity';
-    if (fs.existsSync(path.join(homedir, '.config', 'Code'))) return 'vscode';
-    if (fs.existsSync(path.join(homedir, '.config', 'zed'))) return 'zed';
-    if (fs.existsSync(path.join(homedir, '.config', 'agents'))) return 'amp';
-    if (fs.existsSync(path.join(homedir, '.continue'))) return 'continue';
+  const detected = [];
+
+  const checks = [
+    { name: 'claude', path: path.join(homedir, '.claude'), global: true },
+    { name: 'cursor', path: path.join(homedir, '.cursor'), global: true },
+    { name: 'opencode', path: path.join(homedir, '.config', 'opencode'), global: true },
+    { name: 'vscode', path: path.join(homedir, '.config', 'Code'), global: true },
+    { name: 'zed', path: path.join(homedir, '.config', 'zed'), global: true },
+    { name: 'amp', path: path.join(homedir, '.config', 'agents'), global: true },
+    { name: 'kilo', path: path.join(homedir, '.kilocode'), global: true },
+    { name: 'antigravity', path: path.join(homedir, '.gemini', 'antigravity'), global: true },
+    { name: 'continue', path: path.join(homedir, '.continue'), global: true },
+    { name: 'claude', path: path.join(cwd, '.claude'), global: false },
+    { name: 'cursor', path: path.join(cwd, '.cursor'), global: false },
+    { name: 'opencode', path: path.join(cwd, '.opencode'), global: false },
+    { name: 'vscode', path: path.join(cwd, '.vscode'), global: false },
+    { name: 'zed', path: path.join(cwd, '.zed'), global: false },
+    { name: 'amp', path: path.join(cwd, '.agents'), global: false },
+    { name: 'kilo', path: path.join(cwd, '.kilocode'), global: false },
+    { name: 'antigravity', path: path.join(cwd, '.antigravity'), global: false },
+    { name: 'aider', path: path.join(cwd, '.aider.conf.yml'), global: false },
+    { name: 'continue', path: path.join(cwd, '.continue'), global: false },
+    { name: 'claude', path: path.join(cwd, 'claude.md'), global: false },
+    { name: 'cursor', path: path.join(cwd, '.cursorrules'), global: false },
+  ];
+
+  for (const check of checks) {
+    if (fs.existsSync(check.path) && !detected.find(d => d.name === check.name)) {
+      detected.push({ name: check.name, global: check.global });
+    }
   }
-  
-  if (process.env.CLAUDE_CODE) return 'claude';
-  if (process.env.CURSOR_TRACE) return 'cursor';
-  
-  return null;
+
+  if (process.env.CLAUDE_CODE && !detected.find(d => d.name === 'claude')) {
+    detected.push({ name: 'claude', global: true });
+  }
+  if (process.env.CURSOR_TRACE && !detected.find(d => d.name === 'cursor')) {
+    detected.push({ name: 'cursor', global: true });
+  }
+
+  if (detected.length === 0) return null;
+  if (detected.length === 1) return detected[0].name;
+
+  console.log(chalk.yellow('\n⚠️  Multiple IDEs detected:'));
+  detected.forEach((ide, i) => {
+    const globalFlag = ide.global ? '--global' : '';
+    console.log(chalk.gray(`  ${i + 1}. ${ide.name} ${globalFlag}`));
+  });
+  console.log(chalk.gray(`\nUsing first: ${detected[0].name}`));
+  console.log(chalk.gray(`To use different: npx omnidesign install --ide <name>\n`));
+
+  return detected[0].name;
 }
 
 async function installSkill(ide, global = false) {
@@ -274,18 +314,19 @@ async function installSkill(ide, global = false) {
   }
 }
 
-function copyDirSync(src, dest) {
+function copyDirSync(src, dest, { overwrite = true } = {}) {
   fs.mkdirSync(dest, { recursive: true });
   const entries = fs.readdirSync(src, { withFileTypes: true });
-  
+
   for (const entry of entries) {
     const srcPath = path.join(src, entry.name);
     const destPath = path.join(dest, entry.name);
-    
+
     if (entry.isDirectory()) {
-      copyDirSync(srcPath, destPath);
+      copyDirSync(srcPath, destPath, { overwrite });
     } else {
-      fs.copyFileSync(srcPath, destPath);
+      const copyFlags = overwrite ? undefined : fs.constants.COPYFILE_EXCL;
+      fs.copyFileSync(srcPath, destPath, copyFlags);
     }
   }
 }
