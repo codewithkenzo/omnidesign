@@ -313,6 +313,8 @@ npm install -g omnidesign
 omnidesign install
 ```
 
+**Source:** [github.com/codewithkenzo/omnidesign](https://github.com/codewithkenzo/omnidesign)
+
 ### Method 3: bun
 
 ```bash
@@ -570,7 +572,7 @@ MIT License - see [LICENSE](./LICENSE)
 </p>
 
 <p align="center">
-  <a href="https://twitter.com/omnidesign">Twitter</a> •
+  <a href="https://x.com/omnidesign">X</a> •
   <a href="https://discord.gg/omnidesign">Discord</a> •
   <a href="https://omnidesign.dev">Website</a>
 </p>
