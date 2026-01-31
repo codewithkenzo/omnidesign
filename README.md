@@ -72,7 +72,7 @@ omnidesign/
 
 ## Themes
 
-25 production-ready themes. Each includes complete color tokens, shadows, and interactive states.
+25 production-ready themes. Each includes complete color tokens (primary, surface, text, borders, status), shadows, and interactive states. Preview shows primary accent, background surface, and text colors.
 
 ### Professional
 
