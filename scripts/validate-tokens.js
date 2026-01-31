@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, '..');
@@ -107,10 +107,10 @@ function validate() {
       const tokens = JSON.parse(fs.readFileSync(filePath, 'utf8'));
       const issues = validateDTCG(tokens);
       if (issues.length > 0) {
-        issues.forEach(issue => {
+        for (const issue of issues) {
           errors++;
           log(`Error: ${file} - ${issue}`, 'red');
-        });
+        }
       } else {
         log(`  ✓ ${file}`, 'green');
       }
@@ -130,10 +130,10 @@ function validate() {
       const aliasIssues = validateAliases(tokens, allPrimitives);
       
       if (dtIssues.length > 0 || aliasIssues.length > 0) {
-        [...dtIssues, ...aliasIssues].forEach(issue => {
+        for (const issue of [...dtIssues, ...aliasIssues]) {
           errors++;
           log(`Error: ${file} - ${issue}`, 'red');
-        });
+        }
       } else {
         log(`  ✓ ${file}`, 'green');
       }
@@ -154,10 +154,10 @@ function validate() {
       const issues = validateDTCG(tokens);
       
       if (issues.length > 0) {
-        issues.forEach(issue => {
+        for (const issue of issues) {
           errors++;
           log(`Error: ${file} - ${issue}`, 'red');
-        });
+        }
       } else {
         log(`  ✓ ${file}`, 'green');
       }
