@@ -1,6 +1,6 @@
 {
   "name": "omnidesign",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Universal design system skill for AI coding assistants - Works with Claude Code, Cursor, OpenCode, VS Code, and more",
   "type": "module",
   "main": "index.js",
