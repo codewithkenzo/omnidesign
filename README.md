@@ -131,47 +131,53 @@ Each theme includes **complete design tokens**: colors, shadows, borders, and in
 
 ### 🏢 Professional
 
-| Theme | Description | Primary | Accent |
-|:-----:|-------------|:-------:|:------:|
-| `corporate` | Enterprise blue | ![](https://via.placeholder.com/24/0052CC/0052CC?text=+) `#0052CC` | ![](https://via.placeholder.com/24/0747A6/0747A6?text=+) `#0747A6` |
-| `navy` | Deep navy + gold | ![](https://via.placeholder.com/24/1e3a5f/1e3a5f?text=+) `#1e3a5f` | ![](https://via.placeholder.com/24/c9a227/c9a227?text=+) `#c9a227` |
-| `slate` | Modern gray + teal | ![](https://via.placeholder.com/24/475569/475569?text=+) `#475569` | ![](https://via.placeholder.com/24/14b8a6/14b8a6?text=+) `#14b8a6` |
-| `forest` | Sustainability green | ![](https://via.placeholder.com/24/166534/166534?text=+) `#166534` | ![](https://via.placeholder.com/24/15803d/15803d?text=+) `#15803d` |
-| `ruby` | Luxury burgundy | ![](https://via.placeholder.com/24/9f1239/9f1239?text=+) `#9f1239` | ![](https://via.placeholder.com/24/f43f5e/f43f5e?text=+) `#f43f5e` |
-| `graphite` | Minimalist mono | ![](https://via.placeholder.com/24/374151/374151?text=+) `#374151` | ![](https://via.placeholder.com/24/6b7280/6b7280?text=+) `#6b7280` |
+| Theme | Palette |
+|-------|---------|
+| **corporate** - Enterprise blue | ![corporate](assets/palettes/corporate.svg) |
+| **navy** - Deep navy + gold | ![navy](assets/palettes/navy.svg) |
+| **slate** - Modern gray + teal | ![slate](assets/palettes/slate.svg) |
+| **forest** - Sustainability green | ![forest](assets/palettes/forest.svg) |
+| **ruby** - Luxury burgundy | ![ruby](assets/palettes/ruby.svg) |
+| **graphite** - Minimalist mono | ![graphite](assets/palettes/graphite.svg) |
 
 ### 🎨 Creative
 
-| Theme | Description | Primary | Accent |
-|:-----:|-------------|:-------:|:------:|
-| `sunset` | Warm gradients | ![](https://via.placeholder.com/24/f97316/f97316?text=+) `#f97316` | ![](https://via.placeholder.com/24/f43f5e/f43f5e?text=+) `#f43f5e` |
-| `ocean` | Deep sea blue | ![](https://via.placeholder.com/24/0ea5e9/0ea5e9?text=+) `#0ea5e9` | ![](https://via.placeholder.com/24/06b6d4/06b6d4?text=+) `#06b6d4` |
-| `berry` | Raspberry pink | ![](https://via.placeholder.com/24/db2777/db2777?text=+) `#db2777` | ![](https://via.placeholder.com/24/e879f9/e879f9?text=+) `#e879f9` |
-| `mint` | Fresh pastel | ![](https://via.placeholder.com/24/22c55e/22c55e?text=+) `#22c55e` | ![](https://via.placeholder.com/24/34d399/34d399?text=+) `#34d399` |
-| `coral` | Friendly peach | ![](https://via.placeholder.com/24/fb7185/fb7185?text=+) `#fb7185` | ![](https://via.placeholder.com/24/fca5a5/fca5a5?text=+) `#fca5a5` |
-| `lavender` | Soft purple | ![](https://via.placeholder.com/24/a855f7/a855f7?text=+) `#a855f7` | ![](https://via.placeholder.com/24/c084fc/c084fc?text=+) `#c084fc` |
+| Theme | Palette |
+|-------|---------|
+| **sunset** - Warm gradients | ![sunset](assets/palettes/sunset.svg) |
+| **ocean** - Deep sea blue | ![ocean](assets/palettes/ocean.svg) |
+| **berry** - Raspberry pink | ![berry](assets/palettes/berry.svg) |
+| **mint** - Fresh pastel | ![mint](assets/palettes/mint.svg) |
+| **coral** - Friendly peach | ![coral](assets/palettes/coral.svg) |
+| **lavender** - Soft purple | ![lavender](assets/palettes/lavender.svg) |
 
 ### 🌙 Dark Mode
 
-| Theme | Description | Primary | Accent |
-|:-----:|-------------|:-------:|:------:|
-| `midnight` | True black | ![](https://via.placeholder.com/24/0f172a/0f172a?text=+) `#0f172a` | ![](https://via.placeholder.com/24/3b82f6/3b82f6?text=+) `#3b82f6` |
-| `noir` | High contrast | ![](https://via.placeholder.com/24/000000/000000?text=+) `#000000` | ![](https://via.placeholder.com/24/ffffff/ffffff?text=+) `#ffffff` |
-| `cyberpunk` | Neon synthwave | ![](https://via.placeholder.com/24/d946ef/d946ef?text=+) `#d946ef` | ![](https://via.placeholder.com/24/f472b6/f472b6?text=+) `#f472b6` |
-| `obsidian` | Dark gray | ![](https://via.placeholder.com/24/1f2937/1f2937?text=+) `#1f2937` | ![](https://via.placeholder.com/24/6366f1/6366f1?text=+) `#6366f1` |
-| `deep-space` | Cosmic void | ![](https://via.placeholder.com/24/2e1065/2e1065?text=+) `#2e1065` | ![](https://via.placeholder.com/24/8b5cf6/8b5cf6?text=+) `#8b5cf6` |
-| `brutalist` | Stark contrast | ![](https://via.placeholder.com/24/171717/171717?text=+) `#171717` | ![](https://via.placeholder.com/24/ff0000/ff0000?text=+) `#ff0000` |
+| Theme | Palette |
+|-------|---------|
+| **midnight** - True black | ![midnight](assets/palettes/midnight.svg) |
+| **noir** - High contrast | ![noir](assets/palettes/noir.svg) |
+| **cyberpunk** - Neon synthwave | ![cyberpunk](assets/palettes/cyberpunk.svg) |
+| **obsidian** - Dark gray | ![obsidian](assets/palettes/obsidian.svg) |
+| **deep-space** - Cosmic void | ![deep-space](assets/palettes/deep-space.svg) |
+| **brutalist** - Stark contrast | ![brutalist](assets/palettes/brutalist.svg) |
 
 ### ☀️ Light Mode
 
-| Theme | Description | Primary | Accent |
-|:-----:|-------------|:-------:|:------:|
-| `daylight` | Bright blue | ![](https://via.placeholder.com/24/3b82f6/3b82f6?text=+) `#3b82f6` | ![](https://via.placeholder.com/24/60a5fa/60a5fa?text=+) `#60a5fa` |
-| `paper` | Warm off-white | ![](https://via.placeholder.com/24/faf7f5/faf7f5?text=+) `#faf7f5` | ![](https://via.placeholder.com/24/d97706/d97706?text=+) `#d97706` |
-| `cream` | Soft cream | ![](https://via.placeholder.com/24/fef3c7/fef3c7?text=+) `#fef3c7` | ![](https://via.placeholder.com/24/f59e0b/f59e0b?text=+) `#f59e0b` |
-| `snow` | Pure white | ![](https://via.placeholder.com/24/ffffff/ffffff?text=+) `#ffffff` | ![](https://via.placeholder.com/24/e5e7eb/e5e7eb?text=+) `#e5e7eb` |
-| `spring` | Mint + pink | ![](https://via.placeholder.com/24/86efac/86efac?text=+) `#86efac` | ![](https://via.placeholder.com/24/f9a8d4/f9a8d4?text=+) `#f9a8d4` |
-| `solar` | Yellow warmth | ![](https://via.placeholder.com/24/facc15/facc15?text=+) `#facc15` | ![](https://via.placeholder.com/24/fde047/fde047?text=+) `#fde047` |
+| Theme | Palette |
+|-------|---------|
+| **daylight** - Bright blue | ![daylight](assets/palettes/daylight.svg) |
+| **paper** - Warm off-white | ![paper](assets/palettes/paper.svg) |
+| **cream** - Soft cream | ![cream](assets/palettes/cream.svg) |
+| **snow** - Pure white | ![snow](assets/palettes/snow.svg) |
+| **spring** - Mint + pink | ![spring](assets/palettes/spring.svg) |
+| **solar** - Yellow warmth | ![solar](assets/palettes/solar.svg) |
+
+### 🌟 Special
+
+| Theme | Palette |
+|-------|---------|
+| **starry-night** - Van Gogh inspired | ![starry-night](assets/palettes/starry-night.svg) |
 
 **💡 Usage:** Ask your AI assistant: *"Use the cyberpunk theme"* or *"Apply the ocean theme"*
 
