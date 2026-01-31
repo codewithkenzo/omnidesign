@@ -5,7 +5,11 @@
 </p>
 
 <p align="center">
-  <strong>The Universal Design System for AI Coding Assistants</strong>
+  <strong>Universal Design Skills System for AI Coding Assistants</strong>
+</p>
+
+<p align="center">
+  <em>One skill package. 10 IDEs. 25 themes. Infinite possibilities.</em>
 </p>
 
 <p align="center">
@@ -27,7 +31,15 @@
 
 ## ✨ What is OmniDesign?
 
-**OmniDesign** is a comprehensive design system that works across **all major AI coding assistants**. One package, universal compatibility.
+**OmniDesign** is a **universal design skills system** for AI coding assistants. It installs as a skill/plugin across **10+ IDEs**, giving your AI assistant instant access to:
+
+- 🎨 **25 curated themes** with design tokens
+- 🤖 **AI industry components** (chat, prompts, agents)
+- 🔤 **40+ font families** including Nerd Fonts
+- 🎯 **100+ design tokens** (colors, spacing, typography)
+- 📚 **Component recipes** for React, Vue, Svelte
+
+**Think of it as a design system that travels with your AI assistant.**
 
 ### 🎯 One Command Install
 
@@ -113,63 +125,55 @@ OmniDesign detects your IDE by looking for:
 
 ---
 
-## 🎨 25 Beautiful Themes
+## 🎨 25 Curated Themes
 
-### Professional
-<div align="center">
+Each theme includes **complete design tokens**: colors, shadows, borders, and interactive states.
 
-| Theme | Vibe | Preview |
-|-------|------|---------|
-| `corporate` | Enterprise blue | <span style="color:#0052CC">●</span> |
-| `navy` | Deep navy + gold | <span style="color:#1e3a5f">●</span> |
-| `slate` | Modern gray + teal | <span style="color:#475569">●</span> |
-| `forest` | Sustainability green | <span style="color:#166534">●</span> |
-| `ruby` | Luxury burgundy | <span style="color:#9f1239">●</span> |
-| `graphite` | Minimalist mono | <span style="color:#374151">●</span> |
+### 🏢 Professional
 
-</div>
+| Theme | Description | Primary | Accent |
+|:-----:|-------------|:-------:|:------:|
+| `corporate` | Enterprise blue | ![](https://via.placeholder.com/24/0052CC/0052CC?text=+) `#0052CC` | ![](https://via.placeholder.com/24/0747A6/0747A6?text=+) `#0747A6` |
+| `navy` | Deep navy + gold | ![](https://via.placeholder.com/24/1e3a5f/1e3a5f?text=+) `#1e3a5f` | ![](https://via.placeholder.com/24/c9a227/c9a227?text=+) `#c9a227` |
+| `slate` | Modern gray + teal | ![](https://via.placeholder.com/24/475569/475569?text=+) `#475569` | ![](https://via.placeholder.com/24/14b8a6/14b8a6?text=+) `#14b8a6` |
+| `forest` | Sustainability green | ![](https://via.placeholder.com/24/166534/166534?text=+) `#166534` | ![](https://via.placeholder.com/24/15803d/15803d?text=+) `#15803d` |
+| `ruby` | Luxury burgundy | ![](https://via.placeholder.com/24/9f1239/9f1239?text=+) `#9f1239` | ![](https://via.placeholder.com/24/f43f5e/f43f5e?text=+) `#f43f5e` |
+| `graphite` | Minimalist mono | ![](https://via.placeholder.com/24/374151/374151?text=+) `#374151` | ![](https://via.placeholder.com/24/6b7280/6b7280?text=+) `#6b7280` |
 
-### Creative
-<div align="center">
+### 🎨 Creative
 
-| Theme | Vibe | Preview |
-|-------|------|---------|
-| `sunset` | Warm gradients | <span style="color:#f97316">●</span> |
-| `ocean` | Deep sea blue | <span style="color:#0ea5e9">●</span> |
-| `berry` | Raspberry pink | <span style="color:#db2777">●</span> |
-| `mint` | Fresh pastel | <span style="color:#22c55e">●</span> |
-| `coral` | Friendly peach | <span style="color:#fb7185">●</span> |
-| `lavender` | Soft purple | <span style="color:#a855f7">●</span> |
+| Theme | Description | Primary | Accent |
+|:-----:|-------------|:-------:|:------:|
+| `sunset` | Warm gradients | ![](https://via.placeholder.com/24/f97316/f97316?text=+) `#f97316` | ![](https://via.placeholder.com/24/f43f5e/f43f5e?text=+) `#f43f5e` |
+| `ocean` | Deep sea blue | ![](https://via.placeholder.com/24/0ea5e9/0ea5e9?text=+) `#0ea5e9` | ![](https://via.placeholder.com/24/06b6d4/06b6d4?text=+) `#06b6d4` |
+| `berry` | Raspberry pink | ![](https://via.placeholder.com/24/db2777/db2777?text=+) `#db2777` | ![](https://via.placeholder.com/24/e879f9/e879f9?text=+) `#e879f9` |
+| `mint` | Fresh pastel | ![](https://via.placeholder.com/24/22c55e/22c55e?text=+) `#22c55e` | ![](https://via.placeholder.com/24/34d399/34d399?text=+) `#34d399` |
+| `coral` | Friendly peach | ![](https://via.placeholder.com/24/fb7185/fb7185?text=+) `#fb7185` | ![](https://via.placeholder.com/24/fca5a5/fca5a5?text=+) `#fca5a5` |
+| `lavender` | Soft purple | ![](https://via.placeholder.com/24/a855f7/a855f7?text=+) `#a855f7` | ![](https://via.placeholder.com/24/c084fc/c084fc?text=+) `#c084fc` |
 
-</div>
+### 🌙 Dark Mode
 
-### Dark Mode
-<div align="center">
+| Theme | Description | Primary | Accent |
+|:-----:|-------------|:-------:|:------:|
+| `midnight` | True black | ![](https://via.placeholder.com/24/0f172a/0f172a?text=+) `#0f172a` | ![](https://via.placeholder.com/24/3b82f6/3b82f6?text=+) `#3b82f6` |
+| `noir` | High contrast | ![](https://via.placeholder.com/24/000000/000000?text=+) `#000000` | ![](https://via.placeholder.com/24/ffffff/ffffff?text=+) `#ffffff` |
+| `cyberpunk` | Neon synthwave | ![](https://via.placeholder.com/24/d946ef/d946ef?text=+) `#d946ef` | ![](https://via.placeholder.com/24/f472b6/f472b6?text=+) `#f472b6` |
+| `obsidian` | Dark gray | ![](https://via.placeholder.com/24/1f2937/1f2937?text=+) `#1f2937` | ![](https://via.placeholder.com/24/6366f1/6366f1?text=+) `#6366f1` |
+| `deep-space` | Cosmic void | ![](https://via.placeholder.com/24/2e1065/2e1065?text=+) `#2e1065` | ![](https://via.placeholder.com/24/8b5cf6/8b5cf6?text=+) `#8b5cf6` |
+| `brutalist` | Stark contrast | ![](https://via.placeholder.com/24/171717/171717?text=+) `#171717` | ![](https://via.placeholder.com/24/ff0000/ff0000?text=+) `#ff0000` |
 
-| Theme | Vibe | Preview |
-|-------|------|---------|
-| `midnight` | True black | <span style="color:#0f172a">●</span> |
-| `noir` | High contrast | <span style="color:#000000">●</span> |
-| `cyberpunk` | Neon synthwave | <span style="color:#d946ef">●</span> |
-| `obsidian` | Dark gray | <span style="color:#1f2937">●</span> |
-| `deep-space` | Cosmic void | <span style="color:#2e1065">●</span> |
-| `brutalist` | Stark contrast | <span style="color:#171717">●</span> |
+### ☀️ Light Mode
 
-</div>
+| Theme | Description | Primary | Accent |
+|:-----:|-------------|:-------:|:------:|
+| `daylight` | Bright blue | ![](https://via.placeholder.com/24/3b82f6/3b82f6?text=+) `#3b82f6` | ![](https://via.placeholder.com/24/60a5fa/60a5fa?text=+) `#60a5fa` |
+| `paper` | Warm off-white | ![](https://via.placeholder.com/24/faf7f5/faf7f5?text=+) `#faf7f5` | ![](https://via.placeholder.com/24/d97706/d97706?text=+) `#d97706` |
+| `cream` | Soft cream | ![](https://via.placeholder.com/24/fef3c7/fef3c7?text=+) `#fef3c7` | ![](https://via.placeholder.com/24/f59e0b/f59e0b?text=+) `#f59e0b` |
+| `snow` | Pure white | ![](https://via.placeholder.com/24/ffffff/ffffff?text=+) `#ffffff` | ![](https://via.placeholder.com/24/e5e7eb/e5e7eb?text=+) `#e5e7eb` |
+| `spring` | Mint + pink | ![](https://via.placeholder.com/24/86efac/86efac?text=+) `#86efac` | ![](https://via.placeholder.com/24/f9a8d4/f9a8d4?text=+) `#f9a8d4` |
+| `solar` | Yellow warmth | ![](https://via.placeholder.com/24/facc15/facc15?text=+) `#facc15` | ![](https://via.placeholder.com/24/fde047/fde047?text=+) `#fde047` |
 
-### Light Mode
-<div align="center">
-
-| Theme | Vibe | Preview |
-|-------|------|---------|
-| `daylight` | Bright blue | <span style="color:#3b82f6">●</span> |
-| `paper` | Warm off-white | <span style="color:#faf7f5">●</span> |
-| `cream` | Soft cream | <span style="color:#fef3c7">●</span> |
-| `snow` | Pure white | <span style="color:#ffffff">●</span> |
-| `spring` | Mint + pink | <span style="color:#86efac">●</span> |
-| `solar` | Yellow warmth | <span style="color:#facc15">●</span> |
-
-</div>
+**💡 Usage:** Ask your AI assistant: *"Use the cyberpunk theme"* or *"Apply the ocean theme"*
 
 ### Using Themes
 
@@ -352,31 +356,28 @@ omnidesign/
 ├── 📖 README.md                # This file
 ├── 📦 package.json             # NPM manifest
 ├── 🔧 bin/                     # CLI tools
-│   ├── cli.js                 # Main CLI
+│   ├── cli.js                 # Main CLI - installs skills
 │   ├── install.js             # Install script
 │   └── detect-ide.js          # IDE detection
+├── 🎯 skills/                  # ⭐ IDE-SPECIFIC SKILLS
+│   ├── claude/omnidesign.md   # Claude Code skill
+│   ├── cursor/omnidesign.md   # Cursor skill
+│   ├── opencode/omnidesign.md # OpenCode skill
+│   ├── vscode/package.json    # VS Code extension
+│   ├── aider/omnidesign.md    # Aider conventions
+│   ├── continue/omnidesign.yaml # Continue.dev config
+│   ├── zed/omnidesign.json    # Zed config
+│   ├── amp/SKILL.md           # Amp Code skill
+│   ├── kilo/SKILL.md          # Kilo Code skill
+│   └── antigravity/SKILL.md   # Antigravity skill
 ├── 🎨 tokens/                  # Design tokens
-│   ├── primitives/            # Base values
+│   ├── primitives/            # Base values (colors, spacing)
 │   ├── semantic/              # Contextual tokens
 │   ├── themes/                # 25 theme files
 │   └── typography/            # Font collection
-├── 🧩 components/              # React/Vue components
-│   ├── core/                  # Button, Card, Input
-│   ├── ai/                    # Chat, Prompt, AgentCard
-│   └── layout/                # Grid, Stack
 ├── 📚 recipes/                 # Implementation guides
-│   └── components/            # Component patterns
-├── 🎯 skills/                  # IDE-specific skills
-│   ├── claude/                # Claude Code skill
-│   ├── cursor/                # Cursor skill
-│   ├── opencode/              # OpenCode skill
-│   ├── vscode/                # VS Code extension
-│   ├── aider/                 # Aider conventions
-│   ├── continue/              # Continue.dev config
-│   ├── zed/                   # Zed config
-│   ├── amp/                   # Amp Code skill
-│   ├── kilo/                  # Kilo Code skill
-│   └── antigravity/           # Antigravity skill
+│   ├── components/            # AI component patterns
+│   └── motion/                # Animation system
 └── 📦 packages/                # Built outputs
     ├── tokens-css/
     ├── tokens-ts/
@@ -572,7 +573,11 @@ MIT License - see [LICENSE](./LICENSE)
 </p>
 
 <p align="center">
-  <a href="https://x.com/codewithkenzo">X</a> •
+  <strong>OmniDesign Skills System</strong> — Design tokens that travel with your AI
+</p>
+
+<p align="center">
+  <a href="https://x.com/codewithkenzo">X @codewithkenzo</a> •
   <a href="https://discord.gg/omnidesign">Discord</a> •
   <a href="https://omnidesign.dev">Website</a>
 </p>
