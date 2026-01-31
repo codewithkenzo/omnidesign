@@ -1,12 +1,12 @@
 {
   "name": "omnidesign",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Universal design system skill for AI coding assistants - Works with Claude Code, Cursor, OpenCode, VS Code, and more",
   "type": "module",
   "main": "index.js",
   "bin": {
-    "omnidesign": "./bin/cli.js",
-    "omnidesign-install": "./bin/install.js"
+    "omnidesign": "bin/cli.js",
+    "omnidesign-install": "bin/install.js"
   },
   "scripts": {
     "build": "bun run scripts/build-tokens.js",
