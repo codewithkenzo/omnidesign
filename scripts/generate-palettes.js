@@ -21,13 +21,9 @@ for (const file of themeFiles) {
     primary: themeData.color?.interactive?.primary?.$value || '#3b82f6',
     accent: themeData.color?.interactive?.secondary?.$value || '#6366f1',
     surface: themeData.color?.surface?.default?.$value || '#ffffff',
-    text: themeData.color?.text?.default?.$value || '#000000',
-    success: themeData.color?.status?.success?.$value || '#22c55e',
-    warning: themeData.color?.status?.warning?.$value || '#f59e0b',
-    error: themeData.color?.status?.error?.$value || '#ef4444',
   };
 
-  const svg = generatePaletteSVG(themeName, colors);
+  const svg = generateMinimalPaletteSVG(themeName, colors);
   
   const outputPath = path.join(outputDir, `${themeName}.svg`);
   fs.writeFileSync(outputPath, svg);
@@ -35,47 +31,30 @@ for (const file of themeFiles) {
   console.log(`✓ ${themeName}`);
 }
 
-console.log(`\n✅ Generated ${themeFiles.length} palette images in assets/palettes/`);
+console.log(`\n✅ Generated ${themeFiles.length} minimal palette images in assets/palettes/`);
 
-function generatePaletteSVG(themeName, colors) {
-  const width = 600;
-  const height = 120;
-  const swatchWidth = 80;
-  const swatchHeight = 60;
-  const startX = 20;
-  const startY = 30;
-  const gap = 10;
+function generateMinimalPaletteSVG(themeName, colors) {
+  const width = 320;
+  const height = 40;
+  const swatchSize = 28;
+  const startX = 8;
+  const startY = 6;
+  const gap = 6;
 
   const colorEntries = Object.entries(colors);
   
   let rects = '';
-  let labels = '';
   
   colorEntries.forEach(([name, color], index) => {
-    const x = startX + index * (swatchWidth + gap);
+    const x = startX + index * (swatchSize + gap);
     const y = startY;
     
-    rects += `    <rect x="${x}" y="${y}" width="${swatchWidth}" height="${swatchHeight}" rx="8" fill="${color}" stroke="#e5e7eb" stroke-width="1"/>\n`;
-    
-    labels += `    <text x="${x + swatchWidth/2}" y="${y + swatchHeight + 18}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6b7280">${name}</text>\n`;
-    
-    labels += `    <text x="${x + swatchWidth/2}" y="${y + swatchHeight + 32}" text-anchor="middle" font-family="monospace" font-size="9" fill="#9ca3af">${color}</text>\n`;
+    rects += `    <rect x="${x}" y="${y}" width="${swatchSize}" height="${swatchSize}" rx="6" fill="${color}"/>\n`;
   });
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
-    </filter>
-  </defs>
-  
-  <rect width="${width}" height="${height}" fill="#fafafa" rx="12"/>
-  
-  <text x="20" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#111827">${themeName}</text>
-  
-  <g filter="url(#shadow)">
-${rects}  </g>
-  
-${labels}</svg>`;
+  <rect width="${width}" height="${height}" fill="#0d1117" rx="8"/>
+  <text x="${startX + colorEntries.length * (swatchSize + gap) + 8}" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#e6edf3">${themeName}</text>
+${rects}</svg>`;
 }
