@@ -572,7 +572,7 @@ MIT License - see [LICENSE](./LICENSE)
 </p>
 
 <p align="center">
-  <a href="https://x.com/omnidesign">X</a> •
+  <a href="https://x.com/codewithkenzo">X</a> •
   <a href="https://discord.gg/omnidesign">Discord</a> •
   <a href="https://omnidesign.dev">Website</a>
 </p>
