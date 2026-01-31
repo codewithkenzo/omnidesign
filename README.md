@@ -1,22 +1,35 @@
-# OmniDesign
+# 🎨 OmniDesign
 
-Universal design skills system for AI coding assistants. One package, 10 IDEs, 25 themes.
+<p align="center">
+  <img src="logo.jpg" alt="OmniDesign Logo" width="160">
+</p>
 
-[Install](#installation) • [Themes](#themes) • [Usage](#usage)
+<p align="center">
+  <strong>Universal Design Skills System for AI Coding Assistants</strong>
+</p>
+
+<p align="center">
+  One package. 10 IDEs. 25 themes. 100+ design tokens.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/omnidesign"><img src="https://img.shields.io/npm/v/omnidesign?style=flat-square&color=blue" alt="npm"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/npm/l/omnidesign?style=flat-square" alt="license"></a>
+</p>
 
 ---
 
-## Installation
+## Quick Start
 
-### For Humans
+### Install for Your IDE
 
 ```bash
 npx omnidesign
 ```
 
-Auto-detects your IDE and installs the skill globally.
+Auto-detects and installs globally. That's it.
 
-**Manual install for specific IDE:**
+**Manual install:**
 ```bash
 npx omnidesign install --ide claude      # Claude Code
 npx omnidesign install --ide cursor      # Cursor
@@ -30,17 +43,29 @@ npx omnidesign install --ide aider       # Aider
 npx omnidesign install --ide continue    # Continue.dev
 ```
 
-### For Your Agent
+### Install for Your Agent
 
-Copy-paste this prompt to your AI assistant:
+Copy-paste to your AI assistant:
 
-> Install the OmniDesign skill from npm. Run: `npx omnidesign install --ide <your-ide> --global`
+> Install OmniDesign skill: `npx omnidesign install --ide <your-ide> --global`
 
-Once installed, your agent has access to:
-- 25 curated themes with complete design tokens
-- AI industry components (chat, prompts, agents)
-- 40+ font families including Nerd Fonts
-- 100+ design tokens (colors, spacing, typography)
+Once installed, your agent has access to 25 themes, design tokens, and AI component patterns.
+
+---
+
+## What's Included
+
+```
+omnidesign/
+├── SKILL.md              # Entry point for your AI
+├── tokens/               # Design tokens
+│   ├── themes/          # 25 theme files
+│   ├── primitives/      # Base colors, spacing
+│   └── semantic/        # Contextual tokens
+└── recipes/             # Component patterns
+    ├── components/      # AI chat, prompts, forms
+    └── motion/          # Animation patterns
+```
 
 ---
 
@@ -50,7 +75,7 @@ Once installed, your agent has access to:
 
 ### Professional
 
-| Theme | Preview |
+| Theme | Palette |
 |-------|---------|
 | corporate | ![corporate](assets/palettes/corporate.svg) |
 | navy | ![navy](assets/palettes/navy.svg) |
@@ -61,7 +86,7 @@ Once installed, your agent has access to:
 
 ### Creative
 
-| Theme | Preview |
+| Theme | Palette |
 |-------|---------|
 | sunset | ![sunset](assets/palettes/sunset.svg) |
 | ocean | ![ocean](assets/palettes/ocean.svg) |
@@ -72,7 +97,7 @@ Once installed, your agent has access to:
 
 ### Dark Mode
 
-| Theme | Preview |
+| Theme | Palette |
 |-------|---------|
 | midnight | ![midnight](assets/palettes/midnight.svg) |
 | noir | ![noir](assets/palettes/noir.svg) |
@@ -83,7 +108,7 @@ Once installed, your agent has access to:
 
 ### Light Mode
 
-| Theme | Preview |
+| Theme | Palette |
 |-------|---------|
 | daylight | ![daylight](assets/palettes/daylight.svg) |
 | paper | ![paper](assets/palettes/paper.svg) |
@@ -94,9 +119,11 @@ Once installed, your agent has access to:
 
 ### Specialty
 
-| Theme | Preview |
+| Theme | Palette |
 |-------|---------|
 | starry-night | ![starry-night](assets/palettes/starry-night.svg) |
+
+**Usage:** `"Use the cyberpunk theme"` or `"Apply ocean theme"`
 
 ---
 
@@ -118,11 +145,9 @@ AI: [Generates form using --color-interactive-primary, --spacing-md, --shadow-ca
 
 ### Access Design Tokens
 
-Your AI assistant can reference:
-
 **Colors:**
 - `color.text.default` — Primary text
-- `color.surface.raised` — Cards, elevated surfaces  
+- `color.surface.raised` — Cards, elevated surfaces
 - `color.interactive.primary` — Buttons, links
 - `color.status.success/error/warning` — Status states
 
@@ -159,29 +184,11 @@ Your AI assistant can reference:
 
 ---
 
-## What's Included
-
-Each skill installation contains:
-
-```
-omnidesign/
-├── SKILL.md              # Entry point for your AI
-├── tokens/               # Design tokens
-│   ├── themes/          # 25 theme files
-│   ├── primitives/      # Base colors, spacing
-│   └── semantic/        # Contextual tokens
-└── recipes/             # Component patterns
-    ├── components/      # AI chat, prompts, forms
-    └── motion/          # Animation patterns
-```
-
----
-
 ## CLI Commands
 
 ```bash
 npx omnidesign                    # Auto-detect and install
-npx omnidesign list               # List installed IDEs
+npx omnidesign list               # List installed IDEs  
 npx omnidesign install --ide <ide> --global   # Install globally
 npx omnidesign uninstall --ide <ide> --global  # Uninstall
 ```
@@ -191,3 +198,11 @@ npx omnidesign uninstall --ide <ide> --global  # Uninstall
 ## License
 
 MIT © [codewithkenzo](https://github.com/codewithkenzo)
+
+---
+
+<p align="center">
+  <a href="https://x.com/codewithkenzo">X @codewithkenzo</a> •
+  <a href="https://discord.gg/omnidesign">Discord</a> •
+  <a href="https://omnidesign.dev">Website</a>
+</p>
