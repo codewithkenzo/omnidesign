@@ -1,0 +1,84 @@
+{
+  "name": "omnidesign",
+  "version": "1.0.0",
+  "description": "Universal design system skill for AI coding assistants - Works with Claude Code, Cursor, OpenCode, VS Code, and more",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "omnidesign": "./bin/cli.js",
+    "omnidesign-install": "./bin/install.js"
+  },
+  "scripts": {
+    "build": "bun run scripts/build-tokens.js",
+    "validate": "bun run scripts/validate-tokens.js",
+    "lint": "biome lint .",
+    "format": "biome format . --write",
+    "format:check": "biome format .",
+    "check": "bun run format:check && bun run lint && bun run validate",
+    "themes:list": "bun run -e \"const fs=require('fs');const themes=fs.readdirSync('tokens/themes').filter(f=>f.endsWith('.json')).map(f=>f.replace('.json','')).sort();console.log('\\n🎨 Available Themes ('+themes.length+'):\\n');themes.forEach(t=>console.log('  •',t));console.log();\"",
+    "fonts:list": "bun run -e \"const data=require('./tokens/typography/font-collection.json');console.log('\\n🔤 Font Families:\\n');Object.entries(data.families).forEach(([cat,families])=>{console.log(cat+':');Object.keys(families).forEach(f=>console.log('  •',f));console.log();});\"",
+    "postinstall": "node bin/detect-ide.js"
+  },
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "themes",
+    "components",
+    "ui-library",
+    "css-variables",
+    "typography",
+    "nerd-fonts",
+    "ai-components",
+    "claude-code",
+    "cursor",
+    "opencode",
+    "vscode",
+    "skill",
+    "plugin"
+  ],
+  "author": "OmniDesign Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codewithkenzo/omnidesign.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codewithkenzo/omnidesign/issues"
+  },
+  "homepage": "https://omnidesign.dev",
+  "files": [
+    "tokens/",
+    "recipes/",
+    "components/",
+    "packages/",
+    "bin/",
+    "skills/",
+    "README.md",
+    "QUICKREF.md",
+    "logo.jpg"
+  ],
+  "exports": {
+    "./tokens": "./packages/tokens-css/dist/tokens.css",
+    "./tokens-ts": "./packages/tokens-ts/dist/tokens.ts",
+    "./react": "./packages/react/dist/index.js",
+    "./skill/claude": "./skills/claude/",
+    "./skill/cursor": "./skills/cursor/",
+    "./skill/opencode": "./skills/opencode/",
+    "./skill/vscode": "./skills/vscode/",
+    "./skill/aider": "./skills/aider/",
+    "./skill/continue": "./skills/continue/"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "ora": "^8.0.1"
+  }
+}
