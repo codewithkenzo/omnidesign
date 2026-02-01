@@ -14,7 +14,6 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/omnidesign"><img src="https://img.shields.io/npm/v/omnidesign?style=flat-square&color=blue" alt="npm"></a>
-  <a href="https://www.npmjs.com/package/omnidesign"><img src="https://img.shields.io/npm/dw/omnidesign?style=flat-square&color=green" alt="downloads"></a>
   <a href="https://bun.sh"><img src="https://img.shields.io/badge/bun-runtime-fbf0df?logo=bun" alt="Bun"></a>
   <a href="LICENSE"><img src="https://img.shields.io/npm/l/omnidesign?style=flat-square" alt="license"></a>
 </p>
