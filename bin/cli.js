@@ -2,9 +2,9 @@
 import { program } from 'commander';
 import chalk from 'chalk';
 import fs from 'node:fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import os from 'os';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import os from 'node:os';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'package.json'), 'utf8'));
