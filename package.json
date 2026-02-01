@@ -1,99 +1,99 @@
 {
-  "name": "omnidesign",
-  "version": "1.1.1",
-  "description": "Universal design system with Tailwind CSS integration - 25 themes, 176 colors, 39 Nerd Fonts, and AI-ready component recipes for Claude Code, Cursor, OpenCode, and more",
-  "type": "module",
-  "main": "index.js",
-  "bin": {
-    "omnidesign": "bin/cli.js",
-    "omnidesign-install": "bin/install.js"
-  },
-  "scripts": {
-    "build": "bun run scripts/build-tokens.js && bun run build:tailwind",
-    "build:tailwind": "cd packages/tokens-tailwind && node scripts/build-tailwind.js",
-    "build:fonts": "node scripts/generate-nerd-fonts-catalog.js",
-    "validate": "bun run scripts/validate-tokens.js",
-    "lint": "biome lint .",
-    "format": "biome format . --write",
-    "format:check": "biome format .",
-    "check": "bun run format:check && bun run lint && bun run validate",
-    "themes:list": "bun run -e \"const fs=require('fs');const themes=fs.readdirSync('tokens/themes').filter(f=>f.endsWith('.json')).map(f=>f.replace('.json','')).sort();console.log('\\n🎨 Available Themes ('+themes.length+'):\\n');themes.forEach(t=>console.log('  •',t));console.log();\"",
-    "fonts:list": "bun run -e \"const data=require('./tokens/typography/nerd-fonts-complete.json');console.log('\\n🔤 Nerd Fonts ('+Object.keys(data.fonts).length+'):\\n');Object.entries(data.fonts).forEach(([id,font])=>{console.log('  • '+font.name);});console.log();\"",
-    "colors:list": "bun run -e \"const data=require('./tokens/primitives/colors-extended.json');console.log('\\n🎨 Color Families ('+Object.keys(data.families).length+'):\\n');Object.entries(data.families).forEach(([name,family])=>{console.log('  • '+name+' - '+family.description);});console.log();\"",
-    "postinstall": "node bin/detect-ide.js",
-    "prepublishOnly": "bun run build"
-  },
-  "keywords": [
-    "design-system",
-    "design-tokens",
-    "tailwind",
-    "tailwindcss",
-    "themes",
-    "components",
-    "ui-library",
-    "css-variables",
-    "typography",
-    "nerd-fonts",
-    "ai-components",
-    "claude-code",
-    "cursor",
-    "opencode",
-    "vscode",
-    "skill",
-    "plugin",
-    "color-palette",
-    "component-library"
-  ],
-  "author": "OmniDesign Team",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/codewithkenzo/omnidesign.git"
-  },
-  "bugs": {
-    "url": "https://github.com/codewithkenzo/omnidesign/issues"
-  },
-  "homepage": "https://omnidesign.dev",
-  "files": [
-    "tokens/",
-    "recipes/",
-    "components/",
-    "packages/",
-    "bin/",
-    "skills/",
-    "docs/",
-    "README.md",
-    "QUICKREF.md",
-    "logo.jpg",
-    "AGENTS.md"
-  ],
-  "exports": {
-    "./tokens": "./packages/tokens-css/dist/tokens.css",
-    "./tokens-ts": "./packages/tokens-ts/dist/tokens.ts",
-    "./tailwind": "./packages/tokens-tailwind/dist/tailwind.config.js",
-    "./tailwind-config": "./packages/tokens-tailwind/dist/tailwind.config.json",
-    "./tailwind-mapping": "./packages/tokens-tailwind/dist/utility-mapping.json",
-    "./react": "./packages/react/dist/index.js",
-    "./colors": "./tokens/primitives/colors-extended.json",
-    "./fonts": "./tokens/typography/nerd-fonts-complete.json",
-    "./skill/claude": "./skills/claude/",
-    "./skill/cursor": "./skills/cursor/",
-    "./skill/opencode": "./skills/opencode/",
-    "./skill/vscode": "./skills/vscode/",
-    "./skill/aider": "./skills/aider/",
-    "./skill/continue": "./skills/continue/"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "chalk": "^5.3.0",
-    "commander": "^11.1.0",
-    "inquirer": "^9.2.12",
-    "ora": "^8.0.1"
-  }
+	"name": "omnidesign",
+	"version": "1.1.1",
+	"description": "Universal design system with Tailwind CSS integration - 25 themes, 176 colors, 39 Nerd Fonts, and AI-ready component recipes for Claude Code, Cursor, OpenCode, and more",
+	"type": "module",
+	"main": "index.js",
+	"bin": {
+		"omnidesign": "bin/cli.js",
+		"omnidesign-install": "bin/install.js"
+	},
+	"scripts": {
+		"build": "bun run scripts/build-tokens.js && bun run build:tailwind",
+		"build:tailwind": "cd packages/tokens-tailwind && node scripts/build-tailwind.js",
+		"build:fonts": "node scripts/generate-nerd-fonts-catalog.js",
+		"validate": "bun run scripts/validate-tokens.js",
+		"lint": "biome lint .",
+		"format": "biome format . --write",
+		"format:check": "biome format .",
+		"check": "bun run format:check && bun run lint && bun run validate",
+		"themes:list": "bun run -e \"const fs=require('fs');const themes=fs.readdirSync('tokens/themes').filter(f=>f.endsWith('.json')).map(f=>f.replace('.json','')).sort();console.log('\\n🎨 Available Themes ('+themes.length+'):\\n');themes.forEach(t=>console.log('  •',t));console.log();\"",
+		"fonts:list": "bun run -e \"const data=require('./tokens/typography/nerd-fonts-complete.json');console.log('\\n🔤 Nerd Fonts ('+Object.keys(data.fonts).length+'):\\n');Object.entries(data.fonts).forEach(([id,font])=>{console.log('  • '+font.name);});console.log();\"",
+		"colors:list": "bun run -e \"const data=require('./tokens/primitives/colors-extended.json');console.log('\\n🎨 Color Families ('+Object.keys(data.families).length+'):\\n');Object.entries(data.families).forEach(([name,family])=>{console.log('  • '+name+' - '+family.description);});console.log();\"",
+		"postinstall": "node bin/detect-ide.js",
+		"prepublishOnly": "bun run build"
+	},
+	"keywords": [
+		"design-system",
+		"design-tokens",
+		"tailwind",
+		"tailwindcss",
+		"themes",
+		"components",
+		"ui-library",
+		"css-variables",
+		"typography",
+		"nerd-fonts",
+		"ai-components",
+		"claude-code",
+		"cursor",
+		"opencode",
+		"vscode",
+		"skill",
+		"plugin",
+		"color-palette",
+		"component-library"
+	],
+	"author": "OmniDesign Team",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/codewithkenzo/omnidesign.git"
+	},
+	"bugs": {
+		"url": "https://github.com/codewithkenzo/omnidesign/issues"
+	},
+	"homepage": "https://omnidesign.dev",
+	"files": [
+		"tokens/",
+		"recipes/",
+		"components/",
+		"packages/",
+		"bin/",
+		"skills/",
+		"docs/",
+		"README.md",
+		"QUICKREF.md",
+		"logo.jpg",
+		"AGENTS.md"
+	],
+	"exports": {
+		"./tokens": "./packages/tokens-css/dist/tokens.css",
+		"./tokens-ts": "./packages/tokens-ts/dist/tokens.ts",
+		"./tailwind": "./packages/tokens-tailwind/dist/tailwind.config.js",
+		"./tailwind-config": "./packages/tokens-tailwind/dist/tailwind.config.json",
+		"./tailwind-mapping": "./packages/tokens-tailwind/dist/utility-mapping.json",
+		"./react": "./packages/react/dist/index.js",
+		"./colors": "./tokens/primitives/colors-extended.json",
+		"./fonts": "./tokens/typography/nerd-fonts-complete.json",
+		"./skill/claude": "./skills/claude/",
+		"./skill/cursor": "./skills/cursor/",
+		"./skill/opencode": "./skills/opencode/",
+		"./skill/vscode": "./skills/vscode/",
+		"./skill/aider": "./skills/aider/",
+		"./skill/continue": "./skills/continue/"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"chalk": "^5.3.0",
+		"commander": "^11.1.0",
+		"inquirer": "^9.2.12",
+		"ora": "^8.0.1"
+	}
 }

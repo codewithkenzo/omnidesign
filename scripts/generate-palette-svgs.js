@@ -1,46 +1,51 @@
 #!/usr/bin/env node
-import fs from 'node:fs';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const rootDir = path.join(__dirname, '..');
-const themesDir = path.join(rootDir, 'tokens/themes');
-const outputDir = path.join(rootDir, 'assets/palettes');
+const rootDir = path.join(__dirname, "..");
+const themesDir = path.join(rootDir, "tokens/themes");
+const outputDir = path.join(rootDir, "assets/palettes");
 
-const themeFiles = fs.readdirSync(themesDir).filter(f => f.endsWith('.json'));
+const themeFiles = fs.readdirSync(themesDir).filter((f) => f.endsWith(".json"));
 
-console.log(`Generating enhanced SVG palettes for ${themeFiles.length} themes...\n`);
+console.log(
+	`Generating enhanced SVG palettes for ${themeFiles.length} themes...\n`,
+);
 
-themeFiles.forEach(themeFile => {
-  const themeName = themeFile.replace('.json', '');
-  const themeData = JSON.parse(fs.readFileSync(path.join(themesDir, themeFile), 'utf8'));
-  
-  const colors = {
-    primary: themeData.color?.interactive?.primary?.$value || '#0052CC',
-    primaryHover: themeData.color?.interactive?.['primary.hover']?.$value || '#003E8F',
-    surface: themeData.color?.surface?.default?.$value || '#FFFFFF',
-    surfaceRaised: themeData.color?.surface?.raised?.$value || '#F9FAFB',
-    text: themeData.color?.text?.default?.$value || '#1F2937',
-    textMuted: themeData.color?.text?.muted?.$value || '#6B7280',
-    border: themeData.color?.border?.default?.$value || '#E5E7EB',
-    accent: themeData.color?.status?.success?.$value || '#22C55E'
-  };
-  
-  const svg = generateEnhancedSVG(themeName, colors, themeData);
-  
-  const outputPath = path.join(outputDir, `${themeName}.svg`);
-  fs.writeFileSync(outputPath, svg);
-  
-  console.log(`  ✓ ${themeName}.svg`);
+themeFiles.forEach((themeFile) => {
+	const themeName = themeFile.replace(".json", "");
+	const themeData = JSON.parse(
+		fs.readFileSync(path.join(themesDir, themeFile), "utf8"),
+	);
+
+	const colors = {
+		primary: themeData.color?.interactive?.primary?.$value || "#0052CC",
+		primaryHover:
+			themeData.color?.interactive?.["primary.hover"]?.$value || "#003E8F",
+		surface: themeData.color?.surface?.default?.$value || "#FFFFFF",
+		surfaceRaised: themeData.color?.surface?.raised?.$value || "#F9FAFB",
+		text: themeData.color?.text?.default?.$value || "#1F2937",
+		textMuted: themeData.color?.text?.muted?.$value || "#6B7280",
+		border: themeData.color?.border?.default?.$value || "#E5E7EB",
+		accent: themeData.color?.status?.success?.$value || "#22C55E",
+	};
+
+	const svg = generateEnhancedSVG(themeName, colors, themeData);
+
+	const outputPath = path.join(outputDir, `${themeName}.svg`);
+	fs.writeFileSync(outputPath, svg);
+
+	console.log(`  ✓ ${themeName}.svg`);
 });
 
 console.log(`\n✅ Generated ${themeFiles.length} enhanced SVG palettes`);
 
 function generateEnhancedSVG(name, colors, themeData) {
-  const description = themeData.theme?.$description || `${name} theme`;
-  
-  return `<?xml version="1.0" encoding="UTF-8"?>
+	const description = themeData.theme?.$description || `${name} theme`;
+
+	return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="400" height="80" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
@@ -60,7 +65,7 @@ function generateEnhancedSVG(name, colors, themeData) {
   
   <!-- Theme name -->
   <text x="20" y="30" class="text label">${name}</text>
-  <text x="20" y="50" class="text desc">${description.substring(0, 50)}${description.length > 50 ? '...' : ''}</text>
+  <text x="20" y="50" class="text desc">${description.substring(0, 50)}${description.length > 50 ? "..." : ""}</text>
   
   <!-- Primary color swatch -->
   <rect x="280" y="12" width="32" height="32" rx="8" fill="${colors.primary}" filter="url(#shadow)"/>

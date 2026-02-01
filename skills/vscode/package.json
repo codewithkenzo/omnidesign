@@ -1,66 +1,86 @@
 {
-  "name": "omnidesign-vscode",
-  "displayName": "OmniDesign",
-  "description": "Universal design system with 25 themes and AI components",
-  "version": "1.0.0",
-  "publisher": "omnidesign",
-  "engines": {
-    "vscode": "^1.85.0"
-  },
-  "categories": ["Other", "Machine Learning", "Snippets"],
-  "keywords": ["design system", "themes", "tokens", "ui", "components"],
-  "activationEvents": ["onStartupFinished"],
-  "main": "./out/extension.js",
-  "contributes": {
-    "chatParticipants": [
-      {
-        "id": "omnidesign.participant",
-        "fullName": "OmniDesign",
-        "name": "omnidesign",
-        "description": "Design system expert with 25 themes and component patterns",
-        "isSticky": true,
-        "commands": [
-          {
-            "name": "theme",
-            "description": "Apply a theme (corporate, cyberpunk, sunset, etc.)"
-          },
-          {
-            "name": "component",
-            "description": "Generate a component using design tokens"
-          }
-        ]
-      }
-    ],
-    "configuration": {
-      "title": "OmniDesign",
-      "properties": {
-        "omnidesign.enabled": {
-          "type": "boolean",
-          "default": true,
-          "description": "Enable OmniDesign assistance"
-        },
-        "omnidesign.theme": {
-          "type": "string",
-          "default": "corporate",
-          "enum": [
-            "corporate", "navy", "slate", "forest", "ruby", "graphite",
-            "sunset", "ocean", "berry", "mint", "coral", "lavender",
-            "midnight", "noir", "cyberpunk", "obsidian", "deep-space", "brutalist",
-            "daylight", "paper", "cream", "snow", "spring", "solar",
-            "starry-night"
-          ],
-          "description": "Active theme"
-        }
-      }
-    }
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.85.0",
-    "typescript": "^5.3.0"
-  }
+	"name": "omnidesign-vscode",
+	"displayName": "OmniDesign",
+	"description": "Universal design system with 25 themes and AI components",
+	"version": "1.0.0",
+	"publisher": "omnidesign",
+	"engines": {
+		"vscode": "^1.85.0"
+	},
+	"categories": ["Other", "Machine Learning", "Snippets"],
+	"keywords": ["design system", "themes", "tokens", "ui", "components"],
+	"activationEvents": ["onStartupFinished"],
+	"main": "./out/extension.js",
+	"contributes": {
+		"chatParticipants": [
+			{
+				"id": "omnidesign.participant",
+				"fullName": "OmniDesign",
+				"name": "omnidesign",
+				"description": "Design system expert with 25 themes and component patterns",
+				"isSticky": true,
+				"commands": [
+					{
+						"name": "theme",
+						"description": "Apply a theme (corporate, cyberpunk, sunset, etc.)"
+					},
+					{
+						"name": "component",
+						"description": "Generate a component using design tokens"
+					}
+				]
+			}
+		],
+		"configuration": {
+			"title": "OmniDesign",
+			"properties": {
+				"omnidesign.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable OmniDesign assistance"
+				},
+				"omnidesign.theme": {
+					"type": "string",
+					"default": "corporate",
+					"enum": [
+						"corporate",
+						"navy",
+						"slate",
+						"forest",
+						"ruby",
+						"graphite",
+						"sunset",
+						"ocean",
+						"berry",
+						"mint",
+						"coral",
+						"lavender",
+						"midnight",
+						"noir",
+						"cyberpunk",
+						"obsidian",
+						"deep-space",
+						"brutalist",
+						"daylight",
+						"paper",
+						"cream",
+						"snow",
+						"spring",
+						"solar",
+						"starry-night"
+					],
+					"description": "Active theme"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.85.0",
+		"typescript": "^5.3.0"
+	}
 }

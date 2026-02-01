@@ -1,1858 +1,1481 @@
 {
-  "_meta": {
-    "version": "3.4.0",
-    "totalFonts": 39,
-    "lastUpdated": "2026-01-31",
-    "source": "https://github.com/ryanoasis/nerd-fonts",
-    "website": "https://www.nerdfonts.com",
-    "description": "Complete Nerd Fonts collection with CDN URLs, CSS imports, and installation commands",
-    "glyphCount": "10,000+",
-    "iconSets": [
-      "Seti-UI + Custom",
-      "Devicons",
-      "Font Awesome",
-      "Font Awesome Extension",
-      "Material Design Icons",
-      "Weather",
-      "Octicons",
-      "Powerline Symbols",
-      "Powerline Extra Symbols",
-      "IEC Power Symbols",
-      "Font Logos",
-      "Pomicons",
-      "Codicons"
-    ]
-  },
-  "categories": {
-    "programming": {
-      "description": "Fonts optimized for programming with ligatures, clear distinctions, and excellent readability",
-      "recommendations": [
-        "jetbrains-mono-nerd",
-        "fira-code-nerd",
-        "caskaydia-cove-nerd",
-        "caskaydia-mono-nerd",
-        "zed-mono-nerd"
-      ]
-    },
-    "terminal": {
-      "description": "Fonts designed for terminal use with powerline symbols and compact designs",
-      "recommendations": [
-        "iosevka-term-nerd",
-        "meslo-lg-nerd",
-        "terminus-nerd",
-        "ubuntu-mono-nerd"
-      ]
-    },
-    "dense": {
-      "description": "Narrow fonts for maximum information density",
-      "recommendations": [
-        "iosevka-nerd",
-        "iosevka-term-nerd",
-        "proggy-clean-nerd",
-        "terminus-nerd"
-      ]
-    },
-    "retro": {
-      "description": "Vintage and nostalgic terminal fonts",
-      "recommendations": [
-        "3270-nerd",
-        "bigblue-terminal-nerd",
-        "gohu-nerd",
-        "terminus-nerd"
-      ]
-    },
-    "creative": {
-      "description": "Unique and artistic monospace fonts",
-      "recommendations": [
-        "victor-mono-nerd",
-        "fantasque-sans-mono-nerd",
-        "comic-shanns-mono-nerd",
-        "recursive-mono-nerd"
-      ]
-    },
-    "accessible": {
-      "description": "Fonts designed for accessibility and readability",
-      "recommendations": [
-        "atkinson-hyperlegible-mono-nerd",
-        "opendyslexic-nerd",
-        "commit-mono-nerd"
-      ]
-    },
-    "minimal": {
-      "description": "Clean, simple, and minimal designs",
-      "recommendations": [
-        "geist-mono-nerd",
-        "jetbrains-mono-nerd",
-        "blex-mono-nerd",
-        "commit-mono-nerd"
-      ]
-    },
-    "google-fonts": {
-      "description": "Fonts available on Google Fonts for easy web integration",
-      "recommendations": [
-        "jetbrains-mono-nerd",
-        "fira-code-nerd",
-        "space-mono-nerd",
-        "roboto-mono-nerd",
-        "inconsolata-nerd",
-        "ubuntu-mono-nerd",
-        "source-code-pro-nerd"
-      ]
-    }
-  },
-  "fontPairings": {
-    "modern-dev": {
-      "heading": "geist-mono-nerd",
-      "body": "geist-mono-nerd",
-      "code": "geist-mono-nerd",
-      "description": "Vercel's cohesive font system - use the Geist package"
-    },
-    "professional": {
-      "heading": "jetbrains-mono-nerd",
-      "body": "jetbrains-mono-nerd",
-      "code": "jetbrains-mono-nerd",
-      "description": "JetBrains Mono for everything - professional and clean"
-    },
-    "hacker": {
-      "heading": "fira-code-nerd",
-      "body": "fira-code-nerd",
-      "code": "fira-code-nerd",
-      "description": "Fira Code with ligatures - popular open source choice"
-    },
-    "microsoft": {
-      "heading": "caskaydia-cove-nerd",
-      "body": "caskaydia-cove-nerd",
-      "code": "caskaydia-cove-nerd",
-      "description": "Cascadia Code - designed for Windows Terminal"
-    },
-    "dense-terminal": {
-      "heading": "iosevka-term-nerd",
-      "body": "iosevka-term-nerd",
-      "code": "iosevka-term-nerd",
-      "description": "Maximum density for terminal power users"
-    },
-    "classic-terminal": {
-      "heading": "meslo-lg-nerd",
-      "body": "meslo-lg-nerd",
-      "code": "meslo-lg-nerd",
-      "description": "Meslo - the classic terminal font derived from Menlo"
-    },
-    "creative-coding": {
-      "heading": "victor-mono-nerd",
-      "body": "victor-mono-nerd",
-      "code": "victor-mono-nerd",
-      "description": "Victor Mono with distinctive cursive italics"
-    },
-    "accessible-reading": {
-      "heading": "atkinson-hyperlegible-mono-nerd",
-      "body": "atkinson-hyperlegible-mono-nerd",
-      "code": "atkinson-hyperlegible-mono-nerd",
-      "description": "Maximum legibility for low vision users"
-    }
-  },
-  "fonts": {
-    "jetbrains-mono-nerd": {
-      "name": "JetBrainsMono Nerd Font",
-      "familyName": "JetBrainsMono Nerd Font",
-      "shortName": "JetBrainsMono",
-      "originalName": null,
-      "category": "programming",
-      "version": "2.304",
-      "description": "JetBrains officially created font for developers with excellent ligatures and readability",
-      "features": [
-        "ligatures",
-        "jetbrains",
-        "professional"
-      ],
-      "weights": [
-        100,
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        800
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/JetBrainsMono/",
-        "googleFonts": "https://fonts.googleapis.com/css2?family=JetBrains%20Mono:wght@100..800&display=swap",
-        "preview": "https://www.programmingfonts.org/#jetbrainsmono"
-      },
-      "install": {
-        "homebrew": "font-jetbrains-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-jetbrains-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-jetbrainsmono-nerd",
-          "scoop": "scoop install JetBrainsMono-NF"
-        }
-      },
-      "css": {
-        "import": "@import url('https://fonts.googleapis.com/css2?family=JetBrains%20Mono:wght@100..800&display=swap');",
-        "fontFace": "font-family: 'JetBrainsMono Nerd Font', 'JetBrainsMono', monospace;",
-        "tailwindConfig": "'JetBrainsMono Nerd Font', 'JetBrainsMono', monospace"
-      }
-    },
-    "fira-code-nerd": {
-      "name": "FiraCode Nerd Font",
-      "familyName": "FiraCode Nerd Font",
-      "shortName": "FiraCode",
-      "originalName": null,
-      "category": "programming",
-      "version": "6.2",
-      "description": "Programming ligatures, extension of Fira Mono font, enlarged operators - very popular choice",
-      "features": [
-        "ligatures",
-        "popular",
-        "mozilla"
-      ],
-      "weights": [
-        300,
-        400,
-        450,
-        500,
-        600,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FiraCode.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/FiraCode/",
-        "googleFonts": "https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap",
-        "preview": "https://www.programmingfonts.org/#firacode"
-      },
-      "install": {
-        "homebrew": "font-fira-code-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-fira-code-nerd-font",
-          "arch": "sudo pacman -S ttf-firacode-nerd",
-          "scoop": "scoop install FiraCode-NF"
-        }
-      },
-      "css": {
-        "import": "@import url('https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap');",
-        "fontFace": "font-family: 'FiraCode Nerd Font', 'FiraCode', sans-serif;",
-        "tailwindConfig": "'FiraCode Nerd Font', 'FiraCode', sans-serif"
-      }
-    },
-    "hack-nerd": {
-      "name": "Hack Nerd Font",
-      "familyName": "Hack Nerd Font",
-      "shortName": "Hack",
-      "originalName": null,
-      "category": "programming",
-      "version": "3.003",
-      "description": "Dotted zero, short descenders, expands upon work done for Bitstream Vera & DejaVu, legible at common sizes",
-      "features": [
-        "dotted-zero",
-        "legible",
-        "bitstream-based"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Hack/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#hack"
-      },
-      "install": {
-        "homebrew": "font-hack-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-hack-nerd-font",
-          "arch": "sudo pacman -S ttf-hack-nerd",
-          "scoop": "scoop install Hack-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip */",
-        "fontFace": "font-family: 'Hack Nerd Font', 'Hack', sans-serif;",
-        "tailwindConfig": "'Hack Nerd Font', 'Hack', sans-serif"
-      }
-    },
-    "caskaydia-cove-nerd": {
-      "name": "CaskaydiaCove Nerd Font",
-      "familyName": "CaskaydiaCove Nerd Font",
-      "shortName": "CaskaydiaCove",
-      "originalName": null,
-      "category": "programming",
-      "version": "2407.24",
-      "description": "Microsoft's Cascadia Code with Nerd Font glyphs - includes programming ligatures, designed for Windows Terminal",
-      "features": [
-        "ligatures",
-        "microsoft",
-        "windows-terminal"
-      ],
-      "weights": [
-        200,
-        300,
-        400,
-        500,
-        600,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaCode.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/CascadiaCode/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#caskaydiacove"
-      },
-      "install": {
-        "homebrew": "font-caskaydia-cove-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-caskaydia-cove-nerd-font",
-          "arch": "sudo pacman -S ttf-caskaydiacove-nerd",
-          "scoop": "scoop install CaskaydiaCove-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaCode.zip */",
-        "fontFace": "font-family: 'CaskaydiaCove Nerd Font', 'CaskaydiaCove', sans-serif;",
-        "tailwindConfig": "'CaskaydiaCove Nerd Font', 'CaskaydiaCove', sans-serif"
-      }
-    },
-    "caskaydia-mono-nerd": {
-      "name": "CaskaydiaMono Nerd Font",
-      "familyName": "CaskaydiaMono Nerd Font",
-      "shortName": "CaskaydiaMono",
-      "originalName": null,
-      "category": "programming",
-      "version": "2407.24",
-      "description": "Like Cascadia Code but without any ligatures - for those who prefer no ligatures",
-      "features": [
-        "no-ligatures",
-        "microsoft"
-      ],
-      "weights": [
-        200,
-        300,
-        400,
-        500,
-        600,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/CascadiaMono/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#caskaydiamono"
-      },
-      "install": {
-        "homebrew": "font-caskaydia-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-caskaydia-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-caskaydiamono-nerd",
-          "scoop": "scoop install CaskaydiaMono-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaMono.zip */",
-        "fontFace": "font-family: 'CaskaydiaMono Nerd Font', 'CaskaydiaMono', monospace;",
-        "tailwindConfig": "'CaskaydiaMono Nerd Font', 'CaskaydiaMono', monospace"
-      }
-    },
-    "iosevka-nerd": {
-      "name": "Iosevka Nerd Font",
-      "familyName": "Iosevka Nerd Font",
-      "shortName": "Iosevka",
-      "originalName": null,
-      "category": "dense",
-      "version": "33.2.1",
-      "description": "Narrow and horizontally tight characters, slashed zero. Maximum information density.",
-      "features": [
-        "narrow",
-        "dense",
-        "tall"
-      ],
-      "weights": [
-        100,
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        800,
-        900
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Iosevka.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Iosevka/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#iosevka"
-      },
-      "install": {
-        "homebrew": "font-iosevka-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-iosevka-nerd-font",
-          "arch": "sudo pacman -S ttf-iosevka-nerd",
-          "scoop": "scoop install Iosevka-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Iosevka.zip */",
-        "fontFace": "font-family: 'Iosevka Nerd Font', 'Iosevka', sans-serif;",
-        "tailwindConfig": "'Iosevka Nerd Font', 'Iosevka', sans-serif"
-      }
-    },
-    "iosevka-term-nerd": {
-      "name": "IosevkaTerm Nerd Font",
-      "familyName": "IosevkaTerm Nerd Font",
-      "shortName": "IosevkaTerm",
-      "originalName": null,
-      "category": "dense",
-      "version": "33.2.1",
-      "description": "A narrower variant focusing on terminal uses - arrows and geometric symbols are narrow",
-      "features": [
-        "narrow",
-        "terminal-optimized"
-      ],
-      "weights": [
-        100,
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        800,
-        900
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IosevkaTerm.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/IosevkaTerm/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#iosevkaterm"
-      },
-      "install": {
-        "homebrew": "font-iosevka-term-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-iosevka-term-nerd-font",
-          "arch": "sudo pacman -S ttf-iosevkaterm-nerd",
-          "scoop": "scoop install IosevkaTerm-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IosevkaTerm.zip */",
-        "fontFace": "font-family: 'IosevkaTerm Nerd Font', 'IosevkaTerm', sans-serif;",
-        "tailwindConfig": "'IosevkaTerm Nerd Font', 'IosevkaTerm', sans-serif"
-      }
-    },
-    "iosevka-term-slab-nerd": {
-      "name": "IosevkaTermSlab Nerd Font",
-      "familyName": "IosevkaTermSlab Nerd Font",
-      "shortName": "IosevkaTermSlab",
-      "originalName": null,
-      "category": "dense",
-      "version": "33.2.1",
-      "description": "Nice as Iosevka but with slab serifs for a different aesthetic",
-      "features": [
-        "narrow",
-        "slab-serif"
-      ],
-      "weights": [
-        100,
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        800,
-        900
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IosevkaTermSlab.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/IosevkaTermSlab/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#iosevkatermslab"
-      },
-      "install": {
-        "homebrew": "font-iosevka-term-slab-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-iosevka-term-slab-nerd-font",
-          "arch": "sudo pacman -S ttf-iosevkatermslab-nerd",
-          "scoop": "scoop install IosevkaTermSlab-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IosevkaTermSlab.zip */",
-        "fontFace": "font-family: 'IosevkaTermSlab Nerd Font', 'IosevkaTermSlab', sans-serif;",
-        "tailwindConfig": "'IosevkaTermSlab Nerd Font', 'IosevkaTermSlab', sans-serif"
-      }
-    },
-    "meslo-lg-nerd": {
-      "name": "MesloLG Nerd Font",
-      "familyName": "MesloLG Nerd Font",
-      "shortName": "MesloLG",
-      "originalName": null,
-      "category": "terminal",
-      "version": "1.21",
-      "description": "Slashed zeros, customized version of Apple's Menlo - popular terminal font",
-      "features": [
-        "powerline",
-        "menlo-based",
-        "popular"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Meslo.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Meslo/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#meslolg"
-      },
-      "install": {
-        "homebrew": "font-meslo-lg-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-meslo-lg-nerd-font",
-          "arch": "sudo pacman -S ttf-meslolg-nerd",
-          "scoop": "scoop install MesloLG-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Meslo.zip */",
-        "fontFace": "font-family: 'MesloLG Nerd Font', 'MesloLG', sans-serif;",
-        "tailwindConfig": "'MesloLG Nerd Font', 'MesloLG', sans-serif"
-      }
-    },
-    "terminus-nerd": {
-      "name": "Terminess Nerd Font",
-      "familyName": "Terminess Nerd Font",
-      "shortName": "Terminess",
-      "originalName": null,
-      "category": "terminal",
-      "version": "4.49.2",
-      "description": "Squarish characters that are slightly askew - bitmap font aesthetic in TTF",
-      "features": [
-        "bitmap-like",
-        "square",
-        "retro"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": false,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Terminus.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Terminus/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#terminess"
-      },
-      "install": {
-        "homebrew": "font-terminus-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-terminus-nerd-font",
-          "arch": "sudo pacman -S ttf-terminus-nerd",
-          "scoop": "scoop install Terminess-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Terminus.zip */",
-        "fontFace": "font-family: 'Terminess Nerd Font', 'Terminess', sans-serif;",
-        "tailwindConfig": "'Terminess Nerd Font', 'Terminess', sans-serif"
-      }
-    },
-    "gohu-nerd": {
-      "name": "Gohu Nerd Font",
-      "familyName": "Gohu Nerd Font",
-      "shortName": "Gohu",
-      "originalName": null,
-      "category": "terminal",
-      "version": "2.0",
-      "description": "Bitmap font, tall capitals and ascenders, small serifs - distinctive look",
-      "features": [
-        "bitmap",
-        "tall",
-        "serifs"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": false,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Gohu.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Gohu/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#gohu"
-      },
-      "install": {
-        "homebrew": "font-gohu-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-gohu-nerd-font",
-          "arch": "sudo pacman -S ttf-gohu-nerd",
-          "scoop": "scoop install Gohu-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Gohu.zip */",
-        "fontFace": "font-family: 'Gohu Nerd Font', 'Gohu', sans-serif;",
-        "tailwindConfig": "'Gohu Nerd Font', 'Gohu', sans-serif"
-      }
-    },
-    "geist-mono-nerd": {
-      "name": "GeistMono Nerd Font",
-      "familyName": "GeistMono Nerd Font",
-      "shortName": "GeistMono",
-      "originalName": null,
-      "category": "minimal",
-      "version": "1.401",
-      "description": "Vercel's monospaced typeface designed for code editors, diagrams, terminals - very clean",
-      "features": [
-        "vercel",
-        "clean",
-        "modern"
-      ],
-      "weights": [
-        100,
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        800,
-        900
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Geistmono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/GeistMono/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#geistmono"
-      },
-      "install": {
-        "homebrew": "font-geist-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-geist-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-geistmono-nerd",
-          "scoop": "scoop install GeistMono-NF"
-        }
-      },
-      "css": {
-        "import": "import { GeistMono } from 'geist/font/mono';",
-        "fontFace": "font-family: 'GeistMono Nerd Font', 'GeistMono', monospace;",
-        "tailwindConfig": "'GeistMono Nerd Font', 'GeistMono', monospace"
-      }
-    },
-    "space-mono-nerd": {
-      "name": "SpaceMono Nerd Font",
-      "familyName": "SpaceMono Nerd Font",
-      "shortName": "SpaceMono",
-      "originalName": null,
-      "category": "creative",
-      "version": "1.001",
-      "description": "Squarish character lines, dotted zero, aggressive parentheses - Google Fonts",
-      "features": [
-        "google",
-        "square",
-        "distinctive"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/SpaceMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/SpaceMono/",
-        "googleFonts": "https://fonts.googleapis.com/css2?family=Space%20Mono:wght@400;700&display=swap",
-        "preview": "https://www.programmingfonts.org/#spacemono"
-      },
-      "install": {
-        "homebrew": "font-space-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-space-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-spacemono-nerd",
-          "scoop": "scoop install SpaceMono-NF"
-        }
-      },
-      "css": {
-        "import": "@import url('https://fonts.googleapis.com/css2?family=Space%20Mono:wght@400;700&display=swap');",
-        "fontFace": "font-family: 'SpaceMono Nerd Font', 'SpaceMono', monospace;",
-        "tailwindConfig": "'SpaceMono Nerd Font', 'SpaceMono', monospace"
-      }
-    },
-    "roboto-mono-nerd": {
-      "name": "RobotoMono Nerd Font",
-      "familyName": "RobotoMono Nerd Font",
-      "shortName": "RobotoMono",
-      "originalName": null,
-      "category": "minimal",
-      "version": "3.0",
-      "description": "Dashed zero, curved and straight character lines - Google's Roboto Mono",
-      "features": [
-        "google",
-        "roboto",
-        "clean"
-      ],
-      "weights": [
-        100,
-        200,
-        300,
-        400,
-        500,
-        600,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/RobotoMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/RobotoMono/",
-        "googleFonts": "https://fonts.googleapis.com/css2?family=Roboto%20Mono:wght@100..700&display=swap",
-        "preview": "https://www.programmingfonts.org/#robotomono"
-      },
-      "install": {
-        "homebrew": "font-roboto-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-roboto-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-robotomono-nerd",
-          "scoop": "scoop install RobotoMono-NF"
-        }
-      },
-      "css": {
-        "import": "@import url('https://fonts.googleapis.com/css2?family=Roboto%20Mono:wght@100..700&display=swap');",
-        "fontFace": "font-family: 'RobotoMono Nerd Font', 'RobotoMono', monospace;",
-        "tailwindConfig": "'RobotoMono Nerd Font', 'RobotoMono', monospace"
-      }
-    },
-    "inconsolata-nerd": {
-      "name": "Inconsolata Nerd Font",
-      "familyName": "Inconsolata Nerd Font",
-      "shortName": "Inconsolata",
-      "originalName": null,
-      "category": "programming",
-      "version": "3.000",
-      "description": "Slashed zero, takes inspiration from many different fonts - very popular on Google Fonts",
-      "features": [
-        "google",
-        "popular",
-        "classic"
-      ],
-      "weights": [
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        800,
-        900
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Inconsolata.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Inconsolata/",
-        "googleFonts": "https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap",
-        "preview": "https://www.programmingfonts.org/#inconsolata"
-      },
-      "install": {
-        "homebrew": "font-inconsolata-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-inconsolata-nerd-font",
-          "arch": "sudo pacman -S ttf-inconsolata-nerd",
-          "scoop": "scoop install Inconsolata-NF"
-        }
-      },
-      "css": {
-        "import": "@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');",
-        "fontFace": "font-family: 'Inconsolata Nerd Font', 'Inconsolata', sans-serif;",
-        "tailwindConfig": "'Inconsolata Nerd Font', 'Inconsolata', sans-serif"
-      }
-    },
-    "ubuntu-mono-nerd": {
-      "name": "UbuntuMono Nerd Font",
-      "familyName": "UbuntuMono Nerd Font",
-      "shortName": "UbuntuMono",
-      "originalName": null,
-      "category": "terminal",
-      "version": "0.80",
-      "description": "Dotted zeros, used the n, o, H & O Latin characters as a base for design - Ubuntu's monospace",
-      "features": [
-        "ubuntu",
-        "linux",
-        "canonical"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/UbuntuMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/UbuntuMono/",
-        "googleFonts": "https://fonts.googleapis.com/css2?family=Ubuntu%20Mono:wght@400;700&display=swap",
-        "preview": "https://www.programmingfonts.org/#ubuntumono"
-      },
-      "install": {
-        "homebrew": "font-ubuntu-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-ubuntu-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-ubuntumono-nerd",
-          "scoop": "scoop install UbuntuMono-NF"
-        }
-      },
-      "css": {
-        "import": "@import url('https://fonts.googleapis.com/css2?family=Ubuntu%20Mono:wght@400;700&display=swap');",
-        "fontFace": "font-family: 'UbuntuMono Nerd Font', 'UbuntuMono', monospace;",
-        "tailwindConfig": "'UbuntuMono Nerd Font', 'UbuntuMono', monospace"
-      }
-    },
-    "source-code-pro-nerd": {
-      "name": "SauceCodePro Nerd Font",
-      "familyName": "SauceCodePro Nerd Font",
-      "shortName": "SauceCodePro",
-      "originalName": "Source Code Pro",
-      "category": "programming",
-      "version": "2.042",
-      "description": "Monospaced font family for user interface and coding environments - Adobe's Source Code Pro",
-      "features": [
-        "adobe",
-        "professional",
-        "adobe-fonts"
-      ],
-      "weights": [
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        900
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/SourceCodePro.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/SourceCodePro/",
-        "googleFonts": "https://fonts.googleapis.com/css2?family=Source%20Code%20Pro:wght@200..900&display=swap",
-        "preview": "https://www.programmingfonts.org/#saucecodepro"
-      },
-      "install": {
-        "homebrew": "font-sauce-code-pro-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-sauce-code-pro-nerd-font",
-          "arch": "sudo pacman -S ttf-sourcecodepro-nerd",
-          "scoop": "scoop install SauceCodePro-NF"
-        }
-      },
-      "css": {
-        "import": "@import url('https://fonts.googleapis.com/css2?family=Source%20Code%20Pro:wght@200..900&display=swap');",
-        "fontFace": "font-family: 'SauceCodePro Nerd Font', 'SauceCodePro', sans-serif;",
-        "tailwindConfig": "'SauceCodePro Nerd Font', 'SauceCodePro', sans-serif"
-      }
-    },
-    "victor-mono-nerd": {
-      "name": "VictorMono Nerd Font",
-      "familyName": "VictorMono Nerd Font",
-      "shortName": "VictorMono",
-      "originalName": null,
-      "category": "creative",
-      "version": "1.5.6",
-      "description": "Clean, crisp and narrow, with a large x-height and clear punctuation. Cursive italics are distinctive.",
-      "features": [
-        "cursive-italics",
-        "narrow",
-        "elegant"
-      ],
-      "weights": [
-        100,
-        200,
-        300,
-        400,
-        500,
-        600,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/VictorMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/VictorMono/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#victormono"
-      },
-      "install": {
-        "homebrew": "font-victor-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-victor-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-victormono-nerd",
-          "scoop": "scoop install VictorMono-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/VictorMono.zip */",
-        "fontFace": "font-family: 'VictorMono Nerd Font', 'VictorMono', monospace;",
-        "tailwindConfig": "'VictorMono Nerd Font', 'VictorMono', monospace"
-      }
-    },
-    "fantasque-sans-mono-nerd": {
-      "name": "FantasqueSansMono Nerd Font",
-      "familyName": "FantasqueSansMono Nerd Font",
-      "shortName": "FantasqueSansMono",
-      "originalName": null,
-      "category": "creative",
-      "version": "1.8.0",
-      "description": "Wibbly-wobbly handwriting-like fuzziness, takes inspiration from Inconsolata and Monaco",
-      "features": [
-        "handwritten",
-        "fun",
-        "fuzzy"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FantasqueSansMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/FantasqueSansMono/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#fantasquesansmono"
-      },
-      "install": {
-        "homebrew": "font-fantasque-sans-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-fantasque-sans-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-fantasquesansmono-nerd",
-          "scoop": "scoop install FantasqueSansMono-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FantasqueSansMono.zip */",
-        "fontFace": "font-family: 'FantasqueSansMono Nerd Font', 'FantasqueSansMono', monospace;",
-        "tailwindConfig": "'FantasqueSansMono Nerd Font', 'FantasqueSansMono', monospace"
-      }
-    },
-    "agave-nerd": {
-      "name": "Agave Nerd Font",
-      "familyName": "Agave Nerd Font",
-      "shortName": "Agave",
-      "originalName": null,
-      "category": "creative",
-      "version": "37",
-      "description": "A small, monospace, outline font that is geometrically regular and simple with a unique artistic feel",
-      "features": [
-        "artistic",
-        "geometric",
-        "small"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": false,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Agave.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Agave/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#agave"
-      },
-      "install": {
-        "homebrew": "font-agave-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-agave-nerd-font",
-          "arch": "sudo pacman -S ttf-agave-nerd",
-          "scoop": "scoop install Agave-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Agave.zip */",
-        "fontFace": "font-family: 'Agave Nerd Font', 'Agave', sans-serif;",
-        "tailwindConfig": "'Agave Nerd Font', 'Agave', sans-serif"
-      }
-    },
-    "comic-shanns-mono-nerd": {
-      "name": "ComicShannsMono Nerd Font",
-      "familyName": "ComicShannsMono Nerd Font",
-      "shortName": "ComicShannsMono",
-      "originalName": null,
-      "category": "creative",
-      "version": "1.3.2",
-      "description": "The very typeface you've been trained to recognize since childhood - comic style monospace",
-      "features": [
-        "comic",
-        "fun",
-        "playful"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/ComicShannsMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/ComicShannsMono/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#comicshannsmono"
-      },
-      "install": {
-        "homebrew": "font-comic-shanns-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-comic-shanns-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-comicshannsmono-nerd",
-          "scoop": "scoop install ComicShannsMono-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/ComicShannsMono.zip */",
-        "fontFace": "font-family: 'ComicShannsMono Nerd Font', 'ComicShannsMono', monospace;",
-        "tailwindConfig": "'ComicShannsMono Nerd Font', 'ComicShannsMono', monospace"
-      }
-    },
-    "commit-mono-nerd": {
-      "name": "CommitMono Nerd Font",
-      "familyName": "CommitMono Nerd Font",
-      "shortName": "CommitMono",
-      "originalName": null,
-      "category": "minimal",
-      "version": "1.143",
-      "description": "An anonymous and neutral programming typeface, highly readable",
-      "features": [
-        "neutral",
-        "readable",
-        "modern"
-      ],
-      "weights": [
-        200,
-        300,
-        400,
-        500,
-        600,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CommitMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/CommitMono/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#commitmono"
-      },
-      "install": {
-        "homebrew": "font-commit-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-commit-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-commitmono-nerd",
-          "scoop": "scoop install CommitMono-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CommitMono.zip */",
-        "fontFace": "font-family: 'CommitMono Nerd Font', 'CommitMono', monospace;",
-        "tailwindConfig": "'CommitMono Nerd Font', 'CommitMono', monospace"
-      }
-    },
-    "blex-mono-nerd": {
-      "name": "BlexMono Nerd Font",
-      "familyName": "BlexMono Nerd Font",
-      "shortName": "BlexMono",
-      "originalName": "IBM Plex Mono",
-      "category": "minimal",
-      "version": "2.004",
-      "description": "It's global, it's versatile and it's distinctly IBM. Corporate and professional.",
-      "features": [
-        "ibm",
-        "corporate",
-        "professional"
-      ],
-      "weights": [
-        100,
-        200,
-        300,
-        400,
-        450,
-        500,
-        600,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IBMPlexMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/IBMPlexMono/",
-        "googleFonts": "https://fonts.googleapis.com/css2?family=IBM%20Plex%20Mono:wght@100..700&display=swap",
-        "preview": "https://www.programmingfonts.org/#blexmono"
-      },
-      "install": {
-        "homebrew": "font-blex-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-blex-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-blexmono-nerd",
-          "scoop": "scoop install BlexMono-NF"
-        }
-      },
-      "css": {
-        "import": "@import url('https://fonts.googleapis.com/css2?family=IBM%20Plex%20Mono:wght@100..700&display=swap');",
-        "fontFace": "font-family: 'BlexMono Nerd Font', 'BlexMono', monospace;",
-        "tailwindConfig": "'BlexMono Nerd Font', 'BlexMono', monospace"
-      }
-    },
-    "intel-one-mono-nerd": {
-      "name": "IntelOneMono Nerd Font",
-      "familyName": "IntelOneMono Nerd Font",
-      "shortName": "IntelOneMono",
-      "originalName": null,
-      "category": "minimal",
-      "version": "1.4.0",
-      "description": "Expressive monospaced font family built with clarity, legibility, and developer needs in mind",
-      "features": [
-        "intel",
-        "clear",
-        "legible"
-      ],
-      "weights": [
-        100,
-        200,
-        300,
-        400,
-        500,
-        600,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IntelOneMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/IntelOneMono/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#intelonemono"
-      },
-      "install": {
-        "homebrew": "font-intel-one-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-intel-one-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-intelonemono-nerd",
-          "scoop": "scoop install IntelOneMono-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IntelOneMono.zip */",
-        "fontFace": "font-family: 'IntelOneMono Nerd Font', 'IntelOneMono', monospace;",
-        "tailwindConfig": "'IntelOneMono Nerd Font', 'IntelOneMono', monospace"
-      }
-    },
-    "monaspace-nerd": {
-      "name": "Monaspice Nerd Font",
-      "familyName": "Monaspice Nerd Font",
-      "shortName": "Monaspice",
-      "originalName": "Monaspace",
-      "category": "programming",
-      "version": "1.200",
-      "description": "Five matching fonts all having 'texture healing' to improve legibility - GitHub's font family",
-      "features": [
-        "github",
-        "texture-healing",
-        "five-variants"
-      ],
-      "weights": [
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        800
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Monaspace.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Monaspace/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#monaspice"
-      },
-      "install": {
-        "homebrew": "font-monaspace-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-monaspace-nerd-font",
-          "arch": "sudo pacman -S ttf-monaspace-nerd",
-          "scoop": "scoop install Monaspice-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Monaspace.zip */",
-        "fontFace": "font-family: 'Monaspice Nerd Font', 'Monaspice', sans-serif;",
-        "tailwindConfig": "'Monaspice Nerd Font', 'Monaspice', sans-serif"
-      }
-    },
-    "atkinson-hyperlegible-mono-nerd": {
-      "name": "Atkinson Hyperlegible Mono Nerd Font",
-      "familyName": "Atkinson Hyperlegible Mono Nerd Font",
-      "shortName": "AtkynsonMono",
-      "originalName": null,
-      "category": "accessible",
-      "version": "2.001",
-      "description": "A monospaced font designed to improve legibility and readability for individuals with low vision",
-      "features": [
-        "accessibility",
-        "low-vision",
-        "legibility"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": false,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/AtkinsonHyperlegibleMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/AtkinsonHyperlegibleMono/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#atkynsonmono"
-      },
-      "install": {
-        "homebrew": "font-atkinson-hyperlegible-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-atkinson-hyperlegible-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-atkinsonhyperlegiblemono-nerd",
-          "scoop": "scoop install AtkynsonMono-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/AtkinsonHyperlegibleMono.zip */",
-        "fontFace": "font-family: 'Atkinson Hyperlegible Mono Nerd Font', 'AtkynsonMono', monospace;",
-        "tailwindConfig": "'Atkinson Hyperlegible Mono Nerd Font', 'AtkynsonMono', monospace"
-      }
-    },
-    "opendyslexic-nerd": {
-      "name": "OpenDyslexic Nerd Font",
-      "familyName": "OpenDyslexic Nerd Font",
-      "shortName": "OpenDyslexic",
-      "originalName": null,
-      "category": "accessible",
-      "version": "2.001",
-      "description": "Designed specifically to alleviate reading errors caused by dyslexia - weighted bottoms for stability",
-      "features": [
-        "dyslexia",
-        "accessibility",
-        "weighted"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Opendyslexic.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/OpenDyslexic/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#opendyslexic"
-      },
-      "install": {
-        "homebrew": "font-opendyslexic-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-opendyslexic-nerd-font",
-          "arch": "sudo pacman -S ttf-opendyslexic-nerd",
-          "scoop": "scoop install OpenDyslexic-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Opendyslexic.zip */",
-        "fontFace": "font-family: 'OpenDyslexic Nerd Font', 'OpenDyslexic', sans-serif;",
-        "tailwindConfig": "'OpenDyslexic Nerd Font', 'OpenDyslexic', sans-serif"
-      }
-    },
-    "3270-nerd": {
-      "name": "3270 Nerd Font",
-      "familyName": "3270 Nerd Font",
-      "shortName": "3270",
-      "originalName": null,
-      "category": "retro",
-      "version": "3.0.1",
-      "description": "Derived from the x3270 font, a modern format of a font with high nostalgic IBM terminal value",
-      "features": [
-        "ibm",
-        "terminal",
-        "retro",
-        "ibm-3270"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": false,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/3270.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/3270/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#3270"
-      },
-      "install": {
-        "homebrew": "font-3270-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-3270-nerd-font",
-          "arch": "sudo pacman -S ttf-3270-nerd",
-          "scoop": "scoop install 3270-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/3270.zip */",
-        "fontFace": "font-family: '3270 Nerd Font', '3270', sans-serif;",
-        "tailwindConfig": "'3270 Nerd Font', '3270', sans-serif"
-      }
-    },
-    "bigblue-terminal-nerd": {
-      "name": "BigBlueTerminal Nerd Font",
-      "familyName": "BigBlueTerminal Nerd Font",
-      "shortName": "BigBlueTerminal",
-      "originalName": null,
-      "category": "retro",
-      "version": null,
-      "description": "Nostalgic, closely based on IBM's 8x14 EGA/VGA charset",
-      "features": [
-        "ibm",
-        "ega",
-        "vga",
-        "retro"
-      ],
-      "weights": [
-        400
-      ],
-      "hasItalic": false,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/BigBlueTerminal.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/BigBlueTerminal/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#bigblueterminal"
-      },
-      "install": {
-        "homebrew": "font-bigblue-terminal-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-bigblue-terminal-nerd-font",
-          "arch": "sudo pacman -S ttf-bigblueterminal-nerd",
-          "scoop": "scoop install BigBlueTerminal-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/BigBlueTerminal.zip */",
-        "fontFace": "font-family: 'BigBlueTerminal Nerd Font', 'BigBlueTerminal', sans-serif;",
-        "tailwindConfig": "'BigBlueTerminal Nerd Font', 'BigBlueTerminal', sans-serif"
-      }
-    },
-    "proggy-clean-nerd": {
-      "name": "ProggyClean Nerd Font",
-      "familyName": "ProggyClean Nerd Font",
-      "shortName": "ProggyClean",
-      "originalName": null,
-      "category": "dense",
-      "version": "2004/04/15",
-      "description": "Designed particularly for use at small point sizes - bitmap-like clarity",
-      "features": [
-        "small-sizes",
-        "bitmap-like",
-        "crisp"
-      ],
-      "weights": [
-        400
-      ],
-      "hasItalic": false,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/ProggyClean.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/ProggyClean/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#proggyclean"
-      },
-      "install": {
-        "homebrew": "font-proggy-clean-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-proggy-clean-nerd-font",
-          "arch": "sudo pacman -S ttf-proggyclean-nerd",
-          "scoop": "scoop install ProggyClean-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/ProggyClean.zip */",
-        "fontFace": "font-family: 'ProggyClean Nerd Font', 'ProggyClean', sans-serif;",
-        "tailwindConfig": "'ProggyClean Nerd Font', 'ProggyClean', sans-serif"
-      }
-    },
-    "hasklug-nerd": {
-      "name": "Hasklug Nerd Font",
-      "familyName": "Hasklug Nerd Font",
-      "shortName": "Hasklug",
-      "originalName": "Hasklig",
-      "category": "programming",
-      "version": "1.2",
-      "description": "Monospaced ligatures make composite glyphs (e.g. ->) more readable, especially in Haskell",
-      "features": [
-        "ligatures",
-        "haskell",
-        "functional"
-      ],
-      "weights": [
-        400,
-        500,
-        600,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hasklig.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Hasklig/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#hasklug"
-      },
-      "install": {
-        "homebrew": "font-hasklug-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-hasklug-nerd-font",
-          "arch": "sudo pacman -S ttf-hasklug-nerd",
-          "scoop": "scoop install Hasklug-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hasklig.zip */",
-        "fontFace": "font-family: 'Hasklug Nerd Font', 'Hasklug', sans-serif;",
-        "tailwindConfig": "'Hasklug Nerd Font', 'Hasklug', sans-serif"
-      }
-    },
-    "lilex-nerd": {
-      "name": "Lilex Nerd Font",
-      "familyName": "Lilex Nerd Font",
-      "shortName": "Lilex",
-      "originalName": null,
-      "category": "programming",
-      "version": "2.600",
-      "description": "Modern with ligatures and a distinctive geometric design",
-      "features": [
-        "ligatures",
-        "modern",
-        "geometric"
-      ],
-      "weights": [
-        100,
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        800,
-        900
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Lilex.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Lilex/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#lilex"
-      },
-      "install": {
-        "homebrew": "font-lilex-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-lilex-nerd-font",
-          "arch": "sudo pacman -S ttf-lilex-nerd",
-          "scoop": "scoop install Lilex-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Lilex.zip */",
-        "fontFace": "font-family: 'Lilex Nerd Font', 'Lilex', sans-serif;",
-        "tailwindConfig": "'Lilex Nerd Font', 'Lilex', sans-serif"
-      }
-    },
-    "zed-mono-nerd": {
-      "name": "ZedMono Nerd Font",
-      "familyName": "ZedMono Nerd Font",
-      "shortName": "ZedMono",
-      "originalName": null,
-      "category": "programming",
-      "version": "1.2.0",
-      "description": "Zed Mono is a more rounded version of Iosevka - from Zed editor creators",
-      "features": [
-        "zed",
-        "rounded",
-        "modern"
-      ],
-      "weights": [
-        400,
-        500,
-        600,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Zedmono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/ZedMono/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#zedmono"
-      },
-      "install": {
-        "homebrew": "font-zed-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-zed-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-zedmono-nerd",
-          "scoop": "scoop install ZedMono-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Zedmono.zip */",
-        "fontFace": "font-family: 'ZedMono Nerd Font', 'ZedMono', monospace;",
-        "tailwindConfig": "'ZedMono Nerd Font', 'ZedMono', monospace"
-      }
-    },
-    "martian-mono-nerd": {
-      "name": "MartianMono Nerd Font",
-      "familyName": "MartianMono Nerd Font",
-      "shortName": "MartianMono",
-      "originalName": null,
-      "category": "programming",
-      "version": "1.1.0",
-      "description": "Free and open-source monospaced font from Evil Martians - great for UI",
-      "features": [
-        "evil-martians",
-        "ui",
-        "modern"
-      ],
-      "weights": [
-        100,
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        800
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Martianmono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/MartianMono/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#martianmono"
-      },
-      "install": {
-        "homebrew": "font-martian-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-martian-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-martianmono-nerd",
-          "scoop": "scoop install MartianMono-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Martianmono.zip */",
-        "fontFace": "font-family: 'MartianMono Nerd Font', 'MartianMono', monospace;",
-        "tailwindConfig": "'MartianMono Nerd Font', 'MartianMono', monospace"
-      }
-    },
-    "recursive-mono-nerd": {
-      "name": "RecMono Nerd Font",
-      "familyName": "RecMono Nerd Font",
-      "shortName": "RecMono",
-      "originalName": "Recursive Mono",
-      "category": "creative",
-      "version": "1.085",
-      "description": "Inspired by casual script signpainting, 4 variants with linear, casual, mono styles",
-      "features": [
-        "variable",
-        "signpainting",
-        "casual"
-      ],
-      "weights": [
-        300,
-        400,
-        500,
-        600,
-        700,
-        800,
-        900,
-        1000
-      ],
-      "hasItalic": true,
-      "hasLigatures": true,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Recursive.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Recursive/",
-        "googleFonts": "https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap",
-        "preview": "https://www.programmingfonts.org/#recmono"
-      },
-      "install": {
-        "homebrew": "font-recursive-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-recursive-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-recursivemono-nerd",
-          "scoop": "scoop install RecMono-NF"
-        }
-      },
-      "css": {
-        "import": "@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap');",
-        "fontFace": "font-family: 'RecMono Nerd Font', 'RecMono', monospace;",
-        "tailwindConfig": "'RecMono Nerd Font', 'RecMono', monospace"
-      }
-    },
-    "dejavu-sans-mono-nerd": {
-      "name": "DejaVuSansMono Nerd Font",
-      "familyName": "DejaVuSansMono Nerd Font",
-      "shortName": "DejaVuSansMono",
-      "originalName": null,
-      "category": "programming",
-      "version": "2.37",
-      "description": "Dotted zero, based on the Bitstream Vera Fonts with a wider range of characters",
-      "features": [
-        "classic",
-        "wide-coverage",
-        "bitstream-based"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/DejaVuSansMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/DejaVuSansMono/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#dejavusansmono"
-      },
-      "install": {
-        "homebrew": "font-dejavu-sans-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-dejavu-sans-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-dejavusansmono-nerd",
-          "scoop": "scoop install DejaVuSansMono-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/DejaVuSansMono.zip */",
-        "fontFace": "font-family: 'DejaVuSansMono Nerd Font', 'DejaVuSansMono', monospace;",
-        "tailwindConfig": "'DejaVuSansMono Nerd Font', 'DejaVuSansMono', monospace"
-      }
-    },
-    "liberation-mono-nerd": {
-      "name": "LiberationMono Nerd Font",
-      "familyName": "LiberationMono Nerd Font",
-      "shortName": "LiberationMono",
-      "originalName": null,
-      "category": "programming",
-      "version": "2.1.5",
-      "description": "0 and O very similar, very short tight descenders - metrically compatible with Courier New",
-      "features": [
-        "metric-compatible",
-        "courier-alternative"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/LiberationMono.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/LiberationMono/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#liberationmono"
-      },
-      "install": {
-        "homebrew": "font-liberation-mono-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-liberation-mono-nerd-font",
-          "arch": "sudo pacman -S ttf-liberationmono-nerd",
-          "scoop": "scoop install LiberationMono-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/LiberationMono.zip */",
-        "fontFace": "font-family: 'LiberationMono Nerd Font', 'LiberationMono', monospace;",
-        "tailwindConfig": "'LiberationMono Nerd Font', 'LiberationMono', monospace"
-      }
-    },
-    "envy-code-r-nerd": {
-      "name": "EnvyCodeR Nerd Font",
-      "familyName": "EnvyCodeR Nerd Font",
-      "shortName": "EnvyCodeR",
-      "originalName": null,
-      "category": "programming",
-      "version": "0.79",
-      "description": "Fully-scalable monospaced font designed for programming and command prompts",
-      "features": [
-        "programming",
-        "command-prompt"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/EnvyCodeR.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/EnvyCodeR/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#envycoder"
-      },
-      "install": {
-        "homebrew": "font-envy-code-r-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-envy-code-r-nerd-font",
-          "arch": "sudo pacman -S ttf-envycoder-nerd",
-          "scoop": "scoop install EnvyCodeR-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/EnvyCodeR.zip */",
-        "fontFace": "font-family: 'EnvyCodeR Nerd Font', 'EnvyCodeR', sans-serif;",
-        "tailwindConfig": "'EnvyCodeR Nerd Font', 'EnvyCodeR', sans-serif"
-      }
-    },
-    "hermit-nerd": {
-      "name": "Hermit Nerd Font",
-      "familyName": "Hermit Nerd Font",
-      "shortName": "Hermit",
-      "originalName": null,
-      "category": "programming",
-      "version": "2.0",
-      "description": "Symbols stand out from common text - clear and distinctive",
-      "features": [
-        "distinctive",
-        "clear"
-      ],
-      "weights": [
-        400,
-        700
-      ],
-      "hasItalic": true,
-      "hasLigatures": false,
-      "nerdFontVersion": "3.4.0",
-      "license": "Various",
-      "urls": {
-        "githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hermit.zip",
-        "jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Hermit/",
-        "googleFonts": null,
-        "preview": "https://www.programmingfonts.org/#hermit"
-      },
-      "install": {
-        "homebrew": "font-hermit-nerd-font",
-        "commands": {
-          "macos": "brew install --cask font-hermit-nerd-font",
-          "arch": "sudo pacman -S ttf-hermit-nerd",
-          "scoop": "scoop install Hermit-NF"
-        }
-      },
-      "css": {
-        "import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hermit.zip */",
-        "fontFace": "font-family: 'Hermit Nerd Font', 'Hermit', sans-serif;",
-        "tailwindConfig": "'Hermit Nerd Font', 'Hermit', sans-serif"
-      }
-    }
-  }
+	"_meta": {
+		"version": "3.4.0",
+		"totalFonts": 39,
+		"lastUpdated": "2026-01-31",
+		"source": "https://github.com/ryanoasis/nerd-fonts",
+		"website": "https://www.nerdfonts.com",
+		"description": "Complete Nerd Fonts collection with CDN URLs, CSS imports, and installation commands",
+		"glyphCount": "10,000+",
+		"iconSets": [
+			"Seti-UI + Custom",
+			"Devicons",
+			"Font Awesome",
+			"Font Awesome Extension",
+			"Material Design Icons",
+			"Weather",
+			"Octicons",
+			"Powerline Symbols",
+			"Powerline Extra Symbols",
+			"IEC Power Symbols",
+			"Font Logos",
+			"Pomicons",
+			"Codicons"
+		]
+	},
+	"categories": {
+		"programming": {
+			"description": "Fonts optimized for programming with ligatures, clear distinctions, and excellent readability",
+			"recommendations": [
+				"jetbrains-mono-nerd",
+				"fira-code-nerd",
+				"caskaydia-cove-nerd",
+				"caskaydia-mono-nerd",
+				"zed-mono-nerd"
+			]
+		},
+		"terminal": {
+			"description": "Fonts designed for terminal use with powerline symbols and compact designs",
+			"recommendations": [
+				"iosevka-term-nerd",
+				"meslo-lg-nerd",
+				"terminus-nerd",
+				"ubuntu-mono-nerd"
+			]
+		},
+		"dense": {
+			"description": "Narrow fonts for maximum information density",
+			"recommendations": [
+				"iosevka-nerd",
+				"iosevka-term-nerd",
+				"proggy-clean-nerd",
+				"terminus-nerd"
+			]
+		},
+		"retro": {
+			"description": "Vintage and nostalgic terminal fonts",
+			"recommendations": [
+				"3270-nerd",
+				"bigblue-terminal-nerd",
+				"gohu-nerd",
+				"terminus-nerd"
+			]
+		},
+		"creative": {
+			"description": "Unique and artistic monospace fonts",
+			"recommendations": [
+				"victor-mono-nerd",
+				"fantasque-sans-mono-nerd",
+				"comic-shanns-mono-nerd",
+				"recursive-mono-nerd"
+			]
+		},
+		"accessible": {
+			"description": "Fonts designed for accessibility and readability",
+			"recommendations": [
+				"atkinson-hyperlegible-mono-nerd",
+				"opendyslexic-nerd",
+				"commit-mono-nerd"
+			]
+		},
+		"minimal": {
+			"description": "Clean, simple, and minimal designs",
+			"recommendations": [
+				"geist-mono-nerd",
+				"jetbrains-mono-nerd",
+				"blex-mono-nerd",
+				"commit-mono-nerd"
+			]
+		},
+		"google-fonts": {
+			"description": "Fonts available on Google Fonts for easy web integration",
+			"recommendations": [
+				"jetbrains-mono-nerd",
+				"fira-code-nerd",
+				"space-mono-nerd",
+				"roboto-mono-nerd",
+				"inconsolata-nerd",
+				"ubuntu-mono-nerd",
+				"source-code-pro-nerd"
+			]
+		}
+	},
+	"fontPairings": {
+		"modern-dev": {
+			"heading": "geist-mono-nerd",
+			"body": "geist-mono-nerd",
+			"code": "geist-mono-nerd",
+			"description": "Vercel's cohesive font system - use the Geist package"
+		},
+		"professional": {
+			"heading": "jetbrains-mono-nerd",
+			"body": "jetbrains-mono-nerd",
+			"code": "jetbrains-mono-nerd",
+			"description": "JetBrains Mono for everything - professional and clean"
+		},
+		"hacker": {
+			"heading": "fira-code-nerd",
+			"body": "fira-code-nerd",
+			"code": "fira-code-nerd",
+			"description": "Fira Code with ligatures - popular open source choice"
+		},
+		"microsoft": {
+			"heading": "caskaydia-cove-nerd",
+			"body": "caskaydia-cove-nerd",
+			"code": "caskaydia-cove-nerd",
+			"description": "Cascadia Code - designed for Windows Terminal"
+		},
+		"dense-terminal": {
+			"heading": "iosevka-term-nerd",
+			"body": "iosevka-term-nerd",
+			"code": "iosevka-term-nerd",
+			"description": "Maximum density for terminal power users"
+		},
+		"classic-terminal": {
+			"heading": "meslo-lg-nerd",
+			"body": "meslo-lg-nerd",
+			"code": "meslo-lg-nerd",
+			"description": "Meslo - the classic terminal font derived from Menlo"
+		},
+		"creative-coding": {
+			"heading": "victor-mono-nerd",
+			"body": "victor-mono-nerd",
+			"code": "victor-mono-nerd",
+			"description": "Victor Mono with distinctive cursive italics"
+		},
+		"accessible-reading": {
+			"heading": "atkinson-hyperlegible-mono-nerd",
+			"body": "atkinson-hyperlegible-mono-nerd",
+			"code": "atkinson-hyperlegible-mono-nerd",
+			"description": "Maximum legibility for low vision users"
+		}
+	},
+	"fonts": {
+		"jetbrains-mono-nerd": {
+			"name": "JetBrainsMono Nerd Font",
+			"familyName": "JetBrainsMono Nerd Font",
+			"shortName": "JetBrainsMono",
+			"originalName": null,
+			"category": "programming",
+			"version": "2.304",
+			"description": "JetBrains officially created font for developers with excellent ligatures and readability",
+			"features": ["ligatures", "jetbrains", "professional"],
+			"weights": [100, 200, 300, 400, 500, 600, 700, 800],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/JetBrainsMono/",
+				"googleFonts": "https://fonts.googleapis.com/css2?family=JetBrains%20Mono:wght@100..800&display=swap",
+				"preview": "https://www.programmingfonts.org/#jetbrainsmono"
+			},
+			"install": {
+				"homebrew": "font-jetbrains-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-jetbrains-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-jetbrainsmono-nerd",
+					"scoop": "scoop install JetBrainsMono-NF"
+				}
+			},
+			"css": {
+				"import": "@import url('https://fonts.googleapis.com/css2?family=JetBrains%20Mono:wght@100..800&display=swap');",
+				"fontFace": "font-family: 'JetBrainsMono Nerd Font', 'JetBrainsMono', monospace;",
+				"tailwindConfig": "'JetBrainsMono Nerd Font', 'JetBrainsMono', monospace"
+			}
+		},
+		"fira-code-nerd": {
+			"name": "FiraCode Nerd Font",
+			"familyName": "FiraCode Nerd Font",
+			"shortName": "FiraCode",
+			"originalName": null,
+			"category": "programming",
+			"version": "6.2",
+			"description": "Programming ligatures, extension of Fira Mono font, enlarged operators - very popular choice",
+			"features": ["ligatures", "popular", "mozilla"],
+			"weights": [300, 400, 450, 500, 600, 700],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FiraCode.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/FiraCode/",
+				"googleFonts": "https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap",
+				"preview": "https://www.programmingfonts.org/#firacode"
+			},
+			"install": {
+				"homebrew": "font-fira-code-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-fira-code-nerd-font",
+					"arch": "sudo pacman -S ttf-firacode-nerd",
+					"scoop": "scoop install FiraCode-NF"
+				}
+			},
+			"css": {
+				"import": "@import url('https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap');",
+				"fontFace": "font-family: 'FiraCode Nerd Font', 'FiraCode', sans-serif;",
+				"tailwindConfig": "'FiraCode Nerd Font', 'FiraCode', sans-serif"
+			}
+		},
+		"hack-nerd": {
+			"name": "Hack Nerd Font",
+			"familyName": "Hack Nerd Font",
+			"shortName": "Hack",
+			"originalName": null,
+			"category": "programming",
+			"version": "3.003",
+			"description": "Dotted zero, short descenders, expands upon work done for Bitstream Vera & DejaVu, legible at common sizes",
+			"features": ["dotted-zero", "legible", "bitstream-based"],
+			"weights": [400, 700],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Hack/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#hack"
+			},
+			"install": {
+				"homebrew": "font-hack-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-hack-nerd-font",
+					"arch": "sudo pacman -S ttf-hack-nerd",
+					"scoop": "scoop install Hack-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip */",
+				"fontFace": "font-family: 'Hack Nerd Font', 'Hack', sans-serif;",
+				"tailwindConfig": "'Hack Nerd Font', 'Hack', sans-serif"
+			}
+		},
+		"caskaydia-cove-nerd": {
+			"name": "CaskaydiaCove Nerd Font",
+			"familyName": "CaskaydiaCove Nerd Font",
+			"shortName": "CaskaydiaCove",
+			"originalName": null,
+			"category": "programming",
+			"version": "2407.24",
+			"description": "Microsoft's Cascadia Code with Nerd Font glyphs - includes programming ligatures, designed for Windows Terminal",
+			"features": ["ligatures", "microsoft", "windows-terminal"],
+			"weights": [200, 300, 400, 500, 600, 700],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaCode.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/CascadiaCode/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#caskaydiacove"
+			},
+			"install": {
+				"homebrew": "font-caskaydia-cove-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-caskaydia-cove-nerd-font",
+					"arch": "sudo pacman -S ttf-caskaydiacove-nerd",
+					"scoop": "scoop install CaskaydiaCove-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaCode.zip */",
+				"fontFace": "font-family: 'CaskaydiaCove Nerd Font', 'CaskaydiaCove', sans-serif;",
+				"tailwindConfig": "'CaskaydiaCove Nerd Font', 'CaskaydiaCove', sans-serif"
+			}
+		},
+		"caskaydia-mono-nerd": {
+			"name": "CaskaydiaMono Nerd Font",
+			"familyName": "CaskaydiaMono Nerd Font",
+			"shortName": "CaskaydiaMono",
+			"originalName": null,
+			"category": "programming",
+			"version": "2407.24",
+			"description": "Like Cascadia Code but without any ligatures - for those who prefer no ligatures",
+			"features": ["no-ligatures", "microsoft"],
+			"weights": [200, 300, 400, 500, 600, 700],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/CascadiaMono/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#caskaydiamono"
+			},
+			"install": {
+				"homebrew": "font-caskaydia-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-caskaydia-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-caskaydiamono-nerd",
+					"scoop": "scoop install CaskaydiaMono-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaMono.zip */",
+				"fontFace": "font-family: 'CaskaydiaMono Nerd Font', 'CaskaydiaMono', monospace;",
+				"tailwindConfig": "'CaskaydiaMono Nerd Font', 'CaskaydiaMono', monospace"
+			}
+		},
+		"iosevka-nerd": {
+			"name": "Iosevka Nerd Font",
+			"familyName": "Iosevka Nerd Font",
+			"shortName": "Iosevka",
+			"originalName": null,
+			"category": "dense",
+			"version": "33.2.1",
+			"description": "Narrow and horizontally tight characters, slashed zero. Maximum information density.",
+			"features": ["narrow", "dense", "tall"],
+			"weights": [100, 200, 300, 400, 500, 600, 700, 800, 900],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Iosevka.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Iosevka/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#iosevka"
+			},
+			"install": {
+				"homebrew": "font-iosevka-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-iosevka-nerd-font",
+					"arch": "sudo pacman -S ttf-iosevka-nerd",
+					"scoop": "scoop install Iosevka-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Iosevka.zip */",
+				"fontFace": "font-family: 'Iosevka Nerd Font', 'Iosevka', sans-serif;",
+				"tailwindConfig": "'Iosevka Nerd Font', 'Iosevka', sans-serif"
+			}
+		},
+		"iosevka-term-nerd": {
+			"name": "IosevkaTerm Nerd Font",
+			"familyName": "IosevkaTerm Nerd Font",
+			"shortName": "IosevkaTerm",
+			"originalName": null,
+			"category": "dense",
+			"version": "33.2.1",
+			"description": "A narrower variant focusing on terminal uses - arrows and geometric symbols are narrow",
+			"features": ["narrow", "terminal-optimized"],
+			"weights": [100, 200, 300, 400, 500, 600, 700, 800, 900],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IosevkaTerm.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/IosevkaTerm/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#iosevkaterm"
+			},
+			"install": {
+				"homebrew": "font-iosevka-term-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-iosevka-term-nerd-font",
+					"arch": "sudo pacman -S ttf-iosevkaterm-nerd",
+					"scoop": "scoop install IosevkaTerm-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IosevkaTerm.zip */",
+				"fontFace": "font-family: 'IosevkaTerm Nerd Font', 'IosevkaTerm', sans-serif;",
+				"tailwindConfig": "'IosevkaTerm Nerd Font', 'IosevkaTerm', sans-serif"
+			}
+		},
+		"iosevka-term-slab-nerd": {
+			"name": "IosevkaTermSlab Nerd Font",
+			"familyName": "IosevkaTermSlab Nerd Font",
+			"shortName": "IosevkaTermSlab",
+			"originalName": null,
+			"category": "dense",
+			"version": "33.2.1",
+			"description": "Nice as Iosevka but with slab serifs for a different aesthetic",
+			"features": ["narrow", "slab-serif"],
+			"weights": [100, 200, 300, 400, 500, 600, 700, 800, 900],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IosevkaTermSlab.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/IosevkaTermSlab/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#iosevkatermslab"
+			},
+			"install": {
+				"homebrew": "font-iosevka-term-slab-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-iosevka-term-slab-nerd-font",
+					"arch": "sudo pacman -S ttf-iosevkatermslab-nerd",
+					"scoop": "scoop install IosevkaTermSlab-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IosevkaTermSlab.zip */",
+				"fontFace": "font-family: 'IosevkaTermSlab Nerd Font', 'IosevkaTermSlab', sans-serif;",
+				"tailwindConfig": "'IosevkaTermSlab Nerd Font', 'IosevkaTermSlab', sans-serif"
+			}
+		},
+		"meslo-lg-nerd": {
+			"name": "MesloLG Nerd Font",
+			"familyName": "MesloLG Nerd Font",
+			"shortName": "MesloLG",
+			"originalName": null,
+			"category": "terminal",
+			"version": "1.21",
+			"description": "Slashed zeros, customized version of Apple's Menlo - popular terminal font",
+			"features": ["powerline", "menlo-based", "popular"],
+			"weights": [400, 700],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Meslo.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Meslo/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#meslolg"
+			},
+			"install": {
+				"homebrew": "font-meslo-lg-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-meslo-lg-nerd-font",
+					"arch": "sudo pacman -S ttf-meslolg-nerd",
+					"scoop": "scoop install MesloLG-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Meslo.zip */",
+				"fontFace": "font-family: 'MesloLG Nerd Font', 'MesloLG', sans-serif;",
+				"tailwindConfig": "'MesloLG Nerd Font', 'MesloLG', sans-serif"
+			}
+		},
+		"terminus-nerd": {
+			"name": "Terminess Nerd Font",
+			"familyName": "Terminess Nerd Font",
+			"shortName": "Terminess",
+			"originalName": null,
+			"category": "terminal",
+			"version": "4.49.2",
+			"description": "Squarish characters that are slightly askew - bitmap font aesthetic in TTF",
+			"features": ["bitmap-like", "square", "retro"],
+			"weights": [400, 700],
+			"hasItalic": false,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Terminus.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Terminus/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#terminess"
+			},
+			"install": {
+				"homebrew": "font-terminus-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-terminus-nerd-font",
+					"arch": "sudo pacman -S ttf-terminus-nerd",
+					"scoop": "scoop install Terminess-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Terminus.zip */",
+				"fontFace": "font-family: 'Terminess Nerd Font', 'Terminess', sans-serif;",
+				"tailwindConfig": "'Terminess Nerd Font', 'Terminess', sans-serif"
+			}
+		},
+		"gohu-nerd": {
+			"name": "Gohu Nerd Font",
+			"familyName": "Gohu Nerd Font",
+			"shortName": "Gohu",
+			"originalName": null,
+			"category": "terminal",
+			"version": "2.0",
+			"description": "Bitmap font, tall capitals and ascenders, small serifs - distinctive look",
+			"features": ["bitmap", "tall", "serifs"],
+			"weights": [400, 700],
+			"hasItalic": false,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Gohu.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Gohu/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#gohu"
+			},
+			"install": {
+				"homebrew": "font-gohu-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-gohu-nerd-font",
+					"arch": "sudo pacman -S ttf-gohu-nerd",
+					"scoop": "scoop install Gohu-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Gohu.zip */",
+				"fontFace": "font-family: 'Gohu Nerd Font', 'Gohu', sans-serif;",
+				"tailwindConfig": "'Gohu Nerd Font', 'Gohu', sans-serif"
+			}
+		},
+		"geist-mono-nerd": {
+			"name": "GeistMono Nerd Font",
+			"familyName": "GeistMono Nerd Font",
+			"shortName": "GeistMono",
+			"originalName": null,
+			"category": "minimal",
+			"version": "1.401",
+			"description": "Vercel's monospaced typeface designed for code editors, diagrams, terminals - very clean",
+			"features": ["vercel", "clean", "modern"],
+			"weights": [100, 200, 300, 400, 500, 600, 700, 800, 900],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Geistmono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/GeistMono/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#geistmono"
+			},
+			"install": {
+				"homebrew": "font-geist-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-geist-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-geistmono-nerd",
+					"scoop": "scoop install GeistMono-NF"
+				}
+			},
+			"css": {
+				"import": "import { GeistMono } from 'geist/font/mono';",
+				"fontFace": "font-family: 'GeistMono Nerd Font', 'GeistMono', monospace;",
+				"tailwindConfig": "'GeistMono Nerd Font', 'GeistMono', monospace"
+			}
+		},
+		"space-mono-nerd": {
+			"name": "SpaceMono Nerd Font",
+			"familyName": "SpaceMono Nerd Font",
+			"shortName": "SpaceMono",
+			"originalName": null,
+			"category": "creative",
+			"version": "1.001",
+			"description": "Squarish character lines, dotted zero, aggressive parentheses - Google Fonts",
+			"features": ["google", "square", "distinctive"],
+			"weights": [400, 700],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/SpaceMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/SpaceMono/",
+				"googleFonts": "https://fonts.googleapis.com/css2?family=Space%20Mono:wght@400;700&display=swap",
+				"preview": "https://www.programmingfonts.org/#spacemono"
+			},
+			"install": {
+				"homebrew": "font-space-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-space-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-spacemono-nerd",
+					"scoop": "scoop install SpaceMono-NF"
+				}
+			},
+			"css": {
+				"import": "@import url('https://fonts.googleapis.com/css2?family=Space%20Mono:wght@400;700&display=swap');",
+				"fontFace": "font-family: 'SpaceMono Nerd Font', 'SpaceMono', monospace;",
+				"tailwindConfig": "'SpaceMono Nerd Font', 'SpaceMono', monospace"
+			}
+		},
+		"roboto-mono-nerd": {
+			"name": "RobotoMono Nerd Font",
+			"familyName": "RobotoMono Nerd Font",
+			"shortName": "RobotoMono",
+			"originalName": null,
+			"category": "minimal",
+			"version": "3.0",
+			"description": "Dashed zero, curved and straight character lines - Google's Roboto Mono",
+			"features": ["google", "roboto", "clean"],
+			"weights": [100, 200, 300, 400, 500, 600, 700],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/RobotoMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/RobotoMono/",
+				"googleFonts": "https://fonts.googleapis.com/css2?family=Roboto%20Mono:wght@100..700&display=swap",
+				"preview": "https://www.programmingfonts.org/#robotomono"
+			},
+			"install": {
+				"homebrew": "font-roboto-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-roboto-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-robotomono-nerd",
+					"scoop": "scoop install RobotoMono-NF"
+				}
+			},
+			"css": {
+				"import": "@import url('https://fonts.googleapis.com/css2?family=Roboto%20Mono:wght@100..700&display=swap');",
+				"fontFace": "font-family: 'RobotoMono Nerd Font', 'RobotoMono', monospace;",
+				"tailwindConfig": "'RobotoMono Nerd Font', 'RobotoMono', monospace"
+			}
+		},
+		"inconsolata-nerd": {
+			"name": "Inconsolata Nerd Font",
+			"familyName": "Inconsolata Nerd Font",
+			"shortName": "Inconsolata",
+			"originalName": null,
+			"category": "programming",
+			"version": "3.000",
+			"description": "Slashed zero, takes inspiration from many different fonts - very popular on Google Fonts",
+			"features": ["google", "popular", "classic"],
+			"weights": [200, 300, 400, 500, 600, 700, 800, 900],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Inconsolata.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Inconsolata/",
+				"googleFonts": "https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap",
+				"preview": "https://www.programmingfonts.org/#inconsolata"
+			},
+			"install": {
+				"homebrew": "font-inconsolata-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-inconsolata-nerd-font",
+					"arch": "sudo pacman -S ttf-inconsolata-nerd",
+					"scoop": "scoop install Inconsolata-NF"
+				}
+			},
+			"css": {
+				"import": "@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');",
+				"fontFace": "font-family: 'Inconsolata Nerd Font', 'Inconsolata', sans-serif;",
+				"tailwindConfig": "'Inconsolata Nerd Font', 'Inconsolata', sans-serif"
+			}
+		},
+		"ubuntu-mono-nerd": {
+			"name": "UbuntuMono Nerd Font",
+			"familyName": "UbuntuMono Nerd Font",
+			"shortName": "UbuntuMono",
+			"originalName": null,
+			"category": "terminal",
+			"version": "0.80",
+			"description": "Dotted zeros, used the n, o, H & O Latin characters as a base for design - Ubuntu's monospace",
+			"features": ["ubuntu", "linux", "canonical"],
+			"weights": [400, 700],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/UbuntuMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/UbuntuMono/",
+				"googleFonts": "https://fonts.googleapis.com/css2?family=Ubuntu%20Mono:wght@400;700&display=swap",
+				"preview": "https://www.programmingfonts.org/#ubuntumono"
+			},
+			"install": {
+				"homebrew": "font-ubuntu-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-ubuntu-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-ubuntumono-nerd",
+					"scoop": "scoop install UbuntuMono-NF"
+				}
+			},
+			"css": {
+				"import": "@import url('https://fonts.googleapis.com/css2?family=Ubuntu%20Mono:wght@400;700&display=swap');",
+				"fontFace": "font-family: 'UbuntuMono Nerd Font', 'UbuntuMono', monospace;",
+				"tailwindConfig": "'UbuntuMono Nerd Font', 'UbuntuMono', monospace"
+			}
+		},
+		"source-code-pro-nerd": {
+			"name": "SauceCodePro Nerd Font",
+			"familyName": "SauceCodePro Nerd Font",
+			"shortName": "SauceCodePro",
+			"originalName": "Source Code Pro",
+			"category": "programming",
+			"version": "2.042",
+			"description": "Monospaced font family for user interface and coding environments - Adobe's Source Code Pro",
+			"features": ["adobe", "professional", "adobe-fonts"],
+			"weights": [200, 300, 400, 500, 600, 700, 900],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/SourceCodePro.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/SourceCodePro/",
+				"googleFonts": "https://fonts.googleapis.com/css2?family=Source%20Code%20Pro:wght@200..900&display=swap",
+				"preview": "https://www.programmingfonts.org/#saucecodepro"
+			},
+			"install": {
+				"homebrew": "font-sauce-code-pro-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-sauce-code-pro-nerd-font",
+					"arch": "sudo pacman -S ttf-sourcecodepro-nerd",
+					"scoop": "scoop install SauceCodePro-NF"
+				}
+			},
+			"css": {
+				"import": "@import url('https://fonts.googleapis.com/css2?family=Source%20Code%20Pro:wght@200..900&display=swap');",
+				"fontFace": "font-family: 'SauceCodePro Nerd Font', 'SauceCodePro', sans-serif;",
+				"tailwindConfig": "'SauceCodePro Nerd Font', 'SauceCodePro', sans-serif"
+			}
+		},
+		"victor-mono-nerd": {
+			"name": "VictorMono Nerd Font",
+			"familyName": "VictorMono Nerd Font",
+			"shortName": "VictorMono",
+			"originalName": null,
+			"category": "creative",
+			"version": "1.5.6",
+			"description": "Clean, crisp and narrow, with a large x-height and clear punctuation. Cursive italics are distinctive.",
+			"features": ["cursive-italics", "narrow", "elegant"],
+			"weights": [100, 200, 300, 400, 500, 600, 700],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/VictorMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/VictorMono/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#victormono"
+			},
+			"install": {
+				"homebrew": "font-victor-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-victor-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-victormono-nerd",
+					"scoop": "scoop install VictorMono-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/VictorMono.zip */",
+				"fontFace": "font-family: 'VictorMono Nerd Font', 'VictorMono', monospace;",
+				"tailwindConfig": "'VictorMono Nerd Font', 'VictorMono', monospace"
+			}
+		},
+		"fantasque-sans-mono-nerd": {
+			"name": "FantasqueSansMono Nerd Font",
+			"familyName": "FantasqueSansMono Nerd Font",
+			"shortName": "FantasqueSansMono",
+			"originalName": null,
+			"category": "creative",
+			"version": "1.8.0",
+			"description": "Wibbly-wobbly handwriting-like fuzziness, takes inspiration from Inconsolata and Monaco",
+			"features": ["handwritten", "fun", "fuzzy"],
+			"weights": [400, 700],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FantasqueSansMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/FantasqueSansMono/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#fantasquesansmono"
+			},
+			"install": {
+				"homebrew": "font-fantasque-sans-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-fantasque-sans-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-fantasquesansmono-nerd",
+					"scoop": "scoop install FantasqueSansMono-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FantasqueSansMono.zip */",
+				"fontFace": "font-family: 'FantasqueSansMono Nerd Font', 'FantasqueSansMono', monospace;",
+				"tailwindConfig": "'FantasqueSansMono Nerd Font', 'FantasqueSansMono', monospace"
+			}
+		},
+		"agave-nerd": {
+			"name": "Agave Nerd Font",
+			"familyName": "Agave Nerd Font",
+			"shortName": "Agave",
+			"originalName": null,
+			"category": "creative",
+			"version": "37",
+			"description": "A small, monospace, outline font that is geometrically regular and simple with a unique artistic feel",
+			"features": ["artistic", "geometric", "small"],
+			"weights": [400, 700],
+			"hasItalic": false,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Agave.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Agave/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#agave"
+			},
+			"install": {
+				"homebrew": "font-agave-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-agave-nerd-font",
+					"arch": "sudo pacman -S ttf-agave-nerd",
+					"scoop": "scoop install Agave-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Agave.zip */",
+				"fontFace": "font-family: 'Agave Nerd Font', 'Agave', sans-serif;",
+				"tailwindConfig": "'Agave Nerd Font', 'Agave', sans-serif"
+			}
+		},
+		"comic-shanns-mono-nerd": {
+			"name": "ComicShannsMono Nerd Font",
+			"familyName": "ComicShannsMono Nerd Font",
+			"shortName": "ComicShannsMono",
+			"originalName": null,
+			"category": "creative",
+			"version": "1.3.2",
+			"description": "The very typeface you've been trained to recognize since childhood - comic style monospace",
+			"features": ["comic", "fun", "playful"],
+			"weights": [400, 700],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/ComicShannsMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/ComicShannsMono/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#comicshannsmono"
+			},
+			"install": {
+				"homebrew": "font-comic-shanns-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-comic-shanns-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-comicshannsmono-nerd",
+					"scoop": "scoop install ComicShannsMono-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/ComicShannsMono.zip */",
+				"fontFace": "font-family: 'ComicShannsMono Nerd Font', 'ComicShannsMono', monospace;",
+				"tailwindConfig": "'ComicShannsMono Nerd Font', 'ComicShannsMono', monospace"
+			}
+		},
+		"commit-mono-nerd": {
+			"name": "CommitMono Nerd Font",
+			"familyName": "CommitMono Nerd Font",
+			"shortName": "CommitMono",
+			"originalName": null,
+			"category": "minimal",
+			"version": "1.143",
+			"description": "An anonymous and neutral programming typeface, highly readable",
+			"features": ["neutral", "readable", "modern"],
+			"weights": [200, 300, 400, 500, 600, 700],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CommitMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/CommitMono/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#commitmono"
+			},
+			"install": {
+				"homebrew": "font-commit-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-commit-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-commitmono-nerd",
+					"scoop": "scoop install CommitMono-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CommitMono.zip */",
+				"fontFace": "font-family: 'CommitMono Nerd Font', 'CommitMono', monospace;",
+				"tailwindConfig": "'CommitMono Nerd Font', 'CommitMono', monospace"
+			}
+		},
+		"blex-mono-nerd": {
+			"name": "BlexMono Nerd Font",
+			"familyName": "BlexMono Nerd Font",
+			"shortName": "BlexMono",
+			"originalName": "IBM Plex Mono",
+			"category": "minimal",
+			"version": "2.004",
+			"description": "It's global, it's versatile and it's distinctly IBM. Corporate and professional.",
+			"features": ["ibm", "corporate", "professional"],
+			"weights": [100, 200, 300, 400, 450, 500, 600, 700],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IBMPlexMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/IBMPlexMono/",
+				"googleFonts": "https://fonts.googleapis.com/css2?family=IBM%20Plex%20Mono:wght@100..700&display=swap",
+				"preview": "https://www.programmingfonts.org/#blexmono"
+			},
+			"install": {
+				"homebrew": "font-blex-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-blex-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-blexmono-nerd",
+					"scoop": "scoop install BlexMono-NF"
+				}
+			},
+			"css": {
+				"import": "@import url('https://fonts.googleapis.com/css2?family=IBM%20Plex%20Mono:wght@100..700&display=swap');",
+				"fontFace": "font-family: 'BlexMono Nerd Font', 'BlexMono', monospace;",
+				"tailwindConfig": "'BlexMono Nerd Font', 'BlexMono', monospace"
+			}
+		},
+		"intel-one-mono-nerd": {
+			"name": "IntelOneMono Nerd Font",
+			"familyName": "IntelOneMono Nerd Font",
+			"shortName": "IntelOneMono",
+			"originalName": null,
+			"category": "minimal",
+			"version": "1.4.0",
+			"description": "Expressive monospaced font family built with clarity, legibility, and developer needs in mind",
+			"features": ["intel", "clear", "legible"],
+			"weights": [100, 200, 300, 400, 500, 600, 700],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IntelOneMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/IntelOneMono/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#intelonemono"
+			},
+			"install": {
+				"homebrew": "font-intel-one-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-intel-one-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-intelonemono-nerd",
+					"scoop": "scoop install IntelOneMono-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/IntelOneMono.zip */",
+				"fontFace": "font-family: 'IntelOneMono Nerd Font', 'IntelOneMono', monospace;",
+				"tailwindConfig": "'IntelOneMono Nerd Font', 'IntelOneMono', monospace"
+			}
+		},
+		"monaspace-nerd": {
+			"name": "Monaspice Nerd Font",
+			"familyName": "Monaspice Nerd Font",
+			"shortName": "Monaspice",
+			"originalName": "Monaspace",
+			"category": "programming",
+			"version": "1.200",
+			"description": "Five matching fonts all having 'texture healing' to improve legibility - GitHub's font family",
+			"features": ["github", "texture-healing", "five-variants"],
+			"weights": [200, 300, 400, 500, 600, 700, 800],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Monaspace.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Monaspace/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#monaspice"
+			},
+			"install": {
+				"homebrew": "font-monaspace-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-monaspace-nerd-font",
+					"arch": "sudo pacman -S ttf-monaspace-nerd",
+					"scoop": "scoop install Monaspice-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Monaspace.zip */",
+				"fontFace": "font-family: 'Monaspice Nerd Font', 'Monaspice', sans-serif;",
+				"tailwindConfig": "'Monaspice Nerd Font', 'Monaspice', sans-serif"
+			}
+		},
+		"atkinson-hyperlegible-mono-nerd": {
+			"name": "Atkinson Hyperlegible Mono Nerd Font",
+			"familyName": "Atkinson Hyperlegible Mono Nerd Font",
+			"shortName": "AtkynsonMono",
+			"originalName": null,
+			"category": "accessible",
+			"version": "2.001",
+			"description": "A monospaced font designed to improve legibility and readability for individuals with low vision",
+			"features": ["accessibility", "low-vision", "legibility"],
+			"weights": [400, 700],
+			"hasItalic": false,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/AtkinsonHyperlegibleMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/AtkinsonHyperlegibleMono/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#atkynsonmono"
+			},
+			"install": {
+				"homebrew": "font-atkinson-hyperlegible-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-atkinson-hyperlegible-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-atkinsonhyperlegiblemono-nerd",
+					"scoop": "scoop install AtkynsonMono-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/AtkinsonHyperlegibleMono.zip */",
+				"fontFace": "font-family: 'Atkinson Hyperlegible Mono Nerd Font', 'AtkynsonMono', monospace;",
+				"tailwindConfig": "'Atkinson Hyperlegible Mono Nerd Font', 'AtkynsonMono', monospace"
+			}
+		},
+		"opendyslexic-nerd": {
+			"name": "OpenDyslexic Nerd Font",
+			"familyName": "OpenDyslexic Nerd Font",
+			"shortName": "OpenDyslexic",
+			"originalName": null,
+			"category": "accessible",
+			"version": "2.001",
+			"description": "Designed specifically to alleviate reading errors caused by dyslexia - weighted bottoms for stability",
+			"features": ["dyslexia", "accessibility", "weighted"],
+			"weights": [400, 700],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Opendyslexic.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/OpenDyslexic/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#opendyslexic"
+			},
+			"install": {
+				"homebrew": "font-opendyslexic-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-opendyslexic-nerd-font",
+					"arch": "sudo pacman -S ttf-opendyslexic-nerd",
+					"scoop": "scoop install OpenDyslexic-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Opendyslexic.zip */",
+				"fontFace": "font-family: 'OpenDyslexic Nerd Font', 'OpenDyslexic', sans-serif;",
+				"tailwindConfig": "'OpenDyslexic Nerd Font', 'OpenDyslexic', sans-serif"
+			}
+		},
+		"3270-nerd": {
+			"name": "3270 Nerd Font",
+			"familyName": "3270 Nerd Font",
+			"shortName": "3270",
+			"originalName": null,
+			"category": "retro",
+			"version": "3.0.1",
+			"description": "Derived from the x3270 font, a modern format of a font with high nostalgic IBM terminal value",
+			"features": ["ibm", "terminal", "retro", "ibm-3270"],
+			"weights": [400, 700],
+			"hasItalic": false,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/3270.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/3270/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#3270"
+			},
+			"install": {
+				"homebrew": "font-3270-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-3270-nerd-font",
+					"arch": "sudo pacman -S ttf-3270-nerd",
+					"scoop": "scoop install 3270-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/3270.zip */",
+				"fontFace": "font-family: '3270 Nerd Font', '3270', sans-serif;",
+				"tailwindConfig": "'3270 Nerd Font', '3270', sans-serif"
+			}
+		},
+		"bigblue-terminal-nerd": {
+			"name": "BigBlueTerminal Nerd Font",
+			"familyName": "BigBlueTerminal Nerd Font",
+			"shortName": "BigBlueTerminal",
+			"originalName": null,
+			"category": "retro",
+			"version": null,
+			"description": "Nostalgic, closely based on IBM's 8x14 EGA/VGA charset",
+			"features": ["ibm", "ega", "vga", "retro"],
+			"weights": [400],
+			"hasItalic": false,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/BigBlueTerminal.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/BigBlueTerminal/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#bigblueterminal"
+			},
+			"install": {
+				"homebrew": "font-bigblue-terminal-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-bigblue-terminal-nerd-font",
+					"arch": "sudo pacman -S ttf-bigblueterminal-nerd",
+					"scoop": "scoop install BigBlueTerminal-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/BigBlueTerminal.zip */",
+				"fontFace": "font-family: 'BigBlueTerminal Nerd Font', 'BigBlueTerminal', sans-serif;",
+				"tailwindConfig": "'BigBlueTerminal Nerd Font', 'BigBlueTerminal', sans-serif"
+			}
+		},
+		"proggy-clean-nerd": {
+			"name": "ProggyClean Nerd Font",
+			"familyName": "ProggyClean Nerd Font",
+			"shortName": "ProggyClean",
+			"originalName": null,
+			"category": "dense",
+			"version": "2004/04/15",
+			"description": "Designed particularly for use at small point sizes - bitmap-like clarity",
+			"features": ["small-sizes", "bitmap-like", "crisp"],
+			"weights": [400],
+			"hasItalic": false,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/ProggyClean.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/ProggyClean/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#proggyclean"
+			},
+			"install": {
+				"homebrew": "font-proggy-clean-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-proggy-clean-nerd-font",
+					"arch": "sudo pacman -S ttf-proggyclean-nerd",
+					"scoop": "scoop install ProggyClean-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/ProggyClean.zip */",
+				"fontFace": "font-family: 'ProggyClean Nerd Font', 'ProggyClean', sans-serif;",
+				"tailwindConfig": "'ProggyClean Nerd Font', 'ProggyClean', sans-serif"
+			}
+		},
+		"hasklug-nerd": {
+			"name": "Hasklug Nerd Font",
+			"familyName": "Hasklug Nerd Font",
+			"shortName": "Hasklug",
+			"originalName": "Hasklig",
+			"category": "programming",
+			"version": "1.2",
+			"description": "Monospaced ligatures make composite glyphs (e.g. ->) more readable, especially in Haskell",
+			"features": ["ligatures", "haskell", "functional"],
+			"weights": [400, 500, 600, 700],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hasklig.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Hasklig/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#hasklug"
+			},
+			"install": {
+				"homebrew": "font-hasklug-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-hasklug-nerd-font",
+					"arch": "sudo pacman -S ttf-hasklug-nerd",
+					"scoop": "scoop install Hasklug-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hasklig.zip */",
+				"fontFace": "font-family: 'Hasklug Nerd Font', 'Hasklug', sans-serif;",
+				"tailwindConfig": "'Hasklug Nerd Font', 'Hasklug', sans-serif"
+			}
+		},
+		"lilex-nerd": {
+			"name": "Lilex Nerd Font",
+			"familyName": "Lilex Nerd Font",
+			"shortName": "Lilex",
+			"originalName": null,
+			"category": "programming",
+			"version": "2.600",
+			"description": "Modern with ligatures and a distinctive geometric design",
+			"features": ["ligatures", "modern", "geometric"],
+			"weights": [100, 200, 300, 400, 500, 600, 700, 800, 900],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Lilex.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Lilex/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#lilex"
+			},
+			"install": {
+				"homebrew": "font-lilex-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-lilex-nerd-font",
+					"arch": "sudo pacman -S ttf-lilex-nerd",
+					"scoop": "scoop install Lilex-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Lilex.zip */",
+				"fontFace": "font-family: 'Lilex Nerd Font', 'Lilex', sans-serif;",
+				"tailwindConfig": "'Lilex Nerd Font', 'Lilex', sans-serif"
+			}
+		},
+		"zed-mono-nerd": {
+			"name": "ZedMono Nerd Font",
+			"familyName": "ZedMono Nerd Font",
+			"shortName": "ZedMono",
+			"originalName": null,
+			"category": "programming",
+			"version": "1.2.0",
+			"description": "Zed Mono is a more rounded version of Iosevka - from Zed editor creators",
+			"features": ["zed", "rounded", "modern"],
+			"weights": [400, 500, 600, 700],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Zedmono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/ZedMono/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#zedmono"
+			},
+			"install": {
+				"homebrew": "font-zed-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-zed-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-zedmono-nerd",
+					"scoop": "scoop install ZedMono-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Zedmono.zip */",
+				"fontFace": "font-family: 'ZedMono Nerd Font', 'ZedMono', monospace;",
+				"tailwindConfig": "'ZedMono Nerd Font', 'ZedMono', monospace"
+			}
+		},
+		"martian-mono-nerd": {
+			"name": "MartianMono Nerd Font",
+			"familyName": "MartianMono Nerd Font",
+			"shortName": "MartianMono",
+			"originalName": null,
+			"category": "programming",
+			"version": "1.1.0",
+			"description": "Free and open-source monospaced font from Evil Martians - great for UI",
+			"features": ["evil-martians", "ui", "modern"],
+			"weights": [100, 200, 300, 400, 500, 600, 700, 800],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Martianmono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/MartianMono/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#martianmono"
+			},
+			"install": {
+				"homebrew": "font-martian-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-martian-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-martianmono-nerd",
+					"scoop": "scoop install MartianMono-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Martianmono.zip */",
+				"fontFace": "font-family: 'MartianMono Nerd Font', 'MartianMono', monospace;",
+				"tailwindConfig": "'MartianMono Nerd Font', 'MartianMono', monospace"
+			}
+		},
+		"recursive-mono-nerd": {
+			"name": "RecMono Nerd Font",
+			"familyName": "RecMono Nerd Font",
+			"shortName": "RecMono",
+			"originalName": "Recursive Mono",
+			"category": "creative",
+			"version": "1.085",
+			"description": "Inspired by casual script signpainting, 4 variants with linear, casual, mono styles",
+			"features": ["variable", "signpainting", "casual"],
+			"weights": [300, 400, 500, 600, 700, 800, 900, 1000],
+			"hasItalic": true,
+			"hasLigatures": true,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Recursive.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Recursive/",
+				"googleFonts": "https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap",
+				"preview": "https://www.programmingfonts.org/#recmono"
+			},
+			"install": {
+				"homebrew": "font-recursive-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-recursive-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-recursivemono-nerd",
+					"scoop": "scoop install RecMono-NF"
+				}
+			},
+			"css": {
+				"import": "@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap');",
+				"fontFace": "font-family: 'RecMono Nerd Font', 'RecMono', monospace;",
+				"tailwindConfig": "'RecMono Nerd Font', 'RecMono', monospace"
+			}
+		},
+		"dejavu-sans-mono-nerd": {
+			"name": "DejaVuSansMono Nerd Font",
+			"familyName": "DejaVuSansMono Nerd Font",
+			"shortName": "DejaVuSansMono",
+			"originalName": null,
+			"category": "programming",
+			"version": "2.37",
+			"description": "Dotted zero, based on the Bitstream Vera Fonts with a wider range of characters",
+			"features": ["classic", "wide-coverage", "bitstream-based"],
+			"weights": [400, 700],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/DejaVuSansMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/DejaVuSansMono/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#dejavusansmono"
+			},
+			"install": {
+				"homebrew": "font-dejavu-sans-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-dejavu-sans-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-dejavusansmono-nerd",
+					"scoop": "scoop install DejaVuSansMono-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/DejaVuSansMono.zip */",
+				"fontFace": "font-family: 'DejaVuSansMono Nerd Font', 'DejaVuSansMono', monospace;",
+				"tailwindConfig": "'DejaVuSansMono Nerd Font', 'DejaVuSansMono', monospace"
+			}
+		},
+		"liberation-mono-nerd": {
+			"name": "LiberationMono Nerd Font",
+			"familyName": "LiberationMono Nerd Font",
+			"shortName": "LiberationMono",
+			"originalName": null,
+			"category": "programming",
+			"version": "2.1.5",
+			"description": "0 and O very similar, very short tight descenders - metrically compatible with Courier New",
+			"features": ["metric-compatible", "courier-alternative"],
+			"weights": [400, 700],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/LiberationMono.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/LiberationMono/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#liberationmono"
+			},
+			"install": {
+				"homebrew": "font-liberation-mono-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-liberation-mono-nerd-font",
+					"arch": "sudo pacman -S ttf-liberationmono-nerd",
+					"scoop": "scoop install LiberationMono-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/LiberationMono.zip */",
+				"fontFace": "font-family: 'LiberationMono Nerd Font', 'LiberationMono', monospace;",
+				"tailwindConfig": "'LiberationMono Nerd Font', 'LiberationMono', monospace"
+			}
+		},
+		"envy-code-r-nerd": {
+			"name": "EnvyCodeR Nerd Font",
+			"familyName": "EnvyCodeR Nerd Font",
+			"shortName": "EnvyCodeR",
+			"originalName": null,
+			"category": "programming",
+			"version": "0.79",
+			"description": "Fully-scalable monospaced font designed for programming and command prompts",
+			"features": ["programming", "command-prompt"],
+			"weights": [400, 700],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/EnvyCodeR.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/EnvyCodeR/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#envycoder"
+			},
+			"install": {
+				"homebrew": "font-envy-code-r-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-envy-code-r-nerd-font",
+					"arch": "sudo pacman -S ttf-envycoder-nerd",
+					"scoop": "scoop install EnvyCodeR-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/EnvyCodeR.zip */",
+				"fontFace": "font-family: 'EnvyCodeR Nerd Font', 'EnvyCodeR', sans-serif;",
+				"tailwindConfig": "'EnvyCodeR Nerd Font', 'EnvyCodeR', sans-serif"
+			}
+		},
+		"hermit-nerd": {
+			"name": "Hermit Nerd Font",
+			"familyName": "Hermit Nerd Font",
+			"shortName": "Hermit",
+			"originalName": null,
+			"category": "programming",
+			"version": "2.0",
+			"description": "Symbols stand out from common text - clear and distinctive",
+			"features": ["distinctive", "clear"],
+			"weights": [400, 700],
+			"hasItalic": true,
+			"hasLigatures": false,
+			"nerdFontVersion": "3.4.0",
+			"license": "Various",
+			"urls": {
+				"githubRelease": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hermit.zip",
+				"jsDelivr": "https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/Hermit/",
+				"googleFonts": null,
+				"preview": "https://www.programmingfonts.org/#hermit"
+			},
+			"install": {
+				"homebrew": "font-hermit-nerd-font",
+				"commands": {
+					"macos": "brew install --cask font-hermit-nerd-font",
+					"arch": "sudo pacman -S ttf-hermit-nerd",
+					"scoop": "scoop install Hermit-NF"
+				}
+			},
+			"css": {
+				"import": "/* Download from: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hermit.zip */",
+				"fontFace": "font-family: 'Hermit Nerd Font', 'Hermit', sans-serif;",
+				"tailwindConfig": "'Hermit Nerd Font', 'Hermit', sans-serif"
+			}
+		}
+	}
 }
