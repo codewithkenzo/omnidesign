@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Modern gray with teal accent - clean, contemporary...</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#14B8A6" filter="url(#shadow)"/>
-  <text x="296" y="56" class="color-value" text-anchor="middle">#14B8A6</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(70.4% 0.123 182.5)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(70.4% 0.1</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#F8FAFC" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="color-value" text-anchor="middle">#F8FAFC</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(98.4% 0.003 247.9)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(98.4% 0.0</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#0F172A" filter="url(#shadow)"/>
-  <text x="368" y="56" class="color-value" text-anchor="middle">#0F172A</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(20.8% 0.040 265.8)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(20.8% 0.0</text>
 </svg>

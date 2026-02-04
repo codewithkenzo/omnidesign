@@ -8,45 +8,53 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "#1A3C34",
-        "$description": "Primary text - deep green for contrast on pastel surfaces"
+        "$value": "oklch(32.8% 0.043 176.2)",
+        "$description": "Primary text - deep green for contrast on pastel surfaces",
+        "$originalHex": "#1A3C34"
       },
       "muted": {
         "$type": "color",
-        "$value": "#5A7268",
-        "$description": "Secondary text - soft sage gray"
+        "$value": "oklch(53.0% 0.032 167.8)",
+        "$description": "Secondary text - soft sage gray",
+        "$originalHex": "#5A7268"
       },
       "inverted": {
         "$type": "color",
-        "$value": "#F0FDF4",
-        "$description": "Text on light surfaces - pale mint white"
+        "$value": "oklch(98.2% 0.018 155.8)",
+        "$description": "Text on light surfaces - pale mint white",
+        "$originalHex": "#F0FDF4"
       },
       "link": {
         "$type": "color",
-        "$value": "#34D399",
-        "$description": "Link text - fresh mint green"
+        "$value": "oklch(77.3% 0.153 163.2)",
+        "$description": "Link text - fresh mint green",
+        "$originalHex": "#34D399"
       },
       "link.hover": {
         "$type": "color",
-        "$value": "#6EE7B7",
-        "$description": "Link on hover - lighter mint"
+        "$value": "oklch(84.5% 0.130 165.0)",
+        "$description": "Link on hover - lighter mint",
+        "$originalHex": "#6EE7B7"
       }
     },
     "surface": {
       "default": {
         "$type": "color",
-        "$value": "#F0FDF4",
-        "$description": "Default surface - pale mint cream"
+        "$value": "oklch(98.2% 0.018 155.8)",
+        "$description": "Default surface - pale mint cream",
+        "$originalHex": "#F0FDF4"
       },
       "raised": {
         "$type": "color",
-        "$value": "#FFFFFF",
-        "$description": "Elevated surface - pure white"
+        "$value": "oklch(100.0% 0.000 0.0)",
+        "$description": "Elevated surface - pure white",
+        "$originalHex": "#FFFFFF"
       },
       "sunken": {
         "$type": "color",
-        "$value": "#DCFCE7",
-        "$description": "Depressed surface - soft mint for inputs"
+        "$value": "oklch(96.2% 0.043 156.7)",
+        "$description": "Depressed surface - soft mint for inputs",
+        "$originalHex": "#DCFCE7"
       },
       "overlay": {
         "$type": "color",
@@ -57,64 +65,75 @@
     "border": {
       "default": {
         "$type": "color",
-        "$value": "#A7F3D0",
-        "$description": "Default border - soft purple-mint"
+        "$value": "oklch(90.5% 0.089 164.2)",
+        "$description": "Default border - soft purple-mint",
+        "$originalHex": "#A7F3D0"
       },
       "subtle": {
         "$type": "color",
-        "$value": "#D8B4FE",
-        "$description": "Subtle border - very faint purple"
+        "$value": "oklch(82.7% 0.108 306.4)",
+        "$description": "Subtle border - very faint purple",
+        "$originalHex": "#D8B4FE"
       },
       "strong": {
         "$type": "color",
-        "$value": "#6EE7B7",
-        "$description": "Strong border - visible mint green"
+        "$value": "oklch(84.5% 0.130 165.0)",
+        "$description": "Strong border - visible mint green",
+        "$originalHex": "#6EE7B7"
       }
     },
     "interactive": {
       "primary": {
         "$type": "color",
-        "$value": "#34D399",
-        "$description": "Primary action - fresh mint green"
+        "$value": "oklch(77.3% 0.153 163.2)",
+        "$description": "Primary action - fresh mint green",
+        "$originalHex": "#34D399"
       },
       "primary.hover": {
         "$type": "color",
-        "$value": "#6EE7B7",
-        "$description": "Primary hover - lighter mint"
+        "$value": "oklch(84.5% 0.130 165.0)",
+        "$description": "Primary hover - lighter mint",
+        "$originalHex": "#6EE7B7"
       },
       "secondary": {
         "$type": "color",
-        "$value": "#8B5CF6",
-        "$description": "Secondary action - lavender purple for contrast"
+        "$value": "oklch(60.6% 0.219 292.7)",
+        "$description": "Secondary action - lavender purple for contrast",
+        "$originalHex": "#8B5CF6"
       }
     },
     "focus": {
       "ring": {
         "$type": "color",
-        "$value": "#6EE7B7",
-        "$description": "Focus ring - soft mint glow"
+        "$value": "oklch(84.5% 0.130 165.0)",
+        "$description": "Focus ring - soft mint glow",
+        "$originalHex": "#6EE7B7"
       }
     },
     "status": {
       "success": {
         "$type": "color",
-        "$value": "#059669",
-        "$description": "Success - deep emerald green"
+        "$value": "oklch(59.6% 0.127 163.2)",
+        "$description": "Success - deep emerald green",
+        "$originalHex": "#059669"
       },
       "warning": {
         "$type": "color",
-        "$value": "#D97706",
-        "$description": "Warning - warm amber"
+        "$value": "oklch(66.6% 0.157 58.3)",
+        "$description": "Warning - warm amber",
+        "$originalHex": "#D97706"
       },
       "error": {
         "$type": "color",
-        "$value": "#DC2626",
-        "$description": "Error - bold red"
+        "$value": "oklch(57.7% 0.215 27.3)",
+        "$description": "Error - bold red",
+        "$originalHex": "#DC2626"
       },
       "info": {
         "$type": "color",
-        "$value": "#0891B2",
-        "$description": "Info - teal cyan"
+        "$value": "oklch(60.9% 0.111 221.7)",
+        "$description": "Info - teal cyan",
+        "$originalHex": "#0891B2"
       }
     }
   },

@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Neon pink/purple on black - synthwave inspired for...</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#F472B6" filter="url(#shadow)"/>
-  <text x="296" y="56" class="color-value" text-anchor="middle">#F472B6</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(72.5% 0.175 349.8)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(72.5% 0.1</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#0A0A0A" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="color-value" text-anchor="middle">#0A0A0A</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(14.5% 0.000 0.0)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(14.5% 0.0</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#E0E0E0" filter="url(#shadow)"/>
-  <text x="368" y="56" class="color-value" text-anchor="middle">#E0E0E0</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(90.7% 0.000 0.0)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(90.7% 0.0</text>
 </svg>

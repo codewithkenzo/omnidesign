@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Deep green theme for sustainability and finance ap...</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#22C55E" filter="url(#shadow)"/>
-  <text x="296" y="56" class="color-value" text-anchor="middle">#22C55E</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(72.3% 0.192 149.6)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(72.3% 0.1</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#065F46" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="color-value" text-anchor="middle">#065F46</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(43.2% 0.086 166.9)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(43.2% 0.0</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#F0FDF4" filter="url(#shadow)"/>
-  <text x="368" y="56" class="color-value" text-anchor="middle">#F0FDF4</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(98.2% 0.018 155.8)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(98.2% 0.0</text>
 </svg>

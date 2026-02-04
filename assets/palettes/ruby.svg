@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Burgundy and wine red theme for luxury brands - el...</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#E11D48" filter="url(#shadow)"/>
-  <text x="296" y="56" class="color-value" text-anchor="middle">#E11D48</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(58.6% 0.222 17.6)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(58.6% 0.2</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#9F1239" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="color-value" text-anchor="middle">#9F1239</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(45.5% 0.171 13.7)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(45.5% 0.1</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#FEF2F2" filter="url(#shadow)"/>
-  <text x="368" y="56" class="color-value" text-anchor="middle">#FEF2F2</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(97.1% 0.013 17.4)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(97.1% 0.0</text>
 </svg>

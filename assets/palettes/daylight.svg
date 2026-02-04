@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Bright white with energetic blue - clean and focus...</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#3B82F6" filter="url(#shadow)"/>
-  <text x="296" y="56" class="color-value" text-anchor="middle">#3B82F6</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(62.3% 0.188 259.8)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(62.3% 0.1</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#F8FAFC" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="color-value" text-anchor="middle">#F8FAFC</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(98.4% 0.003 247.9)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(98.4% 0.0</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#1A202C" filter="url(#shadow)"/>
-  <text x="368" y="56" class="color-value" text-anchor="middle">#1A202C</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(24.3% 0.025 264.0)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(24.3% 0.0</text>
 </svg>

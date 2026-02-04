@@ -8,45 +8,53 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "#F1F5F9",
-        "$description": "Primary text on midnight - cool white with blue hint"
+        "$value": "oklch(96.8% 0.007 247.9)",
+        "$description": "Primary text on midnight - cool white with blue hint",
+        "$originalHex": "#F1F5F9"
       },
       "muted": {
         "$type": "color",
-        "$value": "#64748B",
-        "$description": "Secondary text - muted gray-blue"
+        "$value": "oklch(55.4% 0.041 257.4)",
+        "$description": "Secondary text - muted gray-blue",
+        "$originalHex": "#64748B"
       },
       "inverted": {
         "$type": "color",
-        "$value": "#0A0A0F",
-        "$description": "Text color for light surfaces - deep midnight"
+        "$value": "oklch(14.7% 0.011 285.0)",
+        "$description": "Text color for light surfaces - deep midnight",
+        "$originalHex": "#0A0A0F"
       },
       "link": {
         "$type": "color",
-        "$value": "#38BDF8",
-        "$description": "Link text color - sky blue glow"
+        "$value": "oklch(75.4% 0.139 232.7)",
+        "$description": "Link text color - sky blue glow",
+        "$originalHex": "#38BDF8"
       },
       "link.hover": {
         "$type": "color",
-        "$value": "#7DD3FC",
-        "$description": "Link text color on hover - brighter sky blue"
+        "$value": "oklch(82.8% 0.101 230.3)",
+        "$description": "Link text color on hover - brighter sky blue",
+        "$originalHex": "#7DD3FC"
       }
     },
     "surface": {
       "default": {
         "$type": "color",
-        "$value": "#0A0A0F",
-        "$description": "Default surface background - true midnight black"
+        "$value": "oklch(14.7% 0.011 285.0)",
+        "$description": "Default surface background - true midnight black",
+        "$originalHex": "#0A0A0F"
       },
       "raised": {
         "$type": "color",
-        "$value": "#111116",
-        "$description": "Elevated surface background - slight lighter midnight"
+        "$value": "oklch(18.0% 0.010 285.3)",
+        "$description": "Elevated surface background - slight lighter midnight",
+        "$originalHex": "#111116"
       },
       "sunken": {
         "$type": "color",
-        "$value": "#050508",
-        "$description": "Depressed surface background - deepest midnight for inputs"
+        "$value": "oklch(11.7% 0.009 284.9)",
+        "$description": "Depressed surface background - deepest midnight for inputs",
+        "$originalHex": "#050508"
       },
       "overlay": {
         "$type": "color",
@@ -57,64 +65,75 @@
     "border": {
       "default": {
         "$type": "color",
-        "$value": "#1C1C24",
-        "$description": "Default border color - subtle midnight border"
+        "$value": "oklch(23.0% 0.015 285.1)",
+        "$description": "Default border color - subtle midnight border",
+        "$originalHex": "#1C1C24"
       },
       "subtle": {
         "$type": "color",
-        "$value": "#0F0F15",
-        "$description": "Subtle border for dividers - almost invisible"
+        "$value": "oklch(17.1% 0.012 285.0)",
+        "$description": "Subtle border for dividers - almost invisible",
+        "$originalHex": "#0F0F15"
       },
       "strong": {
         "$type": "color",
-        "$value": "#2A2A33",
-        "$description": "Stronger border for emphasis - visible midnight border"
+        "$value": "oklch(28.9% 0.016 285.3)",
+        "$description": "Stronger border for emphasis - visible midnight border",
+        "$originalHex": "#2A2A33"
       }
     },
     "interactive": {
       "primary": {
         "$type": "color",
-        "$value": "#38BDF8",
-        "$description": "Primary interactive element color - midnight blue glow"
+        "$value": "oklch(75.4% 0.139 232.7)",
+        "$description": "Primary interactive element color - midnight blue glow",
+        "$originalHex": "#38BDF8"
       },
       "primary.hover": {
         "$type": "color",
-        "$value": "#7DD3FC",
-        "$description": "Primary interactive color on hover - brighter sky blue"
+        "$value": "oklch(82.8% 0.101 230.3)",
+        "$description": "Primary interactive color on hover - brighter sky blue",
+        "$originalHex": "#7DD3FC"
       },
       "secondary": {
         "$type": "color",
-        "$value": "#1E293B",
-        "$description": "Secondary interactive element color - lighter midnight"
+        "$value": "oklch(27.9% 0.037 260.0)",
+        "$description": "Secondary interactive element color - lighter midnight",
+        "$originalHex": "#1E293B"
       }
     },
     "focus": {
       "ring": {
         "$type": "color",
-        "$value": "#38BDF8",
-        "$description": "Focus ring outline color - sky blue glow"
+        "$value": "oklch(75.4% 0.139 232.7)",
+        "$description": "Focus ring outline color - sky blue glow",
+        "$originalHex": "#38BDF8"
       }
     },
     "status": {
       "success": {
         "$type": "color",
-        "$value": "#22D3EE",
-        "$description": "Success state color - cyan for midnight"
+        "$value": "oklch(79.7% 0.134 211.5)",
+        "$description": "Success state color - cyan for midnight",
+        "$originalHex": "#22D3EE"
       },
       "warning": {
         "$type": "color",
-        "$value": "#FBBF24",
-        "$description": "Warning state color - amber"
+        "$value": "oklch(83.7% 0.164 84.4)",
+        "$description": "Warning state color - amber",
+        "$originalHex": "#FBBF24"
       },
       "error": {
         "$type": "color",
-        "$value": "#F87171",
-        "$description": "Error state color - coral red adjusted for midnight"
+        "$value": "oklch(71.1% 0.166 22.2)",
+        "$description": "Error state color - coral red adjusted for midnight",
+        "$originalHex": "#F87171"
       },
       "info": {
         "$type": "color",
-        "$value": "#38BDF8",
-        "$description": "Info state color - sky blue"
+        "$value": "oklch(75.4% 0.139 232.7)",
+        "$description": "Info state color - sky blue",
+        "$originalHex": "#38BDF8"
       }
     }
   },

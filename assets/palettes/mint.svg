@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Fresh mint theme with soft greens and pastel tones...</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#34D399" filter="url(#shadow)"/>
-  <text x="296" y="56" class="color-value" text-anchor="middle">#34D399</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(77.3% 0.153 163.2)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(77.3% 0.1</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#FFFFFF" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="color-value" text-anchor="middle">#FFFFFF</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(100.0% 0.000 0.0)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(100.0% 0.</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#1A3C34" filter="url(#shadow)"/>
-  <text x="368" y="56" class="color-value" text-anchor="middle">#1A3C34</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(32.8% 0.043 176.2)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(32.8% 0.0</text>
 </svg>

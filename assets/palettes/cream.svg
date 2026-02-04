@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Soft cream with sage green - calming and organic</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#4A7C59" filter="url(#shadow)"/>
-  <text x="296" y="56" class="color-value" text-anchor="middle">#4A7C59</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(54.1% 0.077 152.7)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(54.1% 0.0</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#EFEEE6" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="color-value" text-anchor="middle">#EFEEE6</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(94.8% 0.011 100.8)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(94.8% 0.0</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#2D3748" filter="url(#shadow)"/>
-  <text x="368" y="56" class="color-value" text-anchor="middle">#2D3748</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(33.5% 0.033 260.9)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(33.5% 0.0</text>
 </svg>

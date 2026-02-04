@@ -8,45 +8,53 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "#292524",
-        "$description": "Primary text on light surfaces - warm dark brown"
+        "$value": "oklch(26.8% 0.006 34.3)",
+        "$description": "Primary text on light surfaces - warm dark brown",
+        "$originalHex": "#292524"
       },
       "muted": {
         "$type": "color",
-        "$value": "#78716C",
-        "$description": "Secondary text - warm stone gray"
+        "$value": "oklch(55.3% 0.012 58.1)",
+        "$description": "Secondary text - warm stone gray",
+        "$originalHex": "#78716C"
       },
       "inverted": {
         "$type": "color",
-        "$value": "#FAF7F5",
-        "$description": "Text color for dark surfaces - warm off-white"
+        "$value": "oklch(97.8% 0.004 56.4)",
+        "$description": "Text color for dark surfaces - warm off-white",
+        "$originalHex": "#FAF7F5"
       },
       "link": {
         "$type": "color",
-        "$value": "#881337",
-        "$description": "Link text color - burgundy accent"
+        "$value": "oklch(41.0% 0.150 10.3)",
+        "$description": "Link text color - burgundy accent",
+        "$originalHex": "#881337"
       },
       "link.hover": {
         "$type": "color",
-        "$value": "#6B1B34",
-        "$description": "Link text color on hover - deeper burgundy"
+        "$value": "oklch(36.1% 0.114 6.1)",
+        "$description": "Link text color on hover - deeper burgundy",
+        "$originalHex": "#6B1B34"
       }
     },
     "surface": {
       "default": {
         "$type": "color",
-        "$value": "#FAF7F5",
-        "$description": "Default surface background - warm off-white"
+        "$value": "oklch(97.8% 0.004 56.4)",
+        "$description": "Default surface background - warm off-white",
+        "$originalHex": "#FAF7F5"
       },
       "raised": {
         "$type": "color",
-        "$value": "#F5F0EB",
-        "$description": "Elevated surface background - slightly warmer off-white"
+        "$value": "oklch(95.8% 0.009 67.7)",
+        "$description": "Elevated surface background - slightly warmer off-white",
+        "$originalHex": "#F5F0EB"
       },
       "sunken": {
         "$type": "color",
-        "$value": "#EDE7DF",
-        "$description": "Depressed surface background - warm beige for inputs"
+        "$value": "oklch(93.0% 0.013 75.4)",
+        "$description": "Depressed surface background - warm beige for inputs",
+        "$originalHex": "#EDE7DF"
       },
       "overlay": {
         "$type": "color",
@@ -57,64 +65,75 @@
     "border": {
       "default": {
         "$type": "color",
-        "$value": "#D6D3D1",
-        "$description": "Default border color - warm stone"
+        "$value": "oklch(86.9% 0.004 56.4)",
+        "$description": "Default border color - warm stone",
+        "$originalHex": "#D6D3D1"
       },
       "subtle": {
         "$type": "color",
-        "$value": "#E7E5E4",
-        "$description": "Subtle border for dividers - very faint warm gray"
+        "$value": "oklch(92.3% 0.003 48.7)",
+        "$description": "Subtle border for dividers - very faint warm gray",
+        "$originalHex": "#E7E5E4"
       },
       "strong": {
         "$type": "color",
-        "$value": "#A8A29E",
-        "$description": "Stronger border for emphasis - warm gray"
+        "$value": "oklch(71.6% 0.009 56.3)",
+        "$description": "Stronger border for emphasis - warm gray",
+        "$originalHex": "#A8A29E"
       }
     },
     "interactive": {
       "primary": {
         "$type": "color",
-        "$value": "#9F1239",
-        "$description": "Primary interactive element color - burgundy"
+        "$value": "oklch(45.5% 0.171 13.7)",
+        "$description": "Primary interactive element color - burgundy",
+        "$originalHex": "#9F1239"
       },
       "primary.hover": {
         "$type": "color",
-        "$value": "#881337",
-        "$description": "Primary interactive color on hover - deeper burgundy"
+        "$value": "oklch(41.0% 0.150 10.3)",
+        "$description": "Primary interactive color on hover - deeper burgundy",
+        "$originalHex": "#881337"
       },
       "secondary": {
         "$type": "color",
-        "$value": "#C2410C",
-        "$description": "Secondary interactive element color - warm orange accent"
+        "$value": "oklch(55.3% 0.174 38.4)",
+        "$description": "Secondary interactive element color - warm orange accent",
+        "$originalHex": "#C2410C"
       }
     },
     "focus": {
       "ring": {
         "$type": "color",
-        "$value": "#BE123C",
-        "$description": "Focus ring outline color - rose glow"
+        "$value": "oklch(51.4% 0.198 16.9)",
+        "$description": "Focus ring outline color - rose glow",
+        "$originalHex": "#BE123C"
       }
     },
     "status": {
       "success": {
         "$type": "color",
-        "$value": "#15803D",
-        "$description": "Success state color - forest green"
+        "$value": "oklch(52.7% 0.137 150.1)",
+        "$description": "Success state color - forest green",
+        "$originalHex": "#15803D"
       },
       "warning": {
         "$type": "color",
-        "$value": "#B45309",
-        "$description": "Warning state color - warm orange"
+        "$value": "oklch(55.5% 0.146 49.0)",
+        "$description": "Warning state color - warm orange",
+        "$originalHex": "#B45309"
       },
       "error": {
         "$type": "color",
-        "$value": "#9F1239",
-        "$description": "Error state color - burgundy red"
+        "$value": "oklch(45.5% 0.171 13.7)",
+        "$description": "Error state color - burgundy red",
+        "$originalHex": "#9F1239"
       },
       "info": {
         "$type": "color",
-        "$value": "#1D4ED8",
-        "$description": "Info state color - blue"
+        "$value": "oklch(48.8% 0.217 264.4)",
+        "$description": "Info state color - blue",
+        "$originalHex": "#1D4ED8"
       }
     }
   },

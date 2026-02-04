@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Deep ocean theme with rich blues and cyan accents ...</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#22D3EE" filter="url(#shadow)"/>
-  <text x="296" y="56" class="color-value" text-anchor="middle">#22D3EE</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(79.7% 0.134 211.5)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(79.7% 0.1</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#075985" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="color-value" text-anchor="middle">#075985</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(44.3% 0.100 240.8)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(44.3% 0.1</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#E0F2FE" filter="url(#shadow)"/>
-  <text x="368" y="56" class="color-value" text-anchor="middle">#E0F2FE</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(95.1% 0.025 236.8)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(95.1% 0.0</text>
 </svg>

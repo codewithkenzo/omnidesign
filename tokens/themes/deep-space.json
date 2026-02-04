@@ -8,45 +8,53 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "#E9D5FF",
-        "$description": "Primary text on deep space - lavender white"
+        "$value": "oklch(90.2% 0.060 306.7)",
+        "$description": "Primary text on deep space - lavender white",
+        "$originalHex": "#E9D5FF"
       },
       "muted": {
         "$type": "color",
-        "$value": "#A78BFA",
-        "$description": "Secondary text - purple-gray"
+        "$value": "oklch(70.9% 0.159 293.5)",
+        "$description": "Secondary text - purple-gray",
+        "$originalHex": "#A78BFA"
       },
       "inverted": {
         "$type": "color",
-        "$value": "#0D0015",
-        "$description": "Text color for light surfaces - deep cosmic black"
+        "$value": "oklch(12.0% 0.060 313.6)",
+        "$description": "Text color for light surfaces - deep cosmic black",
+        "$originalHex": "#0D0015"
       },
       "link": {
         "$type": "color",
-        "$value": "#C084FC",
-        "$description": "Link text color - cosmic purple"
+        "$value": "oklch(72.2% 0.177 305.5)",
+        "$description": "Link text color - cosmic purple",
+        "$originalHex": "#C084FC"
       },
       "link.hover": {
         "$type": "color",
-        "$value": "#D8B4FE",
-        "$description": "Link text color on hover - brighter cosmic purple"
+        "$value": "oklch(82.7% 0.108 306.4)",
+        "$description": "Link text color on hover - brighter cosmic purple",
+        "$originalHex": "#D8B4FE"
       }
     },
     "surface": {
       "default": {
         "$type": "color",
-        "$value": "#0D0015",
-        "$description": "Default surface background - deep cosmic black"
+        "$value": "oklch(12.0% 0.060 313.6)",
+        "$description": "Default surface background - deep cosmic black",
+        "$originalHex": "#0D0015"
       },
       "raised": {
         "$type": "color",
-        "$value": "#1A0526",
-        "$description": "Elevated surface background - purple-tinted space"
+        "$value": "oklch(17.6% 0.068 310.9)",
+        "$description": "Elevated surface background - purple-tinted space",
+        "$originalHex": "#1A0526"
       },
       "sunken": {
         "$type": "color",
-        "$value": "#05000A",
-        "$description": "Depressed surface background - void black for inputs"
+        "$value": "oklch(8.8% 0.044 312.0)",
+        "$description": "Depressed surface background - void black for inputs",
+        "$originalHex": "#05000A"
       },
       "overlay": {
         "$type": "color",
@@ -57,64 +65,75 @@
     "border": {
       "default": {
         "$type": "color",
-        "$value": "#2E1065",
-        "$description": "Default border color - deep purple border"
+        "$value": "oklch(28.3% 0.135 291.1)",
+        "$description": "Default border color - deep purple border",
+        "$originalHex": "#2E1065"
       },
       "subtle": {
         "$type": "color",
-        "$value": "#1A0526",
-        "$description": "Subtle border for dividers - dark purple"
+        "$value": "oklch(17.6% 0.068 310.9)",
+        "$description": "Subtle border for dividers - dark purple",
+        "$originalHex": "#1A0526"
       },
       "strong": {
         "$type": "color",
-        "$value": "#581C87",
-        "$description": "Stronger border for emphasis - visible purple"
+        "$value": "oklch(38.1% 0.166 305.0)",
+        "$description": "Stronger border for emphasis - visible purple",
+        "$originalHex": "#581C87"
       }
     },
     "interactive": {
       "primary": {
         "$type": "color",
-        "$value": "#C084FC",
-        "$description": "Primary interactive element color - cosmic purple"
+        "$value": "oklch(72.2% 0.177 305.5)",
+        "$description": "Primary interactive element color - cosmic purple",
+        "$originalHex": "#C084FC"
       },
       "primary.hover": {
         "$type": "color",
-        "$value": "#E879F9",
-        "$description": "Primary interactive color on hover - lighter purple"
+        "$value": "oklch(74.8% 0.207 322.2)",
+        "$description": "Primary interactive color on hover - lighter purple",
+        "$originalHex": "#E879F9"
       },
       "secondary": {
         "$type": "color",
-        "$value": "#3B0764",
-        "$description": "Secondary interactive element color - deep purple"
+        "$value": "oklch(29.1% 0.143 302.7)",
+        "$description": "Secondary interactive element color - deep purple",
+        "$originalHex": "#3B0764"
       }
     },
     "focus": {
       "ring": {
         "$type": "color",
-        "$value": "#E9D5FF",
-        "$description": "Focus ring outline color - lavender glow"
+        "$value": "oklch(90.2% 0.060 306.7)",
+        "$description": "Focus ring outline color - lavender glow",
+        "$originalHex": "#E9D5FF"
       }
     },
     "status": {
       "success": {
         "$type": "color",
-        "$value": "#34D399",
-        "$description": "Success state color - mint green for deep space"
+        "$value": "oklch(77.3% 0.153 163.2)",
+        "$description": "Success state color - mint green for deep space",
+        "$originalHex": "#34D399"
       },
       "warning": {
         "$type": "color",
-        "$value": "#FBBF24",
-        "$description": "Warning state color - amber star"
+        "$value": "oklch(83.7% 0.164 84.4)",
+        "$description": "Warning state color - amber star",
+        "$originalHex": "#FBBF24"
       },
       "error": {
         "$type": "color",
-        "$value": "#FC8181",
-        "$description": "Error state color - coral nebula"
+        "$value": "oklch(74.2% 0.150 21.4)",
+        "$description": "Error state color - coral nebula",
+        "$originalHex": "#FC8181"
       },
       "info": {
         "$type": "color",
-        "$value": "#E9D5FF",
-        "$description": "Info state color - lavender"
+        "$value": "oklch(90.2% 0.060 306.7)",
+        "$description": "Info state color - lavender",
+        "$originalHex": "#E9D5FF"
       }
     }
   },

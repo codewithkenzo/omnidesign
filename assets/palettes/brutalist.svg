@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Stark black/white/yellow - inspired by Lovable's B...</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#FFD700" filter="url(#shadow)"/>
-  <text x="296" y="56" class="color-value" text-anchor="middle">#FFD700</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(88.7% 0.182 95.3)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(88.7% 0.1</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#000000" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="color-value" text-anchor="middle">#000000</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(0.0% 0.000 0.0)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(0.0% 0.00</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#FFFFFF" filter="url(#shadow)"/>
-  <text x="368" y="56" class="color-value" text-anchor="middle">#FFFFFF</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(100.0% 0.000 0.0)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(100.0% 0.</text>
 </svg>

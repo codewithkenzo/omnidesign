@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Light yellow-gold warmth - inspired by Lovable's S...</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#EAB308" filter="url(#shadow)"/>
-  <text x="296" y="56" class="color-value" text-anchor="middle">#EAB308</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(79.5% 0.162 86.0)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(79.5% 0.1</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#FEF9C3" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="color-value" text-anchor="middle">#FEF9C3</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(97.3% 0.069 103.2)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(97.3% 0.0</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#292524" filter="url(#shadow)"/>
-  <text x="368" y="56" class="color-value" text-anchor="middle">#292524</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(26.8% 0.006 34.3)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(26.8% 0.0</text>
 </svg>

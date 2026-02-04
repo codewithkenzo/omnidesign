@@ -247,12 +247,14 @@
   },
   "white": {
     "$type": "color",
-    "$value": "#FFFFFF",
-    "$description": "Pure white"
+    "$value": "oklch(100.0% 0.000 0.0)",
+    "$description": "Pure white",
+    "$originalHex": "#FFFFFF"
   },
   "black": {
     "$type": "color",
-    "$value": "#000000",
-    "$description": "Pure black"
+    "$value": "oklch(0.0% 0.000 0.0)",
+    "$description": "Pure black",
+    "$originalHex": "#000000"
   }
 }

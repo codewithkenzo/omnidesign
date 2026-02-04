@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Cold blue and deep violet theme for enterprise SPA...</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#2563EB" filter="url(#shadow)"/>
-  <text x="296" y="56" class="color-value" text-anchor="middle">#2563EB</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(54.6% 0.215 262.9)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(54.6% 0.2</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#1E293B" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="color-value" text-anchor="middle">#1E293B</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(27.9% 0.037 260.0)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(27.9% 0.0</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#F1F5F9" filter="url(#shadow)"/>
-  <text x="368" y="56" class="color-value" text-anchor="middle">#F1F5F9</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(96.8% 0.007 247.9)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(96.8% 0.0</text>
 </svg>
