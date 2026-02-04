@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { cn } from './lib/utils';
 
 interface FileWithPreview extends File {
@@ -32,6 +32,16 @@ export function FileUpload({
   const [error, setError] = useState<string>('');
   const [uploading, setUploading] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    return () => {
+      files.forEach((file) => {
+        if (file.preview) {
+          URL.revokeObjectURL(file.preview);
+        }
+      });
+    };
+  }, [files]);
 
   const validateFile = useCallback((file: File): string | null => {
     if (maxSize && file.size > maxSize) {

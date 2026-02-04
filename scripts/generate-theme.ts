@@ -11,8 +11,15 @@ interface TokenGroup {
   [key: string]: Token | TokenGroup;
 }
 
-async function resolveReference(ref: string, allTokens: any): Promise<string> {
+async function resolveReference(ref: string, allTokens: any, visited: Set<string> = new Set()): Promise<string> {
   const cleanRef = ref.replace(/[{}]/g, '');
+  
+  if (visited.has(cleanRef)) {
+    console.warn(`Circular reference detected: ${cleanRef}`);
+    return ref;
+  }
+  
+  visited.add(cleanRef);
   const parts = cleanRef.split('.');
   
   let current = allTokens;
@@ -27,7 +34,7 @@ async function resolveReference(ref: string, allTokens: any): Promise<string> {
   if (current && typeof current === 'object' && '$value' in current) {
     const value = current.$value;
     if (typeof value === 'string' && value.startsWith('{')) {
-      return resolveReference(value, allTokens);
+      return resolveReference(value, allTokens, visited);
     }
     return value;
   }

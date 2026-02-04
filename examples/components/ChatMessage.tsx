@@ -53,11 +53,15 @@ export function ChatMessage({
 }: ChatMessageProps) {
   const [copied, setCopied] = useState(false);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(content);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-    onCopy?.();
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(content);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+      onCopy?.();
+    } catch (err) {
+      console.error('Copy failed:', err);
+    }
   };
 
   const displayName = name || (role === 'user' ? 'You' : 'Assistant');
@@ -92,7 +96,7 @@ export function ChatMessage({
           ) : (
             <div className="prose prose-sm max-w-none dark:prose-invert">
               {content.split('\n').map((line, i) => (
-                <p key={i} className={line.trim() ? '' : 'h-4'}>
+                <p key={`${i}-${line.substring(0, 20)}`} className={line.trim() ? '' : 'h-4'}>
                   {line || '\u00A0'}
                 </p>
               ))}
