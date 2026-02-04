@@ -31,7 +31,7 @@
 
 🎨 **OKLCH Colors** - All 272 colors converted to perceptually uniform OKLCH format (41 primitives + 231 extended)  
 🧩 **10 Production Components** - 2,547 lines of React 19 + TypeScript components  
-🎭 **26 Themes** - Generated theme files with semantic color overrides  
+🎭 **25 Themes** - Generated theme files with semantic color overrides  
 🌗 **Dark Mode** - Built-in support via CSS `prefers-color-scheme`  
 📖 **Interactive Demo** - Try all components with live theme switching (`examples/demo.html`)  
 ⚡ **Type-Safe** - Zero TypeScript errors, ES2024 target, CVA variants

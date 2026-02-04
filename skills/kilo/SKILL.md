@@ -1,6 +1,6 @@
 ---
 name: omnidesign
-description: Universal design system with 25 themes, 40+ fonts, and AI industry components
+description: Universal design system with 25 themes, 39 fonts, and AI industry components
 license: MIT
 compatibility:
   product: kilo-code
