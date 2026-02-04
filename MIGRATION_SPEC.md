@@ -703,6 +703,153 @@ npm install @omnidesign/tailwind
 
 ---
 
+## Phase 6: Token Alignment (Feb 4, 2026)
+
+### Issue Discovered
+
+The initial migration (Phases 1-5) successfully converted CSS files to OKLCH, but **source tokens remained in HEX format**. This created a split-state system:
+
+```
+tokens/primitives/*.json   [HEX]  ❌ Source of truth
+tokens/themes/*.json       [HEX]  ❌ Theme overrides
+         ↓
+scripts/generate-theme.ts  [Conversion] ⚠️ Would overwrite OKLCH → HEX
+         ↓
+src/theme.css              [OKLCH] ✅ Manually migrated
+examples/components/       [OKLCH] ✅ Working
+assets/palettes/*.svg      [HEX]  ❌ Outdated labels
+```
+
+**Risks**:
+- Running build scripts would **revert OKLCH back to HEX**
+- Palette SVGs displayed outdated HEX values
+- Confusion about color counts (176 vs 149 vs 272)
+- Loss of perceptual uniformity benefits
+
+### Resolution
+
+**Extended `scripts/convert-colors.ts`**:
+```typescript
+// Original: Only converted tokens/primitives/color.json
+// Updated: Also converts tokens/themes/*.json (25 files)
+
+const themesDir = 'tokens/themes';
+const themeFiles = await fs.readdir(themesDir);
+for (const filename of themeFiles) {
+  if (filename.endsWith('.json')) {
+    // Create backup: [filename].hex-backup.json
+    // Convert all HEX → OKLCH with $originalHex field
+    // Write converted tokens back
+  }
+}
+```
+
+**Updated `scripts/generate-palette-svgs.js`**:
+- Renamed `.hex` CSS class → `.color-value` (semantic)
+- Truncated OKLCH strings in SVG labels: `${color.substring(0, 15)}`
+- Handles both HEX and OKLCH gracefully
+
+**Full Conversion Executed**:
+```bash
+npx tsx scripts/convert-colors.ts
+# Output:
+# - Converted 41 HEX → OKLCH in tokens/primitives/color.json
+# - Converted 0 HEX in colors-extended.json (already OKLCH)
+# - Converted 25 theme files in tokens/themes/*.json
+# - Created .hex-backup.json for all modified files
+```
+
+**Regenerated All Assets**:
+```bash
+npx tsx scripts/generate-theme.ts        # src/theme.css + dist/themes/*.css
+node scripts/generate-palette-svgs.js    # 25 palette SVGs with OKLCH labels
+```
+
+### Color Count Clarification
+
+**Actual counts**:
+- **41 primitive colors** in `tokens/primitives/color.json`
+  - 8 families: neutral, blue, purple, green, amber, red, white, black
+- **231 extended colors** in `tokens/primitives/colors-extended.json`
+  - 16 families × 11 shades (50-950)
+- **Total: 272 OKLCH colors**
+
+**Previous confusion**:
+- "176 colors" = v1.0 count (16 families × 11 shades, HEX format)
+- "149 colors" = Initial PR claim (incorrect count)
+- "272 colors" = Actual OKLCH system (current)
+
+### Final System State
+
+**After alignment (CORRECT)**:
+```
+tokens/primitives/*.json   [OKLCH] ✅ Source of truth
+tokens/themes/*.json       [OKLCH] ✅ Theme overrides
+         ↓
+scripts/generate-theme.ts  [Passthrough] ✅ Preserves OKLCH
+         ↓
+src/theme.css              [OKLCH] ✅ Generated from tokens
+dist/themes/*.css          [OKLCH] ✅ Generated from tokens
+         ↓
+examples/components/       [OKLCH] ✅ Working
+assets/palettes/*.svg      [OKLCH] ✅ Accurate labels
+```
+
+### Files Modified
+
+**Backup files created** (28 files):
+- `tokens/primitives/color.hex-backup.json`
+- `tokens/primitives/colors-extended.hex-backup.json`
+- `tokens/themes/*.hex-backup.json` (25 files)
+
+**Token files converted** (27 files):
+- `tokens/primitives/color.json` - 41 colors → OKLCH
+- `tokens/themes/*.json` - 25 theme files → OKLCH
+
+**Scripts updated** (2 files):
+- `scripts/convert-colors.ts` - Extended to convert themes
+- `scripts/generate-palette-svgs.js` - Updated to handle OKLCH labels
+
+**Assets regenerated** (27 files):
+- `src/theme.css` - Regenerated from OKLCH tokens
+- `dist/themes/*.css` - 25 theme files regenerated
+- `assets/palettes/*.svg` - 25 palette SVGs with OKLCH labels
+
+**Documentation updated** (2 files):
+- `README.md` - Corrected color count (176 → 272)
+- `MIGRATION_SPEC.md` - Added Phase 6 documentation
+
+### Verification
+
+```bash
+# Tokens are OKLCH
+jq '[.. | objects | select(has("$type") and ."$type" == "color")] | length' tokens/primitives/color.json
+# Output: 41
+
+# Extended colors are OKLCH
+jq '[.. | objects | select(has("$type") and ."$type" == "color")] | length' tokens/primitives/colors-extended.json
+# Output: 231
+
+# CSS uses OKLCH
+grep -c "oklch" src/theme.css
+# Output: 56 (core definitions, rest are references)
+
+# Build scripts preserve OKLCH
+npx tsx scripts/generate-theme.ts
+git diff src/theme.css
+# Output: No changes (OKLCH preserved)
+```
+
+### Benefits Achieved
+
+✅ **Source of truth unified** - Tokens are now OKLCH, not HEX  
+✅ **Build safety** - Running scripts no longer reverts to HEX  
+✅ **Asset accuracy** - Palette SVGs display correct OKLCH values  
+✅ **Rollback safety** - `.hex-backup.json` files for emergency revert  
+✅ **Documentation accuracy** - Color counts corrected (272 colors)
+
+---
+
 ## Post-Migration Tasks
 
 1. **Archive old system**: Tag `v1.0-css-final` and keep for reference

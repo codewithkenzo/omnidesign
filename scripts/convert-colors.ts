@@ -106,12 +106,36 @@ async function main() {
     }
   }
   
+  console.log('\n🎨 Converting theme files...');
+  const themesDir = 'tokens/themes';
+  const themeFiles = await fs.readdir(themesDir);
+  
+  for (const filename of themeFiles) {
+    if (filename.endsWith('.json')) {
+      const themePath = path.join(themesDir, filename);
+      const backupPath = path.join(themesDir, filename.replace('.json', '.hex-backup.json'));
+      
+      try {
+        // Create backup
+        const original = await fs.readFile(themePath, 'utf-8');
+        await fs.writeFile(backupPath, original);
+        console.log(`💾 Backup created: ${backupPath}`);
+        
+        // Convert
+        await convertColorFile(themePath, themePath);
+      } catch (error) {
+        console.error(`❌ Error processing ${themePath}:`, error);
+      }
+    }
+  }
+  
   console.log('━'.repeat(60));
   console.log('🎉 Color conversion complete!');
   console.log('\n📝 Next steps:');
   console.log('   1. Review converted colors visually');
-  console.log('   2. Run: npm run generate:themes');
-  console.log('   3. Test theme switching');
+  console.log('   2. Run: npx tsx scripts/generate-theme.ts');
+  console.log('   3. Run: npm run generate:palettes (to regenerate SVGs)');
+  console.log('   4. Test theme switching');
 }
 
 main().catch(console.error);

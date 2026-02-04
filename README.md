@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  One package. 10 IDEs. 25 themes. 176 colors. 39 Nerd Fonts. Tailwind-ready.
+  One package. 10 IDEs. 25 themes. 272 OKLCH colors. 39 Nerd Fonts. Tailwind-ready.
 </p>
 
 <p align="center">
@@ -29,7 +29,7 @@
 **Branch**: `tailwind-v4-migration`  
 **See**: [MIGRATION_SPEC.md](./MIGRATION_SPEC.md) for full details
 
-🎨 **OKLCH Colors** - All 149 colors converted to perceptually uniform OKLCH format  
+🎨 **OKLCH Colors** - All 272 colors converted to perceptually uniform OKLCH format (41 primitives + 231 extended)  
 🧩 **10 Production Components** - 2,547 lines of React 19 + TypeScript components  
 🎭 **26 Themes** - Generated theme files with semantic color overrides  
 🌗 **Dark Mode** - Built-in support via CSS `prefers-color-scheme`  
@@ -41,7 +41,7 @@
 ### v1.1.0
 
 🎨 **Tailwind CSS Integration** - Full token-to-utility mapping with ready-to-use config  
-🌈 **Extended Color Palette** - 16 color families × 11 shades = 176 colors  
+🎨 **OKLCH Color System** - 41 primitive colors + 231 extended shades = 272 perceptually uniform colors  
 🔤 **39 Nerd Fonts** - Complete catalog with CDN links and install commands  
 📦 **Component Recipes** - Copy-paste Tailwind snippets for buttons, cards, inputs, alerts  
 🤖 **AI-Ready** - Agents can now generate production-ready Tailwind code instantly

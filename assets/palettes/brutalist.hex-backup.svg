@@ -17,7 +17,7 @@
   <rect width="400" height="80" fill="#0d1117" rx="12"/>
   
   <!-- Theme name -->
-  <text x="20" y="30" class="text label">brutalist</text>
+  <text x="20" y="30" class="text label">brutalist.hex-backup</text>
   <text x="20" y="50" class="text desc">Stark black/white/yellow - inspired by Lovable's B...</text>
   
   <!-- Primary color swatch -->
