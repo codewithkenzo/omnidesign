@@ -6,7 +6,7 @@
       .text { font-family: system-ui, -apple-system, sans-serif; fill: #e6edf3; }
       .label { font-size: 14px; font-weight: 600; }
       .desc { font-size: 11px; fill: #8b949e; }
-      .hex { font-size: 9px; fill: #6e7681; font-family: 'JetBrains Mono', monospace; }
+      .color-value { font-size: 9px; fill: #6e7681; font-family: 'JetBrains Mono', monospace; }
     </style>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.3"/>
@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Warm sunset gradient theme with vibrant orange and...</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#FF6B35" filter="url(#shadow)"/>
-  <text x="296" y="56" class="hex" text-anchor="middle">#FF6B35</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(70.5% 0.193 39.2)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(70.5% 0.1</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#FFFFFF" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="hex" text-anchor="middle">#FFFFFF</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(100.0% 0.000 0.0)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(100.0% 0.</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#1A1A2E" filter="url(#shadow)"/>
-  <text x="368" y="56" class="hex" text-anchor="middle">#1A1A2E</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(22.8% 0.038 282.9)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(22.8% 0.0</text>
 </svg>

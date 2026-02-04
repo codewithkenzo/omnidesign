@@ -6,7 +6,7 @@
       .text { font-family: system-ui, -apple-system, sans-serif; fill: #e6edf3; }
       .label { font-size: 14px; font-weight: 600; }
       .desc { font-size: 11px; fill: #8b949e; }
-      .hex { font-size: 9px; fill: #6e7681; font-family: 'JetBrains Mono', monospace; }
+      .color-value { font-size: 9px; fill: #6e7681; font-family: 'JetBrains Mono', monospace; }
     </style>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.3"/>
@@ -21,14 +21,14 @@
   <text x="20" y="50" class="text desc">Neon pink/purple on black - synthwave inspired for...</text>
   
   <!-- Primary color swatch -->
-  <rect x="280" y="12" width="32" height="32" rx="8" fill="#F472B6" filter="url(#shadow)"/>
-  <text x="296" y="56" class="hex" text-anchor="middle">#F472B6</text>
+  <rect x="280" y="12" width="32" height="32" rx="8" fill="oklch(72.5% 0.175 349.8)" filter="url(#shadow)"/>
+  <text x="296" y="56" class="color-value" text-anchor="middle">oklch(72.5% 0.1</text>
   
   <!-- Surface color swatch -->
-  <rect x="316" y="12" width="32" height="32" rx="8" fill="#0A0A0A" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
-  <text x="332" y="56" class="hex" text-anchor="middle">#0A0A0A</text>
+  <rect x="316" y="12" width="32" height="32" rx="8" fill="oklch(14.5% 0.000 0.0)" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="56" class="color-value" text-anchor="middle">oklch(14.5% 0.0</text>
   
   <!-- Text color swatch -->
-  <rect x="352" y="12" width="32" height="32" rx="8" fill="#E0E0E0" filter="url(#shadow)"/>
-  <text x="368" y="56" class="hex" text-anchor="middle">#E0E0E0</text>
+  <rect x="352" y="12" width="32" height="32" rx="8" fill="oklch(90.7% 0.000 0.0)" filter="url(#shadow)"/>
+  <text x="368" y="56" class="color-value" text-anchor="middle">oklch(90.7% 0.0</text>
 </svg>

@@ -2,218 +2,259 @@
   "neutral": {
     "50": {
       "$type": "color",
-      "$value": "#FAFAFA",
-      "$description": "Neutral gray, lightest shade"
+      "$value": "oklch(98.5% 0.000 0.0)",
+      "$description": "Neutral gray, lightest shade",
+      "$originalHex": "#FAFAFA"
     },
     "100": {
       "$type": "color",
-      "$value": "#F5F5F5",
-      "$description": "Neutral gray, very light"
+      "$value": "oklch(97.0% 0.000 0.0)",
+      "$description": "Neutral gray, very light",
+      "$originalHex": "#F5F5F5"
     },
     "200": {
       "$type": "color",
-      "$value": "#E5E5E5",
-      "$description": "Neutral gray, light"
+      "$value": "oklch(92.2% 0.000 0.0)",
+      "$description": "Neutral gray, light",
+      "$originalHex": "#E5E5E5"
     },
     "300": {
       "$type": "color",
-      "$value": "#D4D4D4",
-      "$description": "Neutral gray, light-medium"
+      "$value": "oklch(87.0% 0.000 0.0)",
+      "$description": "Neutral gray, light-medium",
+      "$originalHex": "#D4D4D4"
     },
     "400": {
       "$type": "color",
-      "$value": "#A3A3A3",
-      "$description": "Neutral gray, medium"
+      "$value": "oklch(71.5% 0.000 0.0)",
+      "$description": "Neutral gray, medium",
+      "$originalHex": "#A3A3A3"
     },
     "500": {
       "$type": "color",
-      "$value": "#737373",
-      "$description": "Neutral gray, base shade"
+      "$value": "oklch(55.6% 0.000 0.0)",
+      "$description": "Neutral gray, base shade",
+      "$originalHex": "#737373"
     },
     "600": {
       "$type": "color",
-      "$value": "#525252",
-      "$description": "Neutral gray, medium-dark"
+      "$value": "oklch(43.9% 0.000 0.0)",
+      "$description": "Neutral gray, medium-dark",
+      "$originalHex": "#525252"
     },
     "700": {
       "$type": "color",
-      "$value": "#404040",
-      "$description": "Neutral gray, dark"
+      "$value": "oklch(37.1% 0.000 0.0)",
+      "$description": "Neutral gray, dark",
+      "$originalHex": "#404040"
     },
     "800": {
       "$type": "color",
-      "$value": "#262626",
-      "$description": "Neutral gray, very dark"
+      "$value": "oklch(26.9% 0.000 0.0)",
+      "$description": "Neutral gray, very dark",
+      "$originalHex": "#262626"
     },
     "900": {
       "$type": "color",
-      "$value": "#171717",
-      "$description": "Neutral gray, darkest"
+      "$value": "oklch(20.5% 0.000 0.0)",
+      "$description": "Neutral gray, darkest",
+      "$originalHex": "#171717"
     },
     "950": {
       "$type": "color",
-      "$value": "#0A0A0A",
-      "$description": "Neutral gray, near black"
+      "$value": "oklch(14.5% 0.000 0.0)",
+      "$description": "Neutral gray, near black",
+      "$originalHex": "#0A0A0A"
     }
   },
   "blue": {
     "50": {
       "$type": "color",
-      "$value": "#EFF6FF",
-      "$description": "Cold blue, lightest shade"
+      "$value": "oklch(97.0% 0.014 254.6)",
+      "$description": "Cold blue, lightest shade",
+      "$originalHex": "#EFF6FF"
     },
     "100": {
       "$type": "color",
-      "$value": "#DBEAFE",
-      "$description": "Cold blue, very light"
+      "$value": "oklch(93.2% 0.032 255.6)",
+      "$description": "Cold blue, very light",
+      "$originalHex": "#DBEAFE"
     },
     "200": {
       "$type": "color",
-      "$value": "#BFDBFE",
-      "$description": "Cold blue, light"
+      "$value": "oklch(88.2% 0.057 254.1)",
+      "$description": "Cold blue, light",
+      "$originalHex": "#BFDBFE"
     },
     "300": {
       "$type": "color",
-      "$value": "#93C5FD",
-      "$description": "Cold blue, light-medium"
+      "$value": "oklch(80.9% 0.096 251.8)",
+      "$description": "Cold blue, light-medium",
+      "$originalHex": "#93C5FD"
     },
     "400": {
       "$type": "color",
-      "$value": "#60A5FA",
-      "$description": "Cold blue, medium"
+      "$value": "oklch(71.4% 0.143 254.6)",
+      "$description": "Cold blue, medium",
+      "$originalHex": "#60A5FA"
     },
     "500": {
       "$type": "color",
-      "$value": "#2563EB",
-      "$description": "Cold blue, base shade - enterprise primary"
+      "$value": "oklch(54.6% 0.215 262.9)",
+      "$description": "Cold blue, base shade - enterprise primary",
+      "$originalHex": "#2563EB"
     },
     "600": {
       "$type": "color",
-      "$value": "#1D4ED8",
-      "$description": "Cold blue, medium-dark"
+      "$value": "oklch(48.8% 0.217 264.4)",
+      "$description": "Cold blue, medium-dark",
+      "$originalHex": "#1D4ED8"
     },
     "700": {
       "$type": "color",
-      "$value": "#1E40AF",
-      "$description": "Cold blue, dark"
+      "$value": "oklch(42.4% 0.181 265.6)",
+      "$description": "Cold blue, dark",
+      "$originalHex": "#1E40AF"
     },
     "800": {
       "$type": "color",
-      "$value": "#1E3A8A",
-      "$description": "Cold blue, very dark"
+      "$value": "oklch(37.9% 0.138 265.5)",
+      "$description": "Cold blue, very dark",
+      "$originalHex": "#1E3A8A"
     },
     "900": {
       "$type": "color",
-      "$value": "#172554",
-      "$description": "Cold blue, darkest"
+      "$value": "oklch(28.2% 0.087 267.9)",
+      "$description": "Cold blue, darkest",
+      "$originalHex": "#172554"
     },
     "950": {
       "$type": "color",
-      "$value": "#0F172A",
-      "$description": "Cold blue, near black"
+      "$value": "oklch(20.8% 0.040 265.8)",
+      "$description": "Cold blue, near black",
+      "$originalHex": "#0F172A"
     }
   },
   "purple": {
     "50": {
       "$type": "color",
-      "$value": "#F5F3FF",
-      "$description": "Deep violet, lightest shade"
+      "$value": "oklch(96.9% 0.016 293.8)",
+      "$description": "Deep violet, lightest shade",
+      "$originalHex": "#F5F3FF"
     },
     "100": {
       "$type": "color",
-      "$value": "#EDE9FE",
-      "$description": "Deep violet, very light"
+      "$value": "oklch(94.3% 0.028 294.6)",
+      "$description": "Deep violet, very light",
+      "$originalHex": "#EDE9FE"
     },
     "200": {
       "$type": "color",
-      "$value": "#DDD6FE",
-      "$description": "Deep violet, light"
+      "$value": "oklch(89.4% 0.055 293.3)",
+      "$description": "Deep violet, light",
+      "$originalHex": "#DDD6FE"
     },
     "300": {
       "$type": "color",
-      "$value": "#C4B5FD",
-      "$description": "Deep violet, light-medium"
+      "$value": "oklch(81.1% 0.101 293.6)",
+      "$description": "Deep violet, light-medium",
+      "$originalHex": "#C4B5FD"
     },
     "400": {
       "$type": "color",
-      "$value": "#A78BFA",
-      "$description": "Deep violet, medium"
+      "$value": "oklch(70.9% 0.159 293.5)",
+      "$description": "Deep violet, medium",
+      "$originalHex": "#A78BFA"
     },
     "500": {
       "$type": "color",
-      "$value": "#6D28D9",
-      "$description": "Deep violet, base shade - starry accent"
+      "$value": "oklch(49.1% 0.241 292.6)",
+      "$description": "Deep violet, base shade - starry accent",
+      "$originalHex": "#6D28D9"
     },
     "600": {
       "$type": "color",
-      "$value": "#5B21B6",
-      "$description": "Deep violet, medium-dark"
+      "$value": "oklch(43.2% 0.211 292.8)",
+      "$description": "Deep violet, medium-dark",
+      "$originalHex": "#5B21B6"
     },
     "700": {
       "$type": "color",
-      "$value": "#4C1D95",
-      "$description": "Deep violet, dark"
+      "$value": "oklch(38.0% 0.178 293.7)",
+      "$description": "Deep violet, dark",
+      "$originalHex": "#4C1D95"
     },
     "800": {
       "$type": "color",
-      "$value": "#3730A3",
-      "$description": "Deep violet, very dark"
+      "$value": "oklch(39.8% 0.177 277.4)",
+      "$description": "Deep violet, very dark",
+      "$originalHex": "#3730A3"
     },
     "900": {
       "$type": "color",
-      "$value": "#312E81",
-      "$description": "Deep violet, darkest"
+      "$value": "oklch(35.9% 0.135 278.7)",
+      "$description": "Deep violet, darkest",
+      "$originalHex": "#312E81"
     },
     "950": {
       "$type": "color",
-      "$value": "#1E1B4B",
-      "$description": "Deep violet, near black"
+      "$value": "oklch(25.7% 0.086 281.3)",
+      "$description": "Deep violet, near black",
+      "$originalHex": "#1E1B4B"
     }
   },
   "green": {
     "500": {
       "$type": "color",
-      "$value": "#22C55E",
-      "$description": "Success green, base shade"
+      "$value": "oklch(72.3% 0.192 149.6)",
+      "$description": "Success green, base shade",
+      "$originalHex": "#22C55E"
     },
     "600": {
       "$type": "color",
-      "$value": "#16A34A",
-      "$description": "Success green, dark shade"
+      "$value": "oklch(62.7% 0.170 149.2)",
+      "$description": "Success green, dark shade",
+      "$originalHex": "#16A34A"
     }
   },
   "amber": {
     "500": {
       "$type": "color",
-      "$value": "#F59E0B",
-      "$description": "Warning amber, base shade"
+      "$value": "oklch(76.9% 0.165 70.1)",
+      "$description": "Warning amber, base shade",
+      "$originalHex": "#F59E0B"
     },
     "600": {
       "$type": "color",
-      "$value": "#D97706",
-      "$description": "Warning amber, dark shade"
+      "$value": "oklch(66.6% 0.157 58.3)",
+      "$description": "Warning amber, dark shade",
+      "$originalHex": "#D97706"
     }
   },
   "red": {
     "500": {
       "$type": "color",
-      "$value": "#EF4444",
-      "$description": "Error red, base shade"
+      "$value": "oklch(63.7% 0.208 25.3)",
+      "$description": "Error red, base shade",
+      "$originalHex": "#EF4444"
     },
     "600": {
       "$type": "color",
-      "$value": "#DC2626",
-      "$description": "Error red, dark shade"
+      "$value": "oklch(57.7% 0.215 27.3)",
+      "$description": "Error red, dark shade",
+      "$originalHex": "#DC2626"
     }
   },
   "white": {
     "$type": "color",
-    "$value": "#FFFFFF",
-    "$description": "Pure white"
+    "$value": "oklch(100.0% 0.000 0.0)",
+    "$description": "Pure white",
+    "$originalHex": "#FFFFFF"
   },
   "black": {
     "$type": "color",
-    "$value": "#000000",
-    "$description": "Pure black"
+    "$value": "oklch(0.0% 0.000 0.0)",
+    "$description": "Pure black",
+    "$originalHex": "#000000"
   }
 }

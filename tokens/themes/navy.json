@@ -8,45 +8,53 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "#F1F5F9",
-        "$description": "Primary text on dark surfaces - near white for readability"
+        "$value": "oklch(96.8% 0.007 247.9)",
+        "$description": "Primary text on dark surfaces - near white for readability",
+        "$originalHex": "#F1F5F9"
       },
       "muted": {
         "$type": "color",
-        "$value": "#94A3B8",
-        "$description": "Secondary text - cool gray for less important content"
+        "$value": "oklch(71.1% 0.035 256.8)",
+        "$description": "Secondary text - cool gray for less important content",
+        "$originalHex": "#94A3B8"
       },
       "inverted": {
         "$type": "color",
-        "$value": "#0A1628",
-        "$description": "Text color for light surfaces - deep navy"
+        "$value": "oklch(20.0% 0.040 258.3)",
+        "$description": "Text color for light surfaces - deep navy",
+        "$originalHex": "#0A1628"
       },
       "link": {
         "$type": "color",
-        "$value": "#FBBF24",
-        "$description": "Link text color - gold accent"
+        "$value": "oklch(83.7% 0.164 84.4)",
+        "$description": "Link text color - gold accent",
+        "$originalHex": "#FBBF24"
       },
       "link.hover": {
         "$type": "color",
-        "$value": "#F59E0B",
-        "$description": "Link text color on hover - amber gold"
+        "$value": "oklch(76.9% 0.165 70.1)",
+        "$description": "Link text color on hover - amber gold",
+        "$originalHex": "#F59E0B"
       }
     },
     "surface": {
       "default": {
         "$type": "color",
-        "$value": "#0F172A",
-        "$description": "Default surface background - deep navy (near black)"
+        "$value": "oklch(20.8% 0.040 265.8)",
+        "$description": "Default surface background - deep navy (near black)",
+        "$originalHex": "#0F172A"
       },
       "raised": {
         "$type": "color",
-        "$value": "#1E293B",
-        "$description": "Elevated surface background - lighter navy for cards"
+        "$value": "oklch(27.9% 0.037 260.0)",
+        "$description": "Elevated surface background - lighter navy for cards",
+        "$originalHex": "#1E293B"
       },
       "sunken": {
         "$type": "color",
-        "$value": "#020617",
-        "$description": "Depressed surface background - even darker navy for inputs"
+        "$value": "oklch(12.9% 0.041 264.7)",
+        "$description": "Depressed surface background - even darker navy for inputs",
+        "$originalHex": "#020617"
       },
       "overlay": {
         "$type": "color",
@@ -57,64 +65,75 @@
     "border": {
       "default": {
         "$type": "color",
-        "$value": "#1E3A5F",
-        "$description": "Default border color - muted navy"
+        "$value": "oklch(34.6% 0.074 256.0)",
+        "$description": "Default border color - muted navy",
+        "$originalHex": "#1E3A5F"
       },
       "subtle": {
         "$type": "color",
-        "$value": "#1E293B",
-        "$description": "Subtle border for dividers - faint navy"
+        "$value": "oklch(27.9% 0.037 260.0)",
+        "$description": "Subtle border for dividers - faint navy",
+        "$originalHex": "#1E293B"
       },
       "strong": {
         "$type": "color",
-        "$value": "#334155",
-        "$description": "Stronger border for emphasis - visible navy-gray"
+        "$value": "oklch(37.2% 0.039 257.3)",
+        "$description": "Stronger border for emphasis - visible navy-gray",
+        "$originalHex": "#334155"
       }
     },
     "interactive": {
       "primary": {
         "$type": "color",
-        "$value": "#D4AF37",
-        "$description": "Primary interactive element color - metallic gold"
+        "$value": "oklch(76.7% 0.139 91.1)",
+        "$description": "Primary interactive element color - metallic gold",
+        "$originalHex": "#D4AF37"
       },
       "primary.hover": {
         "$type": "color",
-        "$value": "#EAC054",
-        "$description": "Primary interactive color on hover - lighter gold"
+        "$value": "oklch(82.5% 0.134 87.7)",
+        "$description": "Primary interactive color on hover - lighter gold",
+        "$originalHex": "#EAC054"
       },
       "secondary": {
         "$type": "color",
-        "$value": "#475569",
-        "$description": "Secondary interactive element color - slate gray"
+        "$value": "oklch(44.6% 0.037 257.3)",
+        "$description": "Secondary interactive element color - slate gray",
+        "$originalHex": "#475569"
       }
     },
     "focus": {
       "ring": {
         "$type": "color",
-        "$value": "#D4AF37",
-        "$description": "Focus ring outline color - gold glow"
+        "$value": "oklch(76.7% 0.139 91.1)",
+        "$description": "Focus ring outline color - gold glow",
+        "$originalHex": "#D4AF37"
       }
     },
     "status": {
       "success": {
         "$type": "color",
-        "$value": "#34D399",
-        "$description": "Success state color - emerald green for dark theme"
+        "$value": "oklch(77.3% 0.153 163.2)",
+        "$description": "Success state color - emerald green for dark theme",
+        "$originalHex": "#34D399"
       },
       "warning": {
         "$type": "color",
-        "$value": "#FBBF24",
-        "$description": "Warning state color - amber gold"
+        "$value": "oklch(83.7% 0.164 84.4)",
+        "$description": "Warning state color - amber gold",
+        "$originalHex": "#FBBF24"
       },
       "error": {
         "$type": "color",
-        "$value": "#F87171",
-        "$description": "Error state color - soft coral red"
+        "$value": "oklch(71.1% 0.166 22.2)",
+        "$description": "Error state color - soft coral red",
+        "$originalHex": "#F87171"
       },
       "info": {
         "$type": "color",
-        "$value": "#60A5FA",
-        "$description": "Info state color - light blue"
+        "$value": "oklch(71.4% 0.143 254.6)",
+        "$description": "Info state color - light blue",
+        "$originalHex": "#60A5FA"
       }
     }
   },

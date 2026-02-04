@@ -8,45 +8,53 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "#E0E0E0",
-        "$description": "Primary text on cyberpunk - near white with cyan tint"
+        "$value": "oklch(90.7% 0.000 0.0)",
+        "$description": "Primary text on cyberpunk - near white with cyan tint",
+        "$originalHex": "#E0E0E0"
       },
       "muted": {
         "$type": "color",
-        "$value": "#9CA3AF",
-        "$description": "Secondary text - purple-gray"
+        "$value": "oklch(71.4% 0.019 261.3)",
+        "$description": "Secondary text - purple-gray",
+        "$originalHex": "#9CA3AF"
       },
       "inverted": {
         "$type": "color",
-        "$value": "#000000",
-        "$description": "Text color for light surfaces - pure black"
+        "$value": "oklch(0.0% 0.000 0.0)",
+        "$description": "Text color for light surfaces - pure black",
+        "$originalHex": "#000000"
       },
       "link": {
         "$type": "color",
-        "$value": "#F472B6",
-        "$description": "Link text color - neon pink"
+        "$value": "oklch(72.5% 0.175 349.8)",
+        "$description": "Link text color - neon pink",
+        "$originalHex": "#F472B6"
       },
       "link.hover": {
         "$type": "color",
-        "$value": "#FB7185",
-        "$description": "Link text color on hover - brighter pink"
+        "$value": "oklch(71.9% 0.169 13.4)",
+        "$description": "Link text color on hover - brighter pink",
+        "$originalHex": "#FB7185"
       }
     },
     "surface": {
       "default": {
         "$type": "color",
-        "$value": "#050505",
-        "$description": "Default surface background - nearly pure black"
+        "$value": "oklch(11.5% 0.000 0.0)",
+        "$description": "Default surface background - nearly pure black",
+        "$originalHex": "#050505"
       },
       "raised": {
         "$type": "color",
-        "$value": "#0A0A0A",
-        "$description": "Elevated surface background - slightly lighter black"
+        "$value": "oklch(14.5% 0.000 0.0)",
+        "$description": "Elevated surface background - slightly lighter black",
+        "$originalHex": "#0A0A0A"
       },
       "sunken": {
         "$type": "color",
-        "$value": "#000000",
-        "$description": "Depressed surface background - pure black for inputs"
+        "$value": "oklch(0.0% 0.000 0.0)",
+        "$description": "Depressed surface background - pure black for inputs",
+        "$originalHex": "#000000"
       },
       "overlay": {
         "$type": "color",
@@ -57,64 +65,75 @@
     "border": {
       "default": {
         "$type": "color",
-        "$value": "#2D1B4E",
-        "$description": "Default border color - purple tint"
+        "$value": "oklch(27.6% 0.090 296.3)",
+        "$description": "Default border color - purple tint",
+        "$originalHex": "#2D1B4E"
       },
       "subtle": {
         "$type": "color",
-        "$value": "#1A1A2E",
-        "$description": "Subtle border for dividers - dark purple"
+        "$value": "oklch(22.8% 0.038 282.9)",
+        "$description": "Subtle border for dividers - dark purple",
+        "$originalHex": "#1A1A2E"
       },
       "strong": {
         "$type": "color",
-        "$value": "#4C1D95",
-        "$description": "Stronger border for emphasis - neon purple"
+        "$value": "oklch(38.0% 0.178 293.7)",
+        "$description": "Stronger border for emphasis - neon purple",
+        "$originalHex": "#4C1D95"
       }
     },
     "interactive": {
       "primary": {
         "$type": "color",
-        "$value": "#F472B6",
-        "$description": "Primary interactive element color - neon pink"
+        "$value": "oklch(72.5% 0.175 349.8)",
+        "$description": "Primary interactive element color - neon pink",
+        "$originalHex": "#F472B6"
       },
       "primary.hover": {
         "$type": "color",
-        "$value": "#FB7185",
-        "$description": "Primary interactive color on hover - brighter pink"
+        "$value": "oklch(71.9% 0.169 13.4)",
+        "$description": "Primary interactive color on hover - brighter pink",
+        "$originalHex": "#FB7185"
       },
       "secondary": {
         "$type": "color",
-        "$value": "#A855F7",
-        "$description": "Secondary interactive element color - purple accent"
+        "$value": "oklch(62.7% 0.233 303.9)",
+        "$description": "Secondary interactive element color - purple accent",
+        "$originalHex": "#A855F7"
       }
     },
     "focus": {
       "ring": {
         "$type": "color",
-        "$value": "#D946EF",
-        "$description": "Focus ring outline color - magenta glow"
+        "$value": "oklch(66.7% 0.259 322.1)",
+        "$description": "Focus ring outline color - magenta glow",
+        "$originalHex": "#D946EF"
       }
     },
     "status": {
       "success": {
         "$type": "color",
-        "$value": "#39FF14",
-        "$description": "Success state color - neon green"
+        "$value": "oklch(87.1% 0.286 141.5)",
+        "$description": "Success state color - neon green",
+        "$originalHex": "#39FF14"
       },
       "warning": {
         "$type": "color",
-        "$value": "#FFFF00",
-        "$description": "Warning state color - pure neon yellow"
+        "$value": "oklch(96.8% 0.211 109.8)",
+        "$description": "Warning state color - pure neon yellow",
+        "$originalHex": "#FFFF00"
       },
       "error": {
         "$type": "color",
-        "$value": "#FF006E",
-        "$description": "Error state color - neon magenta"
+        "$value": "oklch(64.1% 0.257 8.1)",
+        "$description": "Error state color - neon magenta",
+        "$originalHex": "#FF006E"
       },
       "info": {
         "$type": "color",
-        "$value": "#00FFFF",
-        "$description": "Info state color - cyan"
+        "$value": "oklch(90.5% 0.155 194.8)",
+        "$description": "Info state color - cyan",
+        "$originalHex": "#00FFFF"
       }
     }
   },

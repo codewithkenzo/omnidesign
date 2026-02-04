@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyberpunk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniDesign + Tailwind v4 Demo</title>
+  <link rel="stylesheet" href="../src/index.css">
+</head>
+<body class="min-h-screen bg-surface-default text-default p-8">
+  <div class="max-w-7xl mx-auto">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold mb-2">OmniDesign + Tailwind v4</h1>
+      <p class="text-muted">Design system migration demonstration</p>
+    </header>
+    
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Theme Selector</h2>
+      <div class="flex flex-wrap gap-2 mb-6">
+        <button onclick="setTheme('cyberpunk')" class="btn">Cyberpunk</button>
+        <button onclick="setTheme('retro')" class="btn">Retro</button>
+        <button onclick="setTheme('midnight')" class="btn">Midnight</button>
+        <button onclick="setTheme('daylight')" class="btn">Daylight</button>
+        <button onclick="setTheme('forest')" class="btn">Forest</button>
+        <button onclick="setTheme('ocean')" class="btn">Ocean</button>
+      </div>
+    </section>
+    
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Color Tokens (OKLCH)</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="card">
+          <div class="h-20 bg-surface-default rounded mb-2"></div>
+          <p class="text-sm font-mono">surface-default</p>
+        </div>
+        <div class="card">
+          <div class="h-20 bg-surface-raised rounded mb-2"></div>
+          <p class="text-sm font-mono">surface-raised</p>
+        </div>
+        <div class="card">
+          <div class="h-20 bg-surface-sunken rounded mb-2"></div>
+          <p class="text-sm font-mono">surface-sunken</p>
+        </div>
+        <div class="card">
+          <div class="h-20 bg-primary rounded mb-2"></div>
+          <p class="text-sm font-mono">primary</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Component Examples</h2>
+      
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Agent Cards</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <article class="bg-surface-raised border border-default rounded-xl p-6 hover:-translate-y-1 hover:shadow-card transition-all duration-200">
+              <header class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-purple-500 flex items-center justify-center font-bold text-inverted">
+                  C
+                </div>
+                <div class="flex-1">
+                  <h4 class="text-default font-semibold text-lg">Claude</h4>
+                  <span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-full text-xs font-medium bg-green-500/15 text-green-600">
+                    <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                    Online
+                  </span>
+                </div>
+              </header>
+              <p class="text-muted text-sm mb-4">Thoughtful AI assistant with strong reasoning capabilities</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-surface-sunken border border-subtle rounded px-2 py-1 text-xs text-muted">Reasoning</span>
+                <span class="bg-surface-sunken border border-subtle rounded px-2 py-1 text-xs text-muted">Code</span>
+                <span class="bg-surface-sunken border border-subtle rounded px-2 py-1 text-xs text-muted">Analysis</span>
+              </div>
+            </article>
+            
+            <article class="bg-surface-raised border border-default rounded-xl p-6 hover:-translate-y-1 hover:shadow-card transition-all duration-200">
+              <header class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-red-500 flex items-center justify-center font-bold text-inverted">
+                  G
+                </div>
+                <div class="flex-1">
+                  <h4 class="text-default font-semibold text-lg">GPT-4</h4>
+                  <span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-full text-xs font-medium bg-amber-500/15 text-amber-600">
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                    Busy
+                  </span>
+                </div>
+              </header>
+              <p class="text-muted text-sm mb-4">Versatile AI model for creative and analytical tasks</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-surface-sunken border border-subtle rounded px-2 py-1 text-xs text-muted">Creative</span>
+                <span class="bg-surface-sunken border border-subtle rounded px-2 py-1 text-xs text-muted">Versatile</span>
+                <span class="bg-surface-sunken border border-subtle rounded px-2 py-1 text-xs text-muted">Fast</span>
+              </div>
+            </article>
+            
+            <article class="bg-surface-raised border border-default rounded-xl p-6 opacity-75">
+              <header class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center font-bold text-inverted">
+                  G
+                </div>
+                <div class="flex-1">
+                  <h4 class="text-default font-semibold text-lg">Gemini</h4>
+                  <span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-full text-xs font-medium bg-surface-sunken text-muted">
+                    <span class="w-2 h-2 rounded-full bg-gray-400"></span>
+                    Offline
+                  </span>
+                </div>
+              </header>
+              <p class="text-muted text-sm mb-4">Multimodal AI with vision and reasoning</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-surface-sunken border border-subtle rounded px-2 py-1 text-xs text-muted">Vision</span>
+                <span class="bg-surface-sunken border border-subtle rounded px-2 py-1 text-xs text-muted">Multimodal</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Buttons</h3>
+          <div class="flex flex-wrap gap-4">
+            <button class="btn">Primary Button</button>
+            <button class="bg-secondary text-default px-4 py-2 rounded-md hover:bg-surface-sunken transition">Secondary</button>
+            <button class="border border-default text-default px-4 py-2 rounded-md hover:bg-surface-sunken transition">Outline</button>
+            <button class="text-link hover:text-link-hover px-4 py-2">Link Button</button>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Form Inputs</h3>
+          <div class="space-y-4 max-w-md">
+            <div>
+              <label class="block text-sm font-medium mb-2">Email</label>
+              <input class="input w-full" type="email" placeholder="you@example.com">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Message</label>
+              <textarea class="input w-full" rows="3" placeholder="Your message..."></textarea>
+            </div>
+            <button class="btn">Submit</button>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold mb-4">AI Prompt Input</h3>
+          <div class="max-w-2xl">
+            <div class="space-y-4">
+              <div class="bg-surface-raised border-2 border-default rounded-xl p-4 transition-all duration-200 focus-within:border-primary cursor-text">
+                <textarea
+                  placeholder="A futuristic city at sunset, cyberpunk style, neon lights..."
+                  rows="3"
+                  class="w-full bg-transparent border-none text-default font-sans text-base leading-relaxed resize-none focus:outline-none min-h-[3rem]"
+                ></textarea>
+                <div class="flex items-center justify-between mt-3 pt-3 border-t border-subtle">
+                  <div class="flex flex-wrap gap-2">
+                    <button class="inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-mono bg-surface-sunken border border-default hover:bg-primary hover:text-inverted hover:border-primary transition-colors">
+                      --ar 16:9
+                    </button>
+                    <button class="inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-mono bg-surface-sunken border border-default hover:bg-primary hover:text-inverted hover:border-primary transition-colors">
+                      --v 6
+                    </button>
+                    <button class="inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-mono bg-surface-sunken border border-default hover:bg-primary hover:text-inverted hover:border-primary transition-colors">
+                      --style raw
+                    </button>
+                  </div>
+                  <div class="font-mono text-xs text-muted">0 / 1000 tokens</div>
+                </div>
+              </div>
+              <button class="btn w-full flex items-center justify-center gap-2">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+                Generate Image
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold mb-4">AI Chat Interface</h3>
+          <div class="max-w-2xl bg-surface-raised border border-default rounded-lg overflow-hidden" style="height: 500px;">
+            <div class="flex flex-col h-full">
+              <div class="flex-1 overflow-y-auto p-4 space-y-4">
+                <article class="flex flex-col gap-2">
+                  <header class="flex items-center gap-2">
+                    <span class="text-sm font-medium">You</span>
+                    <time class="text-xs text-muted">2:30 PM</time>
+                  </header>
+                  <div class="bg-primary text-inverted rounded-lg rounded-br-sm max-w-[85%] ml-auto">
+                    <div class="p-4">
+                      <p>How do I implement dark mode with Tailwind v4?</p>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="flex flex-col gap-2">
+                  <header class="flex items-center gap-2">
+                    <span class="text-sm font-medium">Assistant</span>
+                    <time class="text-xs text-muted">2:30 PM</time>
+                  </header>
+                  <div class="bg-surface-raised border border-default rounded-lg rounded-bl-sm max-w-[85%]">
+                    <div class="p-4">
+                      <p>To implement dark mode in Tailwind v4, you can use the <code class="bg-surface-sunken px-1 py-0.5 rounded text-sm font-mono">@theme</code> directive with dark mode variants.</p>
+                      <p class="mt-2">Here's an example:</p>
+                      <pre class="bg-surface-sunken border border-default rounded p-3 mt-2 overflow-x-auto"><code class="font-mono text-sm">@theme {
+  --color-surface-default: oklch(98% 0 0);
+  
+  @media (prefers-color-scheme: dark) {
+    --color-surface-default: oklch(20% 0 0);
+  }
+}</code></pre>
+                    </div>
+                  </div>
+                  <footer class="flex items-center gap-2 ml-2">
+                    <button class="p-1.5 rounded hover:bg-surface-sunken transition-colors" title="Copy message">
+                      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                      </svg>
+                    </button>
+                    <button class="p-1.5 rounded hover:bg-surface-sunken transition-colors" title="Regenerate">
+                      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                      </svg>
+                    </button>
+                  </footer>
+                </article>
+              </div>
+              
+              <div class="border-t border-default p-4">
+                <div class="flex items-end gap-2 bg-surface-raised border border-default rounded-xl p-2 shadow-card">
+                  <button class="p-2 hover:bg-surface-sunken rounded transition-colors">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+                    </svg>
+                  </button>
+                  <textarea
+                    placeholder="Message Assistant..."
+                    rows="1"
+                    class="flex-1 bg-transparent border-none text-default resize-none focus:outline-none min-h-[40px]"
+                  ></textarea>
+                  <button class="p-2 bg-primary text-inverted rounded-lg hover:bg-primary/90 transition-colors">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Code Blocks</h3>
+          <div class="max-w-2xl space-y-4">
+            <figure class="overflow-hidden font-mono text-sm rounded-lg border bg-surface-sunken border-default" role="region" aria-label="Code example: example.tsx">
+              <figcaption class="flex items-center justify-between px-4 py-2 bg-black/20 border-b border-default">
+                <div class="flex items-center gap-2">
+                  <span class="inline-flex items-center px-2 py-0.5 rounded-sm bg-primary/15 text-primary text-xs font-medium uppercase tracking-wide">tsx</span>
+                  <span class="text-xs text-muted font-mono">example.tsx</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button class="inline-flex items-center gap-1.5 px-2 py-1 rounded text-xs border bg-transparent border-default text-muted hover:bg-surface-raised hover:border-strong hover:text-default transition-all" type="button">
+                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                    <span>Copy</span>
+                  </button>
+                </div>
+              </figcaption>
+              <div class="overflow-x-auto">
+                <div class="flex">
+                  <div class="flex flex-col text-xs text-muted text-right select-none border-r border-default pr-3 py-4 pl-4 bg-black/10" aria-hidden="true">
+                    <span class="leading-relaxed">1</span>
+                    <span class="leading-relaxed">2</span>
+                    <span class="leading-relaxed">3</span>
+                    <span class="leading-relaxed">4</span>
+                  </div>
+                  <pre class="flex-1 p-4 bg-transparent"><code class="text-default leading-relaxed">export function Component() {
+  const [state, setState] = useState(false);
+  return &lt;div&gt;{state}&lt;/div&gt;;
+}</code></pre>
+                </div>
+              </div>
+            </figure>
+            
+            <div class="rounded-lg overflow-hidden bg-[#0D1117] font-mono text-sm" role="region" aria-label="Terminal output">
+              <div class="flex items-center gap-2 px-4 py-2 bg-white/5 border-b border-white/10">
+                <div class="flex gap-1.5" aria-hidden="true">
+                  <span class="w-3 h-3 rounded-full bg-[#FF5F56]"></span>
+                  <span class="w-3 h-3 rounded-full bg-[#FFBD2E]"></span>
+                  <span class="w-3 h-3 rounded-full bg-[#27C93F]"></span>
+                </div>
+                <span class="text-xs text-gray-400">Terminal</span>
+              </div>
+              <div class="p-4 text-[#E6EDF3]">
+                <div class="flex items-baseline gap-2 mb-2">
+                  <span class="text-[#7EE787]">➜</span>
+                  <span class="text-[#7EE787]">~</span>
+                  <span>npm install @omnidesign/tailwind</span>
+                </div>
+                <div class="text-[#8B949E] whitespace-pre-wrap">added 5 packages in 2s</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Thinking Indicators</h3>
+          <div class="max-w-2xl space-y-6">
+            <div>
+              <p class="text-sm text-muted mb-2">Dots Animation</p>
+              <div class="flex items-center gap-2 text-muted text-sm">
+                <div class="inline-flex gap-1" aria-hidden="true">
+                  <span class="w-2 h-2 rounded-full bg-primary animate-bounce [animation-delay:-0.3s]"></span>
+                  <span class="w-2 h-2 rounded-full bg-primary animate-bounce [animation-delay:-0.15s]"></span>
+                  <span class="w-2 h-2 rounded-full bg-primary animate-bounce"></span>
+                </div>
+                <span class="italic">Thinking...</span>
+              </div>
+            </div>
+            
+            <div>
+              <p class="text-sm text-muted mb-2">Wave Animation</p>
+              <div class="flex items-center gap-2 text-muted text-sm">
+                <div class="inline-flex items-center gap-0.5 h-5" aria-hidden="true">
+                  <span class="w-0.5 h-2 bg-primary rounded-full animate-wave [animation-delay:-0.4s]"></span>
+                  <span class="w-0.5 h-3 bg-primary rounded-full animate-wave [animation-delay:-0.3s]"></span>
+                  <span class="w-0.5 h-4 bg-primary rounded-full animate-wave [animation-delay:-0.2s]"></span>
+                  <span class="w-0.5 h-3 bg-primary rounded-full animate-wave [animation-delay:-0.1s]"></span>
+                  <span class="w-0.5 h-2 bg-primary rounded-full animate-wave"></span>
+                </div>
+                <span class="italic">Processing...</span>
+              </div>
+            </div>
+            
+            <div>
+              <p class="text-sm text-muted mb-2">Shimmer Effect</p>
+              <div class="w-32 h-4 rounded bg-gradient-to-r from-surface-sunken via-surface-raised to-surface-sunken bg-[length:200%_100%] animate-shimmer" aria-hidden="true"></div>
+            </div>
+            
+            <div>
+              <p class="text-sm text-muted mb-2">In Message Bubble</p>
+              <div class="bg-surface-raised border border-default rounded-lg rounded-bl-sm p-4 max-w-[85%]">
+                <div class="flex items-center gap-2 text-muted text-sm">
+                  <div class="inline-flex gap-1" aria-hidden="true">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-bounce [animation-delay:-0.3s]"></span>
+                    <span class="w-2 h-2 rounded-full bg-primary animate-bounce [animation-delay:-0.15s]"></span>
+                    <span class="w-2 h-2 rounded-full bg-primary animate-bounce"></span>
+                  </div>
+                  <span class="italic">Thinking...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Bento Grid</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-fr">
+            <article class="col-span-1 row-span-1 bg-surface-raised border border-default rounded-xl p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-card">
+              <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-primary/15 text-primary w-fit mb-4">New</span>
+              <h3 class="text-xl font-semibold text-default mb-2">Analytics</h3>
+              <p class="text-sm text-muted leading-relaxed">Track user behavior and insights</p>
+            </article>
+            
+            <article class="col-span-1 md:col-span-2 row-span-1 bg-surface-raised border border-default rounded-xl p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-card">
+              <h3 class="text-xl font-semibold text-default mb-2">Dashboard</h3>
+              <p class="text-sm text-muted leading-relaxed">Centralized view of all your metrics and KPIs in one place</p>
+            </article>
+            
+            <article class="col-span-1 row-span-1 bg-surface-raised border border-default rounded-xl p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-card">
+              <h3 class="text-xl font-semibold text-default mb-2">Reports</h3>
+              <p class="text-sm text-muted leading-relaxed">Generate detailed reports</p>
+            </article>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Hero Section</h3>
+          <div class="relative bg-gradient-to-br from-primary/5 via-surface-default to-secondary/5 rounded-xl overflow-hidden" style="height: 400px;">
+            <div class="relative z-10 h-full flex items-center justify-center px-6">
+              <div class="text-center max-w-2xl mx-auto space-y-6">
+                <h1 class="text-4xl md:text-5xl font-bold text-default leading-tight tracking-tight">
+                  Build Beautiful Interfaces
+                </h1>
+                <p class="text-lg md:text-xl text-muted leading-relaxed">
+                  Design system powered by Tailwind v4 and OKLCH colors for modern web applications
+                </p>
+                <div class="flex gap-4 justify-center flex-wrap">
+                  <button class="inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium text-base bg-primary text-white hover:bg-primary/90 shadow-sm hover:shadow-md transition-all">
+                    Get Started
+                  </button>
+                  <button class="inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium text-base bg-transparent border-2 border-default text-default hover:bg-surface-raised hover:border-strong transition-all">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Navigation Bar</h3>
+          <div class="relative bg-surface-raised border border-default rounded-xl overflow-hidden">
+            <nav class="bg-surface-raised shadow-card backdrop-blur-sm h-16" role="navigation" aria-label="Demo navigation">
+              <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+                <a href="/" class="text-xl font-semibold text-default">OmniDesign</a>
+                
+                <div class="hidden md:flex items-center gap-1">
+                  <a href="#" class="inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium text-base text-primary border-b-2 border-primary rounded-b-none" aria-current="page">
+                    Home
+                  </a>
+                  <a href="#" class="inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium text-base text-default hover:text-primary hover:bg-surface-raised/50">
+                    About
+                  </a>
+                  <a href="#" class="inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium text-base text-default hover:text-primary hover:bg-surface-raised/50">
+                    Docs
+                  </a>
+                </div>
+                
+                <button class="inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium text-base bg-primary text-white hover:bg-primary/90 shadow-sm">
+                  Sign In
+                </button>
+              </div>
+            </nav>
+            
+            <div class="p-8 text-center text-muted text-sm">
+              <p>Scroll-aware navigation with active link styling</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="mt-16 pt-8 border-t border-default text-center text-muted text-sm">
+      <p>OmniDesign + Tailwind v4 Migration</p>
+      <p>149 colors converted to OKLCH | 26 themes generated | 10 components complete ✅</p>
+    </footer>
+  </div>
+  
+  <script>
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    }
+    
+    const savedTheme = localStorage.getItem('theme') || 'cyberpunk';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+</body>
+</html>

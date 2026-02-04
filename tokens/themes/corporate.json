@@ -8,45 +8,53 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "#1F2937",
-        "$description": "Primary text on light surfaces - dark gray"
+        "$value": "oklch(27.8% 0.030 256.8)",
+        "$description": "Primary text on light surfaces - dark gray",
+        "$originalHex": "#1F2937"
       },
       "muted": {
         "$type": "color",
-        "$value": "#6B7280",
-        "$description": "Secondary text - medium gray for less important content"
+        "$value": "oklch(55.1% 0.023 264.4)",
+        "$description": "Secondary text - medium gray for less important content",
+        "$originalHex": "#6B7280"
       },
       "inverted": {
         "$type": "color",
-        "$value": "#FFFFFF",
-        "$description": "Text color for dark surfaces - pure white"
+        "$value": "oklch(100.0% 0.000 0.0)",
+        "$description": "Text color for dark surfaces - pure white",
+        "$originalHex": "#FFFFFF"
       },
       "link": {
         "$type": "color",
-        "$value": "#2563EB",
-        "$description": "Link text color - corporate blue"
+        "$value": "oklch(54.6% 0.215 262.9)",
+        "$description": "Link text color - corporate blue",
+        "$originalHex": "#2563EB"
       },
       "link.hover": {
         "$type": "color",
-        "$value": "#1D4ED8",
-        "$description": "Link text color on hover - darker corporate blue"
+        "$value": "oklch(48.8% 0.217 264.4)",
+        "$description": "Link text color on hover - darker corporate blue",
+        "$originalHex": "#1D4ED8"
       }
     },
     "surface": {
       "default": {
         "$type": "color",
-        "$value": "#FFFFFF",
-        "$description": "Default surface background - pure white"
+        "$value": "oklch(100.0% 0.000 0.0)",
+        "$description": "Default surface background - pure white",
+        "$originalHex": "#FFFFFF"
       },
       "raised": {
         "$type": "color",
-        "$value": "#F9FAFB",
-        "$description": "Elevated surface background - very light gray for cards"
+        "$value": "oklch(98.5% 0.002 247.8)",
+        "$description": "Elevated surface background - very light gray for cards",
+        "$originalHex": "#F9FAFB"
       },
       "sunken": {
         "$type": "color",
-        "$value": "#F3F4F6",
-        "$description": "Depressed surface background - light gray for inputs and wells"
+        "$value": "oklch(96.7% 0.003 264.5)",
+        "$description": "Depressed surface background - light gray for inputs and wells",
+        "$originalHex": "#F3F4F6"
       },
       "overlay": {
         "$type": "color",
@@ -57,64 +65,75 @@
     "border": {
       "default": {
         "$type": "color",
-        "$value": "#E5E7EB",
-        "$description": "Default border color - light gray"
+        "$value": "oklch(92.8% 0.006 264.5)",
+        "$description": "Default border color - light gray",
+        "$originalHex": "#E5E7EB"
       },
       "subtle": {
         "$type": "color",
-        "$value": "#F3F4F6",
-        "$description": "Subtle border for dividers - very faint"
+        "$value": "oklch(96.7% 0.003 264.5)",
+        "$description": "Subtle border for dividers - very faint",
+        "$originalHex": "#F3F4F6"
       },
       "strong": {
         "$type": "color",
-        "$value": "#D1D5DB",
-        "$description": "Stronger border for emphasis - visible gray"
+        "$value": "oklch(87.2% 0.009 258.3)",
+        "$description": "Stronger border for emphasis - visible gray",
+        "$originalHex": "#D1D5DB"
       }
     },
     "interactive": {
       "primary": {
         "$type": "color",
-        "$value": "#0052CC",
-        "$description": "Primary interactive element color - Salesforce blue"
+        "$value": "oklch(48.0% 0.201 260.5)",
+        "$description": "Primary interactive element color - Salesforce blue",
+        "$originalHex": "#0052CC"
       },
       "primary.hover": {
         "$type": "color",
-        "$value": "#003E8F",
-        "$description": "Primary interactive color on hover - darker Salesforce blue"
+        "$value": "oklch(38.4% 0.146 258.6)",
+        "$description": "Primary interactive color on hover - darker Salesforce blue",
+        "$originalHex": "#003E8F"
       },
       "secondary": {
         "$type": "color",
-        "$value": "#4A5568",
-        "$description": "Secondary interactive element color - cool gray"
+        "$value": "oklch(44.7% 0.034 261.3)",
+        "$description": "Secondary interactive element color - cool gray",
+        "$originalHex": "#4A5568"
       }
     },
     "focus": {
       "ring": {
         "$type": "color",
-        "$value": "#0052CC",
-        "$description": "Focus ring outline color - corporate blue glow"
+        "$value": "oklch(48.0% 0.201 260.5)",
+        "$description": "Focus ring outline color - corporate blue glow",
+        "$originalHex": "#0052CC"
       }
     },
     "status": {
       "success": {
         "$type": "color",
-        "$value": "#00875A",
-        "$description": "Success state color - enterprise green"
+        "$value": "oklch(55.1% 0.122 161.2)",
+        "$description": "Success state color - enterprise green",
+        "$originalHex": "#00875A"
       },
       "warning": {
         "$type": "color",
-        "$value": "#FF8B00",
-        "$description": "Warning state color - amber orange"
+        "$value": "oklch(74.9% 0.180 57.8)",
+        "$description": "Warning state color - amber orange",
+        "$originalHex": "#FF8B00"
       },
       "error": {
         "$type": "color",
-        "$value": "#DE350B",
-        "$description": "Error state color - corporate red"
+        "$value": "oklch(59.0% 0.210 33.4)",
+        "$description": "Error state color - corporate red",
+        "$originalHex": "#DE350B"
       },
       "info": {
         "$type": "color",
-        "$value": "#0065FF",
-        "$description": "Info state color - bright blue"
+        "$value": "oklch(56.2% 0.242 260.9)",
+        "$description": "Info state color - bright blue",
+        "$originalHex": "#0065FF"
       }
     }
   },

@@ -8,45 +8,53 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "#2D1B4E",
-        "$description": "Primary text - deep violet for contrast on lavender surfaces"
+        "$value": "oklch(27.6% 0.090 296.3)",
+        "$description": "Primary text - deep violet for contrast on lavender surfaces",
+        "$originalHex": "#2D1B4E"
       },
       "muted": {
         "$type": "color",
-        "$value": "#6B5A7A",
-        "$description": "Secondary text - muted purple-gray"
+        "$value": "oklch(49.6% 0.054 308.6)",
+        "$description": "Secondary text - muted purple-gray",
+        "$originalHex": "#6B5A7A"
       },
       "inverted": {
         "$type": "color",
-        "$value": "#FAF5FF",
-        "$description": "Text on light surfaces - soft lavender-white"
+        "$value": "oklch(97.7% 0.014 308.3)",
+        "$description": "Text on light surfaces - soft lavender-white",
+        "$originalHex": "#FAF5FF"
       },
       "link": {
         "$type": "color",
-        "$value": "#A78BFA",
-        "$description": "Link text - soft lavender purple"
+        "$value": "oklch(70.9% 0.159 293.5)",
+        "$description": "Link text - soft lavender purple",
+        "$originalHex": "#A78BFA"
       },
       "link.hover": {
         "$type": "color",
-        "$value": "#C4B5FD",
-        "$description": "Link on hover - bright lavender"
+        "$value": "oklch(81.1% 0.101 293.6)",
+        "$description": "Link on hover - bright lavender",
+        "$originalHex": "#C4B5FD"
       }
     },
     "surface": {
       "default": {
         "$type": "color",
-        "$value": "#FAF5FF",
-        "$description": "Default surface - pale lavender cream"
+        "$value": "oklch(97.7% 0.014 308.3)",
+        "$description": "Default surface - pale lavender cream",
+        "$originalHex": "#FAF5FF"
       },
       "raised": {
         "$type": "color",
-        "$value": "#FFFFFF",
-        "$description": "Elevated surface - pure white"
+        "$value": "oklch(100.0% 0.000 0.0)",
+        "$description": "Elevated surface - pure white",
+        "$originalHex": "#FFFFFF"
       },
       "sunken": {
         "$type": "color",
-        "$value": "#F3E8FF",
-        "$description": "Depressed surface - soft violet for inputs"
+        "$value": "oklch(94.6% 0.033 307.2)",
+        "$description": "Depressed surface - soft violet for inputs",
+        "$originalHex": "#F3E8FF"
       },
       "overlay": {
         "$type": "color",
@@ -57,64 +65,75 @@
     "border": {
       "default": {
         "$type": "color",
-        "$value": "#DDD6FE",
-        "$description": "Default border - soft lavender"
+        "$value": "oklch(89.4% 0.055 293.3)",
+        "$description": "Default border - soft lavender",
+        "$originalHex": "#DDD6FE"
       },
       "subtle": {
         "$type": "color",
-        "$value": "#EDE9FE",
-        "$description": "Subtle border - very faint purple"
+        "$value": "oklch(94.3% 0.028 294.6)",
+        "$description": "Subtle border - very faint purple",
+        "$originalHex": "#EDE9FE"
       },
       "strong": {
         "$type": "color",
-        "$value": "#C4B5FD",
-        "$description": "Strong border - visible lavender"
+        "$value": "oklch(81.1% 0.101 293.6)",
+        "$description": "Strong border - visible lavender",
+        "$originalHex": "#C4B5FD"
       }
     },
     "interactive": {
       "primary": {
         "$type": "color",
-        "$value": "#8B5CF6",
-        "$description": "Primary action - vibrant violet"
+        "$value": "oklch(60.6% 0.219 292.7)",
+        "$description": "Primary action - vibrant violet",
+        "$originalHex": "#8B5CF6"
       },
       "primary.hover": {
         "$type": "color",
-        "$value": "#A78BFA",
-        "$description": "Primary hover - bright lavender"
+        "$value": "oklch(70.9% 0.159 293.5)",
+        "$description": "Primary hover - bright lavender",
+        "$originalHex": "#A78BFA"
       },
       "secondary": {
         "$type": "color",
-        "$value": "#7C3AED",
-        "$description": "Secondary action - deep violet"
+        "$value": "oklch(54.1% 0.247 293.0)",
+        "$description": "Secondary action - deep violet",
+        "$originalHex": "#7C3AED"
       }
     },
     "focus": {
       "ring": {
         "$type": "color",
-        "$value": "#A78BFA",
-        "$description": "Focus ring - soft lavender glow"
+        "$value": "oklch(70.9% 0.159 293.5)",
+        "$description": "Focus ring - soft lavender glow",
+        "$originalHex": "#A78BFA"
       }
     },
     "status": {
       "success": {
         "$type": "color",
-        "$value": "#10B981",
-        "$description": "Success - emerald green"
+        "$value": "oklch(69.6% 0.149 162.5)",
+        "$description": "Success - emerald green",
+        "$originalHex": "#10B981"
       },
       "warning": {
         "$type": "color",
-        "$value": "#F59E0B",
-        "$description": "Warning - warm amber"
+        "$value": "oklch(76.9% 0.165 70.1)",
+        "$description": "Warning - warm amber",
+        "$originalHex": "#F59E0B"
       },
       "error": {
         "$type": "color",
-        "$value": "#EF4444",
-        "$description": "Error - vibrant red"
+        "$value": "oklch(63.7% 0.208 25.3)",
+        "$description": "Error - vibrant red",
+        "$originalHex": "#EF4444"
       },
       "info": {
         "$type": "color",
-        "$value": "#38BDF8",
-        "$description": "Info - sky blue"
+        "$value": "oklch(75.4% 0.139 232.7)",
+        "$description": "Info - sky blue",
+        "$originalHex": "#38BDF8"
       }
     }
   },

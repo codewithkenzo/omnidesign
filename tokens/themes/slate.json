@@ -8,45 +8,53 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "#0F172A",
-        "$description": "Primary text on light surfaces - deep slate gray"
+        "$value": "oklch(20.8% 0.040 265.8)",
+        "$description": "Primary text on light surfaces - deep slate gray",
+        "$originalHex": "#0F172A"
       },
       "muted": {
         "$type": "color",
-        "$value": "#64748B",
-        "$description": "Secondary text - cool slate for less important content"
+        "$value": "oklch(55.4% 0.041 257.4)",
+        "$description": "Secondary text - cool slate for less important content",
+        "$originalHex": "#64748B"
       },
       "inverted": {
         "$type": "color",
-        "$value": "#FFFFFF",
-        "$description": "Text color for dark surfaces - pure white"
+        "$value": "oklch(100.0% 0.000 0.0)",
+        "$description": "Text color for dark surfaces - pure white",
+        "$originalHex": "#FFFFFF"
       },
       "link": {
         "$type": "color",
-        "$value": "#0D9488",
-        "$description": "Link text color - teal accent"
+        "$value": "oklch(60.0% 0.104 184.7)",
+        "$description": "Link text color - teal accent",
+        "$originalHex": "#0D9488"
       },
       "link.hover": {
         "$type": "color",
-        "$value": "#0F766E",
-        "$description": "Link text color on hover - darker teal"
+        "$value": "oklch(51.1% 0.086 186.4)",
+        "$description": "Link text color on hover - darker teal",
+        "$originalHex": "#0F766E"
       }
     },
     "surface": {
       "default": {
         "$type": "color",
-        "$value": "#FFFFFF",
-        "$description": "Default surface background - pure white"
+        "$value": "oklch(100.0% 0.000 0.0)",
+        "$description": "Default surface background - pure white",
+        "$originalHex": "#FFFFFF"
       },
       "raised": {
         "$type": "color",
-        "$value": "#F8FAFC",
-        "$description": "Elevated surface background - very light slate for cards"
+        "$value": "oklch(98.4% 0.003 247.9)",
+        "$description": "Elevated surface background - very light slate for cards",
+        "$originalHex": "#F8FAFC"
       },
       "sunken": {
         "$type": "color",
-        "$value": "#E2E8F0",
-        "$description": "Depressed surface background - light slate for inputs"
+        "$value": "oklch(92.9% 0.013 255.5)",
+        "$description": "Depressed surface background - light slate for inputs",
+        "$originalHex": "#E2E8F0"
       },
       "overlay": {
         "$type": "color",
@@ -57,64 +65,75 @@
     "border": {
       "default": {
         "$type": "color",
-        "$value": "#E2E8F0",
-        "$description": "Default border color - light slate"
+        "$value": "oklch(92.9% 0.013 255.5)",
+        "$description": "Default border color - light slate",
+        "$originalHex": "#E2E8F0"
       },
       "subtle": {
         "$type": "color",
-        "$value": "#F1F5F9",
-        "$description": "Subtle border for dividers - very faint slate"
+        "$value": "oklch(96.8% 0.007 247.9)",
+        "$description": "Subtle border for dividers - very faint slate",
+        "$originalHex": "#F1F5F9"
       },
       "strong": {
         "$type": "color",
-        "$value": "#CBD5E1",
-        "$description": "Stronger border for emphasis - visible slate"
+        "$value": "oklch(86.9% 0.020 252.9)",
+        "$description": "Stronger border for emphasis - visible slate",
+        "$originalHex": "#CBD5E1"
       }
     },
     "interactive": {
       "primary": {
         "$type": "color",
-        "$value": "#14B8A6",
-        "$description": "Primary interactive element color - teal"
+        "$value": "oklch(70.4% 0.123 182.5)",
+        "$description": "Primary interactive element color - teal",
+        "$originalHex": "#14B8A6"
       },
       "primary.hover": {
         "$type": "color",
-        "$value": "#0D9488",
-        "$description": "Primary interactive color on hover - darker teal"
+        "$value": "oklch(60.0% 0.104 184.7)",
+        "$description": "Primary interactive color on hover - darker teal",
+        "$originalHex": "#0D9488"
       },
       "secondary": {
         "$type": "color",
-        "$value": "#475569",
-        "$description": "Secondary interactive element color - slate gray"
+        "$value": "oklch(44.6% 0.037 257.3)",
+        "$description": "Secondary interactive element color - slate gray",
+        "$originalHex": "#475569"
       }
     },
     "focus": {
       "ring": {
         "$type": "color",
-        "$value": "#14B8A6",
-        "$description": "Focus ring outline color - teal glow"
+        "$value": "oklch(70.4% 0.123 182.5)",
+        "$description": "Focus ring outline color - teal glow",
+        "$originalHex": "#14B8A6"
       }
     },
     "status": {
       "success": {
         "$type": "color",
-        "$value": "#10B981",
-        "$description": "Success state color - emerald green"
+        "$value": "oklch(69.6% 0.149 162.5)",
+        "$description": "Success state color - emerald green",
+        "$originalHex": "#10B981"
       },
       "warning": {
         "$type": "color",
-        "$value": "#F59E0B",
-        "$description": "Warning state color - amber"
+        "$value": "oklch(76.9% 0.165 70.1)",
+        "$description": "Warning state color - amber",
+        "$originalHex": "#F59E0B"
       },
       "error": {
         "$type": "color",
-        "$value": "#EF4444",
-        "$description": "Error state color - red"
+        "$value": "oklch(63.7% 0.208 25.3)",
+        "$description": "Error state color - red",
+        "$originalHex": "#EF4444"
       },
       "info": {
         "$type": "color",
-        "$value": "#3B82F6",
-        "$description": "Info state color - blue"
+        "$value": "oklch(62.3% 0.188 259.8)",
+        "$description": "Info state color - blue",
+        "$originalHex": "#3B82F6"
       }
     }
   },

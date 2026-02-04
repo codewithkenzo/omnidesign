@@ -8,45 +8,53 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "#FEF2F2",
-        "$description": "Primary text on dark surfaces - near white for readability"
+        "$value": "oklch(97.1% 0.013 17.4)",
+        "$description": "Primary text on dark surfaces - near white for readability",
+        "$originalHex": "#FEF2F2"
       },
       "muted": {
         "$type": "color",
-        "$value": "#FCA5A5",
-        "$description": "Secondary text - light rose for less important content"
+        "$value": "oklch(80.8% 0.103 19.6)",
+        "$description": "Secondary text - light rose for less important content",
+        "$originalHex": "#FCA5A5"
       },
       "inverted": {
         "$type": "color",
-        "$value": "#4C0519",
-        "$description": "Text color for light surfaces - deep burgundy"
+        "$value": "oklch(27.1% 0.101 12.1)",
+        "$description": "Text color for light surfaces - deep burgundy",
+        "$originalHex": "#4C0519"
       },
       "link": {
         "$type": "color",
-        "$value": "#FB7185",
-        "$description": "Link text color - rose accent"
+        "$value": "oklch(71.9% 0.169 13.4)",
+        "$description": "Link text color - rose accent",
+        "$originalHex": "#FB7185"
       },
       "link.hover": {
         "$type": "color",
-        "$value": "#FDA4AF",
-        "$description": "Link text color on hover - lighter rose"
+        "$value": "oklch(81.0% 0.106 11.6)",
+        "$description": "Link text color on hover - lighter rose",
+        "$originalHex": "#FDA4AF"
       }
     },
     "surface": {
       "default": {
         "$type": "color",
-        "$value": "#881337",
-        "$description": "Default surface background - deep burgundy wine"
+        "$value": "oklch(41.0% 0.150 10.3)",
+        "$description": "Default surface background - deep burgundy wine",
+        "$originalHex": "#881337"
       },
       "raised": {
         "$type": "color",
-        "$value": "#9F1239",
-        "$description": "Elevated surface background - lighter burgundy for cards"
+        "$value": "oklch(45.5% 0.171 13.7)",
+        "$description": "Elevated surface background - lighter burgundy for cards",
+        "$originalHex": "#9F1239"
       },
       "sunken": {
         "$type": "color",
-        "$value": "#4C0519",
-        "$description": "Depressed surface background - even darker wine for inputs"
+        "$value": "oklch(27.1% 0.101 12.1)",
+        "$description": "Depressed surface background - even darker wine for inputs",
+        "$originalHex": "#4C0519"
       },
       "overlay": {
         "$type": "color",
@@ -57,64 +65,75 @@
     "border": {
       "default": {
         "$type": "color",
-        "$value": "#9F1239",
-        "$description": "Default border color - muted burgundy"
+        "$value": "oklch(45.5% 0.171 13.7)",
+        "$description": "Default border color - muted burgundy",
+        "$originalHex": "#9F1239"
       },
       "subtle": {
         "$type": "color",
-        "$value": "#881337",
-        "$description": "Subtle border for dividers - faint wine"
+        "$value": "oklch(41.0% 0.150 10.3)",
+        "$description": "Subtle border for dividers - faint wine",
+        "$originalHex": "#881337"
       },
       "strong": {
         "$type": "color",
-        "$value": "#BE123C",
-        "$description": "Stronger border for emphasis - visible burgundy"
+        "$value": "oklch(51.4% 0.198 16.9)",
+        "$description": "Stronger border for emphasis - visible burgundy",
+        "$originalHex": "#BE123C"
       }
     },
     "interactive": {
       "primary": {
         "$type": "color",
-        "$value": "#E11D48",
-        "$description": "Primary interactive element color - vibrant rose"
+        "$value": "oklch(58.6% 0.222 17.6)",
+        "$description": "Primary interactive element color - vibrant rose",
+        "$originalHex": "#E11D48"
       },
       "primary.hover": {
         "$type": "color",
-        "$value": "#BE123C",
-        "$description": "Primary interactive color on hover - darker rose"
+        "$value": "oklch(51.4% 0.198 16.9)",
+        "$description": "Primary interactive color on hover - darker rose",
+        "$originalHex": "#BE123C"
       },
       "secondary": {
         "$type": "color",
-        "$value": "#F43F5E",
-        "$description": "Secondary interactive element color - pink-red"
+        "$value": "oklch(64.5% 0.215 16.4)",
+        "$description": "Secondary interactive element color - pink-red",
+        "$originalHex": "#F43F5E"
       }
     },
     "focus": {
       "ring": {
         "$type": "color",
-        "$value": "#FB7185",
-        "$description": "Focus ring outline color - rose glow"
+        "$value": "oklch(71.9% 0.169 13.4)",
+        "$description": "Focus ring outline color - rose glow",
+        "$originalHex": "#FB7185"
       }
     },
     "status": {
       "success": {
         "$type": "color",
-        "$value": "#86EFAC",
-        "$description": "Success state color - emerald green for contrast"
+        "$value": "oklch(87.1% 0.136 154.4)",
+        "$description": "Success state color - emerald green for contrast",
+        "$originalHex": "#86EFAC"
       },
       "warning": {
         "$type": "color",
-        "$value": "#FDE047",
-        "$description": "Warning state color - yellow for visibility"
+        "$value": "oklch(90.5% 0.166 98.1)",
+        "$description": "Warning state color - yellow for visibility",
+        "$originalHex": "#FDE047"
       },
       "error": {
         "$type": "color",
-        "$value": "#FDA4AF",
-        "$description": "Error state color - pink-red matching theme"
+        "$value": "oklch(81.0% 0.106 11.6)",
+        "$description": "Error state color - pink-red matching theme",
+        "$originalHex": "#FDA4AF"
       },
       "info": {
         "$type": "color",
-        "$value": "#67E8F9",
-        "$description": "Info state color - cyan for clarity"
+        "$value": "oklch(86.5% 0.115 207.1)",
+        "$description": "Info state color - cyan for clarity",
+        "$originalHex": "#67E8F9"
       }
     }
   },

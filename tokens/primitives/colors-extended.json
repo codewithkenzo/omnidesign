@@ -12,394 +12,1669 @@
       "description": "Pure grayscale for UI structure - backgrounds, borders, text",
       "usage": "UI chrome, backgrounds, neutral text",
       "shades": {
-        "50": { "$type": "color", "$value": "#FAFAFA", "$description": "Lightest background, subtle surfaces" },
-        "100": { "$type": "color", "$value": "#F5F5F5", "$description": "Very light backgrounds, hover states" },
-        "200": { "$type": "color", "$value": "#E5E5E5", "$description": "Borders, dividers, subtle backgrounds" },
-        "300": { "$type": "color", "$value": "#D4D4D4", "$description": "Disabled states, placeholder text" },
-        "400": { "$type": "color", "$value": "#A3A3A3", "$description": "Muted text, secondary content" },
-        "500": { "$type": "color", "$value": "#737373", "$description": "Neutral base shade - icons, secondary text" },
-        "600": { "$type": "color", "$value": "#525252", "$description": "Medium gray - primary neutral text" },
-        "700": { "$type": "color", "$value": "#404040", "$description": "Dark gray - headings on light" },
-        "800": { "$type": "color", "$value": "#262626", "$description": "Very dark - strong text" },
-        "900": { "$type": "color", "$value": "#171717", "$description": "Darker text, dark surfaces" },
-        "950": { "$type": "color", "$value": "#0A0A0A", "$description": "Darkest - near black, high contrast text" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(98.5% 0.000 0.0)",
+          "$description": "Lightest background, subtle surfaces",
+          "$originalHex": "#FAFAFA"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(97.0% 0.000 0.0)",
+          "$description": "Very light backgrounds, hover states",
+          "$originalHex": "#F5F5F5"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(92.2% 0.000 0.0)",
+          "$description": "Borders, dividers, subtle backgrounds",
+          "$originalHex": "#E5E5E5"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(87.0% 0.000 0.0)",
+          "$description": "Disabled states, placeholder text",
+          "$originalHex": "#D4D4D4"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(71.5% 0.000 0.0)",
+          "$description": "Muted text, secondary content",
+          "$originalHex": "#A3A3A3"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(55.6% 0.000 0.0)",
+          "$description": "Neutral base shade - icons, secondary text",
+          "$originalHex": "#737373"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(43.9% 0.000 0.0)",
+          "$description": "Medium gray - primary neutral text",
+          "$originalHex": "#525252"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(37.1% 0.000 0.0)",
+          "$description": "Dark gray - headings on light",
+          "$originalHex": "#404040"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(26.9% 0.000 0.0)",
+          "$description": "Very dark - strong text",
+          "$originalHex": "#262626"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(20.5% 0.000 0.0)",
+          "$description": "Darker text, dark surfaces",
+          "$originalHex": "#171717"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(14.5% 0.000 0.0)",
+          "$description": "Darkest - near black, high contrast text",
+          "$originalHex": "#0A0A0A"
+        }
       }
     },
     "slate": {
       "description": "Cool gray with subtle blue undertone - modern tech aesthetic",
       "usage": "Modern tech interfaces, professional software",
       "shades": {
-        "50": { "$type": "color", "$value": "#F8FAFC", "$description": "Slate-50 - cool lightest background" },
-        "100": { "$type": "color", "$value": "#F1F5F9", "$description": "Cool gray background, card surfaces" },
-        "200": { "$type": "color", "$value": "#E2E8F0", "$description": "Cool borders, input backgrounds" },
-        "300": { "$type": "color", "$value": "#CBD5E1", "$description": "Cool disabled, dividers" },
-        "400": { "$type": "color", "$value": "#94A3B8", "$description": "Cool muted text" },
-        "500": { "$type": "color", "$value": "#64748B", "$description": "Slate-500 - neutral cool base" },
-        "600": { "$type": "color", "$value": "#475569", "$description": "Cool primary text" },
-        "700": { "$type": "color", "$value": "#334155", "$description": "Dark cool headings" },
-        "800": { "$type": "color", "$value": "#1E293B", "$description": "Very dark cool surfaces" },
-        "900": { "$type": "color", "$value": "#0F172A", "$description": "Dark mode backgrounds" },
-        "950": { "$type": "color", "$value": "#020617", "$description": "Darkest cool - near black" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(98.4% 0.003 247.9)",
+          "$description": "Slate-50 - cool lightest background",
+          "$originalHex": "#F8FAFC"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(96.8% 0.007 247.9)",
+          "$description": "Cool gray background, card surfaces",
+          "$originalHex": "#F1F5F9"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(92.9% 0.013 255.5)",
+          "$description": "Cool borders, input backgrounds",
+          "$originalHex": "#E2E8F0"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(86.9% 0.020 252.9)",
+          "$description": "Cool disabled, dividers",
+          "$originalHex": "#CBD5E1"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(71.1% 0.035 256.8)",
+          "$description": "Cool muted text",
+          "$originalHex": "#94A3B8"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(55.4% 0.041 257.4)",
+          "$description": "Slate-500 - neutral cool base",
+          "$originalHex": "#64748B"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(44.6% 0.037 257.3)",
+          "$description": "Cool primary text",
+          "$originalHex": "#475569"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(37.2% 0.039 257.3)",
+          "$description": "Dark cool headings",
+          "$originalHex": "#334155"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(27.9% 0.037 260.0)",
+          "$description": "Very dark cool surfaces",
+          "$originalHex": "#1E293B"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(20.8% 0.040 265.8)",
+          "$description": "Dark mode backgrounds",
+          "$originalHex": "#0F172A"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(12.9% 0.041 264.7)",
+          "$description": "Darkest cool - near black",
+          "$originalHex": "#020617"
+        }
       }
     },
     "zinc": {
       "description": "True neutral gray - balanced without color bias",
       "usage": "Neutral UI, Swiss design, minimalist interfaces",
       "shades": {
-        "50": { "$type": "color", "$value": "#FAFAFA", "$description": "True neutral lightest" },
-        "100": { "$type": "color", "$value": "#F4F4F5", "$description": "Neutral background" },
-        "200": { "$type": "color", "$value": "#E4E4E7", "$description": "Neutral borders" },
-        "300": { "$type": "color", "$value": "#D4D4D8", "$description": "Neutral dividers" },
-        "400": { "$type": "color", "$value": "#A1A1AA", "$description": "Neutral muted text" },
-        "500": { "$type": "color", "$value": "#71717A", "$description": "Zinc-500 - true neutral base" },
-        "600": { "$type": "color", "$value": "#52525B", "$description": "Neutral primary text" },
-        "700": { "$type": "color", "$value": "#3F3F46", "$description": "Dark neutral text" },
-        "800": { "$type": "color", "$value": "#27272A", "$description": "Dark neutral surfaces" },
-        "900": { "$type": "color", "$value": "#18181B", "$description": "Very dark neutral" },
-        "950": { "$type": "color", "$value": "#09090B", "$description": "True neutral darkest" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(98.5% 0.000 0.0)",
+          "$description": "True neutral lightest",
+          "$originalHex": "#FAFAFA"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(96.7% 0.001 286.4)",
+          "$description": "Neutral background",
+          "$originalHex": "#F4F4F5"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(92.0% 0.004 286.3)",
+          "$description": "Neutral borders",
+          "$originalHex": "#E4E4E7"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(87.1% 0.005 286.3)",
+          "$description": "Neutral dividers",
+          "$originalHex": "#D4D4D8"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(71.2% 0.013 286.1)",
+          "$description": "Neutral muted text",
+          "$originalHex": "#A1A1AA"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(55.2% 0.014 285.9)",
+          "$description": "Zinc-500 - true neutral base",
+          "$originalHex": "#71717A"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(44.2% 0.015 285.8)",
+          "$description": "Neutral primary text",
+          "$originalHex": "#52525B"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(37.0% 0.012 285.8)",
+          "$description": "Dark neutral text",
+          "$originalHex": "#3F3F46"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(27.4% 0.005 286.0)",
+          "$description": "Dark neutral surfaces",
+          "$originalHex": "#27272A"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(21.0% 0.006 285.9)",
+          "$description": "Very dark neutral",
+          "$originalHex": "#18181B"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(14.1% 0.004 285.8)",
+          "$description": "True neutral darkest",
+          "$originalHex": "#09090B"
+        }
       }
     },
     "stone": {
       "description": "Warm gray with subtle brown undertone - organic, editorial feel",
       "usage": "Editorial content, organic brands, warm interfaces",
       "shades": {
-        "50": { "$type": "color", "$value": "#FAFAF9", "$description": "Warm lightest background" },
-        "100": { "$type": "color", "$value": "#F5F5F4", "$description": "Warm paper-like background" },
-        "200": { "$type": "color", "$value": "#E7E5E4", "$description": "Warm borders" },
-        "300": { "$type": "color", "$value": "#D6D3D1", "$description": "Warm dividers" },
-        "400": { "$type": "color", "$value": "#A8A29E", "$description": "Warm muted text" },
-        "500": { "$type": "color", "$value": "#78716C", "$description": "Stone-500 - warm neutral base" },
-        "600": { "$type": "color", "$value": "#57534E", "$description": "Warm primary text" },
-        "700": { "$type": "color", "$value": "#44403C", "$description": "Dark warm headings" },
-        "800": { "$type": "color", "$value": "#292524", "$description": "Dark warm surfaces" },
-        "900": { "$type": "color", "$value": "#1C1917", "$description": "Very dark warm" },
-        "950": { "$type": "color", "$value": "#0C0A09", "$description": "Warm darkest" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(98.5% 0.001 106.4)",
+          "$description": "Warm lightest background",
+          "$originalHex": "#FAFAF9"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(97.0% 0.001 106.4)",
+          "$description": "Warm paper-like background",
+          "$originalHex": "#F5F5F4"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(92.3% 0.003 48.7)",
+          "$description": "Warm borders",
+          "$originalHex": "#E7E5E4"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(86.9% 0.004 56.4)",
+          "$description": "Warm dividers",
+          "$originalHex": "#D6D3D1"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(71.6% 0.009 56.3)",
+          "$description": "Warm muted text",
+          "$originalHex": "#A8A29E"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(55.3% 0.012 58.1)",
+          "$description": "Stone-500 - warm neutral base",
+          "$originalHex": "#78716C"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(44.4% 0.010 73.6)",
+          "$description": "Warm primary text",
+          "$originalHex": "#57534E"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(37.4% 0.009 67.6)",
+          "$description": "Dark warm headings",
+          "$originalHex": "#44403C"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(26.8% 0.006 34.3)",
+          "$description": "Dark warm surfaces",
+          "$originalHex": "#292524"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(21.6% 0.006 56.0)",
+          "$description": "Very dark warm",
+          "$originalHex": "#1C1917"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(14.7% 0.004 49.2)",
+          "$description": "Warm darkest",
+          "$originalHex": "#0C0A09"
+        }
       }
     },
     "red": {
       "description": "Error states, destructive actions, warnings, alerts",
       "usage": "Danger, error messages, delete buttons, critical alerts",
       "shades": {
-        "50": { "$type": "color", "$value": "#FEF2F2", "$description": "Lightest red - error backgrounds" },
-        "100": { "$type": "color", "$value": "#FEE2E2", "$description": "Light error states, hover" },
-        "200": { "$type": "color", "$value": "#FECACA", "$description": "Error borders, light alerts" },
-        "300": { "$type": "color", "$value": "#FCA5A5", "$description": "Error highlights" },
-        "400": { "$type": "color", "$value": "#F87171", "$description": "Light error text, icons" },
-        "500": { "$type": "color", "$value": "#EF4444", "$description": "Red-500 - error base" },
-        "600": { "$type": "color", "$value": "#DC2626", "$description": "Primary error, destructive buttons" },
-        "700": { "$type": "color", "$value": "#B91C1C", "$description": "Dark error text" },
-        "800": { "$type": "color", "$value": "#991B1B", "$description": "Dark error backgrounds" },
-        "900": { "$type": "color", "$value": "#7F1D1D", "$description": "Very dark error surfaces" },
-        "950": { "$type": "color", "$value": "#450A0A", "$description": "Darkest error - emergency" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(97.1% 0.013 17.4)",
+          "$description": "Lightest red - error backgrounds",
+          "$originalHex": "#FEF2F2"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(93.6% 0.031 17.7)",
+          "$description": "Light error states, hover",
+          "$originalHex": "#FEE2E2"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(88.5% 0.059 18.3)",
+          "$description": "Error borders, light alerts",
+          "$originalHex": "#FECACA"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(80.8% 0.103 19.6)",
+          "$description": "Error highlights",
+          "$originalHex": "#FCA5A5"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(71.1% 0.166 22.2)",
+          "$description": "Light error text, icons",
+          "$originalHex": "#F87171"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(63.7% 0.208 25.3)",
+          "$description": "Red-500 - error base",
+          "$originalHex": "#EF4444"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(57.7% 0.215 27.3)",
+          "$description": "Primary error, destructive buttons",
+          "$originalHex": "#DC2626"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(50.5% 0.190 27.5)",
+          "$description": "Dark error text",
+          "$originalHex": "#B91C1C"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(44.4% 0.161 26.9)",
+          "$description": "Dark error backgrounds",
+          "$originalHex": "#991B1B"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(39.6% 0.133 25.7)",
+          "$description": "Very dark error surfaces",
+          "$originalHex": "#7F1D1D"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(25.8% 0.089 26.0)",
+          "$description": "Darkest error - emergency",
+          "$originalHex": "#450A0A"
+        }
       }
     },
     "orange": {
       "description": "Energy, warmth, enthusiasm - attention-grabbing",
       "usage": "CTAs, warnings, energy, creative interfaces, autumn themes",
       "shades": {
-        "50": { "$type": "color", "$value": "#FFF7ED", "$description": "Lightest orange - warm backgrounds" },
-        "100": { "$type": "color", "$value": "#FFEDD5", "$description": "Orange highlights" },
-        "200": { "$type": "color", "$value": "#FED7AA", "$description": "Orange borders, subtle accents" },
-        "300": { "$type": "color", "$value": "#FDBA74", "$description": "Orange highlights, warnings" },
-        "400": { "$type": "color", "$value": "#FB923C", "$description": "Light orange text, icons" },
-        "500": { "$type": "color", "$value": "#F97316", "$description": "Orange-500 - energy base" },
-        "600": { "$type": "color", "$value": "#EA580C", "$description": "Primary orange - CTAs" },
-        "700": { "$type": "color", "$value": "#C2410C", "$description": "Dark orange text" },
-        "800": { "$type": "color", "$value": "#9A3412", "$description": "Dark orange surfaces" },
-        "900": { "$type": "color", "$value": "#7C2D12", "$description": "Very dark orange" },
-        "950": { "$type": "color", "$value": "#431407", "$description": "Darkest orange - burnt" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(98.0% 0.016 73.7)",
+          "$description": "Lightest orange - warm backgrounds",
+          "$originalHex": "#FFF7ED"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(95.4% 0.037 75.2)",
+          "$description": "Orange highlights",
+          "$originalHex": "#FFEDD5"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(90.1% 0.073 70.7)",
+          "$description": "Orange borders, subtle accents",
+          "$originalHex": "#FED7AA"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(83.7% 0.117 66.3)",
+          "$description": "Orange highlights, warnings",
+          "$originalHex": "#FDBA74"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(75.8% 0.159 55.9)",
+          "$description": "Light orange text, icons",
+          "$originalHex": "#FB923C"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(70.5% 0.187 47.6)",
+          "$description": "Orange-500 - energy base",
+          "$originalHex": "#F97316"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(64.6% 0.194 41.1)",
+          "$description": "Primary orange - CTAs",
+          "$originalHex": "#EA580C"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(55.3% 0.174 38.4)",
+          "$description": "Dark orange text",
+          "$originalHex": "#C2410C"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(47.0% 0.143 37.3)",
+          "$description": "Dark orange surfaces",
+          "$originalHex": "#9A3412"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(40.8% 0.116 38.2)",
+          "$description": "Very dark orange",
+          "$originalHex": "#7C2D12"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(26.6% 0.076 36.3)",
+          "$description": "Darkest orange - burnt",
+          "$originalHex": "#431407"
+        }
       }
     },
     "amber": {
       "description": "Caution, gold, yellow-orange - warning and highlights",
       "usage": "Warnings, gold themes, highlights, star ratings, caution states",
       "shades": {
-        "50": { "$type": "color", "$value": "#FFFBEB", "$description": "Lightest amber - caution backgrounds" },
-        "100": { "$type": "color", "$value": "#FEF3C7", "$description": "Warning backgrounds, alerts" },
-        "200": { "$type": "color", "$value": "#FDE68A", "$description": "Highlight backgrounds" },
-        "300": { "$type": "color", "$value": "#FCD34D", "$description": "Warning icons, stars" },
-        "400": { "$type": "color", "$value": "#FBBF24", "$description": "Gold highlights, ratings" },
-        "500": { "$type": "color", "$value": "#F59E0B", "$description": "Amber-500 - warning base" },
-        "600": { "$type": "color", "$value": "#D97706", "$description": "Primary warning, gold" },
-        "700": { "$type": "color", "$value": "#B45309", "$description": "Dark amber text" },
-        "800": { "$type": "color", "$value": "#92400E", "$description": "Dark amber surfaces" },
-        "900": { "$type": "color", "$value": "#78350F", "$description": "Very dark amber" },
-        "950": { "$type": "color", "$value": "#451A03", "$description": "Darkest amber - bronze" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(98.7% 0.021 95.3)",
+          "$description": "Lightest amber - caution backgrounds",
+          "$originalHex": "#FFFBEB"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(96.2% 0.058 95.6)",
+          "$description": "Warning backgrounds, alerts",
+          "$originalHex": "#FEF3C7"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(92.4% 0.115 95.7)",
+          "$description": "Highlight backgrounds",
+          "$originalHex": "#FDE68A"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(87.9% 0.153 91.6)",
+          "$description": "Warning icons, stars",
+          "$originalHex": "#FCD34D"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(83.7% 0.164 84.4)",
+          "$description": "Gold highlights, ratings",
+          "$originalHex": "#FBBF24"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(76.9% 0.165 70.1)",
+          "$description": "Amber-500 - warning base",
+          "$originalHex": "#F59E0B"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(66.6% 0.157 58.3)",
+          "$description": "Primary warning, gold",
+          "$originalHex": "#D97706"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(55.5% 0.146 49.0)",
+          "$description": "Dark amber text",
+          "$originalHex": "#B45309"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(47.3% 0.125 46.2)",
+          "$description": "Dark amber surfaces",
+          "$originalHex": "#92400E"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(41.4% 0.105 45.9)",
+          "$description": "Very dark amber",
+          "$originalHex": "#78350F"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(27.9% 0.074 45.6)",
+          "$description": "Darkest amber - bronze",
+          "$originalHex": "#451A03"
+        }
       }
     },
     "yellow": {
       "description": "Brightness, optimism, sunshine - high visibility",
       "usage": "Highlights, attention, notifications, cheerful interfaces",
       "shades": {
-        "50": { "$type": "color", "$value": "#FEFCE8", "$description": "Lightest yellow - subtle highlight" },
-        "100": { "$type": "color", "$value": "#FEF9C3", "$description": "Yellow backgrounds" },
-        "200": { "$type": "color", "$value": "#FEF08A", "$description": "Highlight backgrounds" },
-        "300": { "$type": "color", "$value": "#FDE047", "$description": "Yellow highlights, icons" },
-        "400": { "$type": "color", "$value": "#FACC15", "$description": "Bright yellow, notifications" },
-        "500": { "$type": "color", "$value": "#EAB308", "$description": "Yellow-500 - brightness base" },
-        "600": { "$type": "color", "$value": "#CA8A04", "$description": "Primary yellow - warnings" },
-        "700": { "$type": "color", "$value": "#A16207", "$description": "Dark yellow text" },
-        "800": { "$type": "color", "$value": "#854D0E", "$description": "Dark yellow surfaces" },
-        "900": { "$type": "color", "$value": "#713F12", "$description": "Very dark yellow - mustard" },
-        "950": { "$type": "color", "$value": "#422006", "$description": "Darkest yellow - olive" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(98.7% 0.026 102.2)",
+          "$description": "Lightest yellow - subtle highlight",
+          "$originalHex": "#FEFCE8"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(97.3% 0.069 103.2)",
+          "$description": "Yellow backgrounds",
+          "$originalHex": "#FEF9C3"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(94.5% 0.124 101.5)",
+          "$description": "Highlight backgrounds",
+          "$originalHex": "#FEF08A"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(90.5% 0.166 98.1)",
+          "$description": "Yellow highlights, icons",
+          "$originalHex": "#FDE047"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(86.1% 0.173 91.9)",
+          "$description": "Bright yellow, notifications",
+          "$originalHex": "#FACC15"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(79.5% 0.162 86.0)",
+          "$description": "Yellow-500 - brightness base",
+          "$originalHex": "#EAB308"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(68.1% 0.142 75.8)",
+          "$description": "Primary yellow - warnings",
+          "$originalHex": "#CA8A04"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(55.4% 0.121 66.4)",
+          "$description": "Dark yellow text",
+          "$originalHex": "#A16207"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(47.6% 0.103 61.9)",
+          "$description": "Dark yellow surfaces",
+          "$originalHex": "#854D0E"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(42.1% 0.090 57.7)",
+          "$description": "Very dark yellow - mustard",
+          "$originalHex": "#713F12"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(28.6% 0.064 53.8)",
+          "$description": "Darkest yellow - olive",
+          "$originalHex": "#422006"
+        }
       }
     },
     "lime": {
       "description": "Fresh, natural, energetic - eco-friendly vibes",
       "usage": "Nature, eco, spring, freshness, alternative to pure green",
       "shades": {
-        "50": { "$type": "color", "$value": "#F7FEE7", "$description": "Lightest lime - fresh backgrounds" },
-        "100": { "$type": "color", "$value": "#ECFCCB", "$description": "Lime backgrounds, eco themes" },
-        "200": { "$type": "color", "$value": "#D9F99D", "$description": "Lime highlights" },
-        "300": { "$type": "color", "$value": "#BEF264", "$description": "Lime accents, fresh icons" },
-        "400": { "$type": "color", "$value": "#A3E635", "$description": "Bright lime, spring" },
-        "500": { "$type": "color", "$value": "#84CC16", "$description": "Lime-500 - fresh base" },
-        "600": { "$type": "color", "$value": "#65A30D", "$description": "Primary lime - eco" },
-        "700": { "$type": "color", "$value": "#4D7C0F", "$description": "Dark lime text" },
-        "800": { "$type": "color", "$value": "#3F6212", "$description": "Dark lime surfaces" },
-        "900": { "$type": "color", "$value": "#365314", "$description": "Very dark lime - forest" },
-        "950": { "$type": "color", "$value": "#1A2E05", "$description": "Darkest lime - deep green" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(98.6% 0.031 120.8)",
+          "$description": "Lightest lime - fresh backgrounds",
+          "$originalHex": "#F7FEE7"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(96.7% 0.066 122.3)",
+          "$description": "Lime backgrounds, eco themes",
+          "$originalHex": "#ECFCCB"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(93.8% 0.122 124.3)",
+          "$description": "Lime highlights",
+          "$originalHex": "#D9F99D"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(89.7% 0.179 126.7)",
+          "$description": "Lime accents, fresh icons",
+          "$originalHex": "#BEF264"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(84.9% 0.207 128.8)",
+          "$description": "Bright lime, spring",
+          "$originalHex": "#A3E635"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(76.8% 0.204 130.8)",
+          "$description": "Lime-500 - fresh base",
+          "$originalHex": "#84CC16"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(64.8% 0.175 131.7)",
+          "$description": "Primary lime - eco",
+          "$originalHex": "#65A30D"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(53.2% 0.141 131.6)",
+          "$description": "Dark lime text",
+          "$originalHex": "#4D7C0F"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(45.3% 0.113 130.9)",
+          "$description": "Dark lime surfaces",
+          "$originalHex": "#3F6212"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(40.5% 0.096 131.1)",
+          "$description": "Very dark lime - forest",
+          "$originalHex": "#365314"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(27.4% 0.069 132.1)",
+          "$description": "Darkest lime - deep green",
+          "$originalHex": "#1A2E05"
+        }
       }
     },
     "green": {
       "description": "Success, growth, nature, confirmation, positive actions",
       "usage": "Success states, confirmations, go buttons, nature, money",
       "shades": {
-        "50": { "$type": "color", "$value": "#F0FDF4", "$description": "Lightest green - success backgrounds" },
-        "100": { "$type": "color", "$value": "#DCFCE7", "$description": "Success states, confirmations" },
-        "200": { "$type": "color", "$value": "#BBF7D0", "$description": "Success borders, alerts" },
-        "300": { "$type": "color", "$value": "#86EFAC", "$description": "Success highlights" },
-        "400": { "$type": "color", "$value": "#4ADE80", "$description": "Light green, progress" },
-        "500": { "$type": "color", "$value": "#22C55E", "$description": "Green-500 - success base" },
-        "600": { "$type": "color", "$value": "#16A34A", "$description": "Primary success - go buttons" },
-        "700": { "$type": "color", "$value": "#15803D", "$description": "Dark green text" },
-        "800": { "$type": "color", "$value": "#166534", "$description": "Dark green surfaces, money" },
-        "900": { "$type": "color", "$value": "#14532D", "$description": "Very dark green - forest" },
-        "950": { "$type": "color", "$value": "#052E16", "$description": "Darkest green - deep emerald" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(98.2% 0.018 155.8)",
+          "$description": "Lightest green - success backgrounds",
+          "$originalHex": "#F0FDF4"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(96.2% 0.043 156.7)",
+          "$description": "Success states, confirmations",
+          "$originalHex": "#DCFCE7"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(92.5% 0.081 156.0)",
+          "$description": "Success borders, alerts",
+          "$originalHex": "#BBF7D0"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(87.1% 0.136 154.4)",
+          "$description": "Success highlights",
+          "$originalHex": "#86EFAC"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(80.0% 0.182 151.7)",
+          "$description": "Light green, progress",
+          "$originalHex": "#4ADE80"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(72.3% 0.192 149.6)",
+          "$description": "Green-500 - success base",
+          "$originalHex": "#22C55E"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(62.7% 0.170 149.2)",
+          "$description": "Primary success - go buttons",
+          "$originalHex": "#16A34A"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(52.7% 0.137 150.1)",
+          "$description": "Dark green text",
+          "$originalHex": "#15803D"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(44.8% 0.108 151.3)",
+          "$description": "Dark green surfaces, money",
+          "$originalHex": "#166534"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(39.3% 0.090 152.5)",
+          "$description": "Very dark green - forest",
+          "$originalHex": "#14532D"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(26.6% 0.063 152.9)",
+          "$description": "Darkest green - deep emerald",
+          "$originalHex": "#052E16"
+        }
       }
     },
     "emerald": {
       "description": "Natural, refined green - premium organic aesthetic",
       "usage": "Premium eco brands, wellness, sophisticated nature themes",
       "shades": {
-        "50": { "$type": "color", "$value": "#ECFDF5", "$description": "Lightest emerald - premium eco" },
-        "100": { "$type": "color", "$value": "#D1FAE5", "$description": "Emerald backgrounds" },
-        "200": { "$type": "color", "$value": "#A7F3D0", "$description": "Emerald highlights" },
-        "300": { "$type": "color", "$value": "#6EE7B7", "$description": "Emerald accents" },
-        "400": { "$type": "color", "$value": "#34D399", "$description": "Bright emerald" },
-        "500": { "$type": "color", "$value": "#10B981", "$description": "Emerald-500 - premium base" },
-        "600": { "$type": "color", "$value": "#059669", "$description": "Primary emerald - wellness" },
-        "700": { "$type": "color", "$value": "#047857", "$description": "Dark emerald text" },
-        "800": { "$type": "color", "$value": "#065F46", "$description": "Dark emerald surfaces" },
-        "900": { "$type": "color", "$value": "#064E3B", "$description": "Very dark emerald" },
-        "950": { "$type": "color", "$value": "#022C22", "$description": "Darkest emerald - deep teal" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(97.9% 0.021 166.1)",
+          "$description": "Lightest emerald - premium eco",
+          "$originalHex": "#ECFDF5"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(95.0% 0.051 163.1)",
+          "$description": "Emerald backgrounds",
+          "$originalHex": "#D1FAE5"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(90.5% 0.089 164.2)",
+          "$description": "Emerald highlights",
+          "$originalHex": "#A7F3D0"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(84.5% 0.130 165.0)",
+          "$description": "Emerald accents",
+          "$originalHex": "#6EE7B7"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(77.3% 0.153 163.2)",
+          "$description": "Bright emerald",
+          "$originalHex": "#34D399"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(69.6% 0.149 162.5)",
+          "$description": "Emerald-500 - premium base",
+          "$originalHex": "#10B981"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(59.6% 0.127 163.2)",
+          "$description": "Primary emerald - wellness",
+          "$originalHex": "#059669"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(50.8% 0.105 165.6)",
+          "$description": "Dark emerald text",
+          "$originalHex": "#047857"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(43.2% 0.086 166.9)",
+          "$description": "Dark emerald surfaces",
+          "$originalHex": "#065F46"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(37.8% 0.073 168.9)",
+          "$description": "Very dark emerald",
+          "$originalHex": "#064E3B"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(26.2% 0.049 172.6)",
+          "$description": "Darkest emerald - deep teal",
+          "$originalHex": "#022C22"
+        }
       }
     },
     "teal": {
       "description": "Calm, trustworthy, medical, professional - balanced cyan-green",
       "usage": "Medical, finance, trust, professional services, balanced brands",
       "shades": {
-        "50": { "$type": "color", "$value": "#F0FDFA", "$description": "Lightest teal - medical backgrounds" },
-        "100": { "$type": "color", "$value": "#CCFBF1", "$description": "Teal backgrounds, calm" },
-        "200": { "$type": "color", "$value": "#99F6E4", "$description": "Teal highlights, trust" },
-        "300": { "$type": "color", "$value": "#5EEAD4", "$description": "Teal accents, fresh" },
-        "400": { "$type": "color", "$value": "#2DD4BF", "$description": "Bright teal, healthcare" },
-        "500": { "$type": "color", "$value": "#14B8A6", "$description": "Teal-500 - trust base" },
-        "600": { "$type": "color", "$value": "#0D9488", "$description": "Primary teal - medical" },
-        "700": { "$type": "color", "$value": "#0F766E", "$description": "Dark teal text, finance" },
-        "800": { "$type": "color", "$value": "#115E59", "$description": "Dark teal surfaces" },
-        "900": { "$type": "color", "$value": "#134E4A", "$description": "Very dark teal - professional" },
-        "950": { "$type": "color", "$value": "#042F2E", "$description": "Darkest teal - deep sea" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(98.4% 0.014 180.7)",
+          "$description": "Lightest teal - medical backgrounds",
+          "$originalHex": "#F0FDFA"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(95.3% 0.050 180.8)",
+          "$description": "Teal backgrounds, calm",
+          "$originalHex": "#CCFBF1"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(91.0% 0.093 180.4)",
+          "$description": "Teal highlights, trust",
+          "$originalHex": "#99F6E4"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(85.5% 0.125 181.1)",
+          "$description": "Teal accents, fresh",
+          "$originalHex": "#5EEAD4"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(78.5% 0.133 181.9)",
+          "$description": "Bright teal, healthcare",
+          "$originalHex": "#2DD4BF"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(70.4% 0.123 182.5)",
+          "$description": "Teal-500 - trust base",
+          "$originalHex": "#14B8A6"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(60.0% 0.104 184.7)",
+          "$description": "Primary teal - medical",
+          "$originalHex": "#0D9488"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(51.1% 0.086 186.4)",
+          "$description": "Dark teal text, finance",
+          "$originalHex": "#0F766E"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(43.7% 0.071 188.2)",
+          "$description": "Dark teal surfaces",
+          "$originalHex": "#115E59"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(38.6% 0.059 188.4)",
+          "$description": "Very dark teal - professional",
+          "$originalHex": "#134E4A"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(27.7% 0.045 192.5)",
+          "$description": "Darkest teal - deep sea",
+          "$originalHex": "#042F2E"
+        }
       }
     },
     "cyan": {
       "description": "Fresh, modern, tech-forward - blue-green energy",
       "usage": "Tech startups, modern apps, fresh interfaces, water themes",
       "shades": {
-        "50": { "$type": "color", "$value": "#ECFEFF", "$description": "Lightest cyan - tech backgrounds" },
-        "100": { "$type": "color", "$value": "#CFFAFE", "$description": "Cyan backgrounds, fresh" },
-        "200": { "$type": "color", "$value": "#A5F3FC", "$description": "Cyan highlights, modern" },
-        "300": { "$type": "color", "$value": "#67E8F9", "$description": "Cyan accents, tech" },
-        "400": { "$type": "color", "$value": "#22D3EE", "$description": "Bright cyan, startup" },
-        "500": { "$type": "color", "$value": "#06B6D4", "$description": "Cyan-500 - modern base" },
-        "600": { "$type": "color", "$value": "#0891B2", "$description": "Primary cyan - tech" },
-        "700": { "$type": "color", "$value": "#0E7490", "$description": "Dark cyan text" },
-        "800": { "$type": "color", "$value": "#155E75", "$description": "Dark cyan surfaces" },
-        "900": { "$type": "color", "$value": "#164E63", "$description": "Very dark cyan - ocean" },
-        "950": { "$type": "color", "$value": "#083344", "$description": "Darkest cyan - deep water" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(98.4% 0.019 200.9)",
+          "$description": "Lightest cyan - tech backgrounds",
+          "$originalHex": "#ECFEFF"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(95.6% 0.044 203.4)",
+          "$description": "Cyan backgrounds, fresh",
+          "$originalHex": "#CFFAFE"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(91.7% 0.077 205.0)",
+          "$description": "Cyan highlights, modern",
+          "$originalHex": "#A5F3FC"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(86.5% 0.115 207.1)",
+          "$description": "Cyan accents, tech",
+          "$originalHex": "#67E8F9"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(79.7% 0.134 211.5)",
+          "$description": "Bright cyan, startup",
+          "$originalHex": "#22D3EE"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(71.5% 0.126 215.2)",
+          "$description": "Cyan-500 - modern base",
+          "$originalHex": "#06B6D4"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(60.9% 0.111 221.7)",
+          "$description": "Primary cyan - tech",
+          "$originalHex": "#0891B2"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(52.0% 0.094 223.1)",
+          "$description": "Dark cyan text",
+          "$originalHex": "#0E7490"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(45.0% 0.077 224.3)",
+          "$description": "Dark cyan surfaces",
+          "$originalHex": "#155E75"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(39.8% 0.066 227.4)",
+          "$description": "Very dark cyan - ocean",
+          "$originalHex": "#164E63"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(30.2% 0.054 229.7)",
+          "$description": "Darkest cyan - deep water",
+          "$originalHex": "#083344"
+        }
       }
     },
     "sky": {
       "description": "Light, airy, open - gentle blue for relaxed interfaces",
       "usage": "Weather apps, open interfaces, light themes, daytime",
       "shades": {
-        "50": { "$type": "color", "$value": "#F0F9FF", "$description": "Lightest sky - airy backgrounds" },
-        "100": { "$type": "color", "$value": "#E0F2FE", "$description": "Sky backgrounds, calm" },
-        "200": { "$type": "color", "$value": "#BAE6FD", "$description": "Sky highlights, gentle" },
-        "300": { "$type": "color", "$value": "#7DD3FC", "$description": "Sky accents, light blue" },
-        "400": { "$type": "color", "$value": "#38BDF8", "$description": "Bright sky, daytime" },
-        "500": { "$type": "color", "$value": "#0EA5E9", "$description": "Sky-500 - open base" },
-        "600": { "$type": "color", "$value": "#0284C7", "$description": "Primary sky - weather" },
-        "700": { "$type": "color", "$value": "#0369A1", "$description": "Dark sky text" },
-        "800": { "$type": "color", "$value": "#075985", "$description": "Dark sky surfaces" },
-        "900": { "$type": "color", "$value": "#0C4A6E", "$description": "Very dark sky - deep" },
-        "950": { "$type": "color", "$value": "#082F49", "$description": "Darkest sky - night" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(97.7% 0.012 236.6)",
+          "$description": "Lightest sky - airy backgrounds",
+          "$originalHex": "#F0F9FF"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(95.1% 0.025 236.8)",
+          "$description": "Sky backgrounds, calm",
+          "$originalHex": "#E0F2FE"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(90.1% 0.055 230.9)",
+          "$description": "Sky highlights, gentle",
+          "$originalHex": "#BAE6FD"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(82.8% 0.101 230.3)",
+          "$description": "Sky accents, light blue",
+          "$originalHex": "#7DD3FC"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(75.4% 0.139 232.7)",
+          "$description": "Bright sky, daytime",
+          "$originalHex": "#38BDF8"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(68.5% 0.148 237.3)",
+          "$description": "Sky-500 - open base",
+          "$originalHex": "#0EA5E9"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(58.8% 0.139 242.0)",
+          "$description": "Primary sky - weather",
+          "$originalHex": "#0284C7"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(50.0% 0.119 242.7)",
+          "$description": "Dark sky text",
+          "$originalHex": "#0369A1"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(44.3% 0.100 240.8)",
+          "$description": "Dark sky surfaces",
+          "$originalHex": "#075985"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(39.1% 0.085 240.9)",
+          "$description": "Very dark sky - deep",
+          "$originalHex": "#0C4A6E"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(29.3% 0.063 243.2)",
+          "$description": "Darkest sky - night",
+          "$originalHex": "#082F49"
+        }
       }
     },
     "blue": {
       "description": "Primary, corporate, trustworthy - the universal brand color",
       "usage": "Primary brand color, links, corporate themes, trust",
       "shades": {
-        "50": { "$type": "color", "$value": "#EFF6FF", "$description": "Lightest blue - link backgrounds" },
-        "100": { "$type": "color", "$value": "#DBEAFE", "$description": "Blue backgrounds, hover" },
-        "200": { "$type": "color", "$value": "#BFDBFE", "$description": "Blue borders, light" },
-        "300": { "$type": "color", "$value": "#93C5FD", "$description": "Blue highlights" },
-        "400": { "$type": "color", "$value": "#60A5FA", "$description": "Light blue, links" },
-        "500": { "$type": "color", "$value": "#3B82F6", "$description": "Blue-500 - corporate base" },
-        "600": { "$type": "color", "$value": "#2563EB", "$description": "Primary blue - brand" },
-        "700": { "$type": "color", "$value": "#1D4ED8", "$description": "Dark blue text, links" },
-        "800": { "$type": "color", "$value": "#1E40AF", "$description": "Dark blue surfaces" },
-        "900": { "$type": "color", "$value": "#1E3A8A", "$description": "Very dark blue - navy" },
-        "950": { "$type": "color", "$value": "#172554", "$description": "Darkest blue - deep navy" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(97.0% 0.014 254.6)",
+          "$description": "Lightest blue - link backgrounds",
+          "$originalHex": "#EFF6FF"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(93.2% 0.032 255.6)",
+          "$description": "Blue backgrounds, hover",
+          "$originalHex": "#DBEAFE"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(88.2% 0.057 254.1)",
+          "$description": "Blue borders, light",
+          "$originalHex": "#BFDBFE"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(80.9% 0.096 251.8)",
+          "$description": "Blue highlights",
+          "$originalHex": "#93C5FD"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(71.4% 0.143 254.6)",
+          "$description": "Light blue, links",
+          "$originalHex": "#60A5FA"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(62.3% 0.188 259.8)",
+          "$description": "Blue-500 - corporate base",
+          "$originalHex": "#3B82F6"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(54.6% 0.215 262.9)",
+          "$description": "Primary blue - brand",
+          "$originalHex": "#2563EB"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(48.8% 0.217 264.4)",
+          "$description": "Dark blue text, links",
+          "$originalHex": "#1D4ED8"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(42.4% 0.181 265.6)",
+          "$description": "Dark blue surfaces",
+          "$originalHex": "#1E40AF"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(37.9% 0.138 265.5)",
+          "$description": "Very dark blue - navy",
+          "$originalHex": "#1E3A8A"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(28.2% 0.087 267.9)",
+          "$description": "Darkest blue - deep navy",
+          "$originalHex": "#172554"
+        }
       }
     },
     "indigo": {
       "description": "Rich, deep, professional - sophisticated purple-blue",
       "usage": "Premium brands, professional services, sophisticated tech",
       "shades": {
-        "50": { "$type": "color", "$value": "#EEF2FF", "$description": "Lightest indigo - premium backgrounds" },
-        "100": { "$type": "color", "$value": "#E0E7FF", "$description": "Indigo backgrounds" },
-        "200": { "$type": "color", "$value": "#C7D2FE", "$description": "Indigo highlights" },
-        "300": { "$type": "color", "$value": "#A5B4FC", "$description": "Indigo accents" },
-        "400": { "$type": "color", "$value": "#818CF8", "$description": "Bright indigo" },
-        "500": { "$type": "color", "$value": "#6366F1", "$description": "Indigo-500 - premium base" },
-        "600": { "$type": "color", "$value": "#4F46E5", "$description": "Primary indigo - professional" },
-        "700": { "$type": "color", "$value": "#4338CA", "$description": "Dark indigo text" },
-        "800": { "$type": "color", "$value": "#3730A3", "$description": "Dark indigo surfaces" },
-        "900": { "$type": "color", "$value": "#312E81", "$description": "Very dark indigo" },
-        "950": { "$type": "color", "$value": "#1E1B4B", "$description": "Darkest indigo - deep purple" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(96.2% 0.018 272.3)",
+          "$description": "Lightest indigo - premium backgrounds",
+          "$originalHex": "#EEF2FF"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(93.0% 0.033 272.8)",
+          "$description": "Indigo backgrounds",
+          "$originalHex": "#E0E7FF"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(87.0% 0.062 274.0)",
+          "$description": "Indigo highlights",
+          "$originalHex": "#C7D2FE"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(78.5% 0.104 274.7)",
+          "$description": "Indigo accents",
+          "$originalHex": "#A5B4FC"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(68.0% 0.158 276.9)",
+          "$description": "Bright indigo",
+          "$originalHex": "#818CF8"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(58.5% 0.204 277.1)",
+          "$description": "Indigo-500 - premium base",
+          "$originalHex": "#6366F1"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(51.1% 0.230 277.0)",
+          "$description": "Primary indigo - professional",
+          "$originalHex": "#4F46E5"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(45.7% 0.215 277.0)",
+          "$description": "Dark indigo text",
+          "$originalHex": "#4338CA"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(39.8% 0.177 277.4)",
+          "$description": "Dark indigo surfaces",
+          "$originalHex": "#3730A3"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(35.9% 0.135 278.7)",
+          "$description": "Very dark indigo",
+          "$originalHex": "#312E81"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(25.7% 0.086 281.3)",
+          "$description": "Darkest indigo - deep purple",
+          "$originalHex": "#1E1B4B"
+        }
       }
     },
     "violet": {
       "description": "Creative, magical, imaginative - purple with energy",
       "usage": "Creative brands, imagination, magic, art, spiritual themes",
       "shades": {
-        "50": { "$type": "color", "$value": "#F5F3FF", "$description": "Lightest violet - creative backgrounds" },
-        "100": { "$type": "color", "$value": "#EDE9FE", "$description": "Violet backgrounds, art" },
-        "200": { "$type": "color", "$value": "#DDD6FE", "$description": "Violet highlights" },
-        "300": { "$type": "color", "$value": "#C4B5FD", "$description": "Violet accents, creative" },
-        "400": { "$type": "color", "$value": "#A78BFA", "$description": "Bright violet, magic" },
-        "500": { "$type": "color", "$value": "#8B5CF6", "$description": "Violet-500 - creative base" },
-        "600": { "$type": "color", "$value": "#7C3AED", "$description": "Primary violet - imagination" },
-        "700": { "$type": "color", "$value": "#6D28D9", "$description": "Dark violet text" },
-        "800": { "$type": "color", "$value": "#5B21B6", "$description": "Dark violet surfaces" },
-        "900": { "$type": "color", "$value": "#4C1D95", "$description": "Very dark violet" },
-        "950": { "$type": "color", "$value": "#2E1065", "$description": "Darkest violet - deep magic" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(96.9% 0.016 293.8)",
+          "$description": "Lightest violet - creative backgrounds",
+          "$originalHex": "#F5F3FF"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(94.3% 0.028 294.6)",
+          "$description": "Violet backgrounds, art",
+          "$originalHex": "#EDE9FE"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(89.4% 0.055 293.3)",
+          "$description": "Violet highlights",
+          "$originalHex": "#DDD6FE"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(81.1% 0.101 293.6)",
+          "$description": "Violet accents, creative",
+          "$originalHex": "#C4B5FD"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(70.9% 0.159 293.5)",
+          "$description": "Bright violet, magic",
+          "$originalHex": "#A78BFA"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(60.6% 0.219 292.7)",
+          "$description": "Violet-500 - creative base",
+          "$originalHex": "#8B5CF6"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(54.1% 0.247 293.0)",
+          "$description": "Primary violet - imagination",
+          "$originalHex": "#7C3AED"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(49.1% 0.241 292.6)",
+          "$description": "Dark violet text",
+          "$originalHex": "#6D28D9"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(43.2% 0.211 292.8)",
+          "$description": "Dark violet surfaces",
+          "$originalHex": "#5B21B6"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(38.0% 0.178 293.7)",
+          "$description": "Very dark violet",
+          "$originalHex": "#4C1D95"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(28.3% 0.135 291.1)",
+          "$description": "Darkest violet - deep magic",
+          "$originalHex": "#2E1065"
+        }
       }
     },
     "purple": {
       "description": "Premium, luxury, royalty, sophistication - deep purple",
       "usage": "Luxury brands, premium services, royal themes, night",
       "shades": {
-        "50": { "$type": "color", "$value": "#FAF5FF", "$description": "Lightest purple - luxury backgrounds" },
-        "100": { "$type": "color", "$value": "#F3E8FF", "$description": "Purple backgrounds" },
-        "200": { "$type": "color", "$value": "#E9D5FF", "$description": "Purple highlights" },
-        "300": { "$type": "color", "$value": "#D8B4FE", "$description": "Purple accents" },
-        "400": { "$type": "color", "$value": "#C084FC", "$description": "Bright purple" },
-        "500": { "$type": "color", "$value": "#A855F7", "$description": "Purple-500 - luxury base" },
-        "600": { "$type": "color", "$value": "#9333EA", "$description": "Primary purple - premium" },
-        "700": { "$type": "color", "$value": "#7E22CE", "$description": "Dark purple text" },
-        "800": { "$type": "color", "$value": "#6B21A8", "$description": "Dark purple surfaces" },
-        "900": { "$type": "color", "$value": "#581C87", "$description": "Very dark purple - royal" },
-        "950": { "$type": "color", "$value": "#3B0764", "$description": "Darkest purple - deep luxury" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(97.7% 0.014 308.3)",
+          "$description": "Lightest purple - luxury backgrounds",
+          "$originalHex": "#FAF5FF"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(94.6% 0.033 307.2)",
+          "$description": "Purple backgrounds",
+          "$originalHex": "#F3E8FF"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(90.2% 0.060 306.7)",
+          "$description": "Purple highlights",
+          "$originalHex": "#E9D5FF"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(82.7% 0.108 306.4)",
+          "$description": "Purple accents",
+          "$originalHex": "#D8B4FE"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(72.2% 0.177 305.5)",
+          "$description": "Bright purple",
+          "$originalHex": "#C084FC"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(62.7% 0.233 303.9)",
+          "$description": "Purple-500 - luxury base",
+          "$originalHex": "#A855F7"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(55.8% 0.252 302.3)",
+          "$description": "Primary purple - premium",
+          "$originalHex": "#9333EA"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(49.6% 0.237 301.9)",
+          "$description": "Dark purple text",
+          "$originalHex": "#7E22CE"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(43.8% 0.198 303.7)",
+          "$description": "Dark purple surfaces",
+          "$originalHex": "#6B21A8"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(38.1% 0.166 305.0)",
+          "$description": "Very dark purple - royal",
+          "$originalHex": "#581C87"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(29.1% 0.143 302.7)",
+          "$description": "Darkest purple - deep luxury",
+          "$originalHex": "#3B0764"
+        }
       }
     },
     "fuchsia": {
       "description": "Bold, playful, vibrant - energetic purple-pink",
       "usage": "Fun brands, youth, nightlife, party, vibrant interfaces",
       "shades": {
-        "50": { "$type": "color", "$value": "#FDF4FF", "$description": "Lightest fuchsia - playful backgrounds" },
-        "100": { "$type": "color", "$value": "#FAE8FF", "$description": "Fuchsia backgrounds" },
-        "200": { "$type": "color", "$value": "#F5D0FE", "$description": "Fuchsia highlights" },
-        "300": { "$type": "color", "$value": "#F0ABFC", "$description": "Fuchsia accents, fun" },
-        "400": { "$type": "color", "$value": "#E879F9", "$description": "Bright fuchsia, party" },
-        "500": { "$type": "color", "$value": "#D946EF", "$description": "Fuchsia-500 - playful base" },
-        "600": { "$type": "color", "$value": "#C026D3", "$description": "Primary fuchsia - vibrant" },
-        "700": { "$type": "color", "$value": "#A21CAF", "$description": "Dark fuchsia text" },
-        "800": { "$type": "color", "$value": "#86198F", "$description": "Dark fuchsia surfaces" },
-        "900": { "$type": "color", "$value": "#701A75", "$description": "Very dark fuchsia" },
-        "950": { "$type": "color", "$value": "#4A044E", "$description": "Darkest fuchsia - deep" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(97.7% 0.017 320.1)",
+          "$description": "Lightest fuchsia - playful backgrounds",
+          "$originalHex": "#FDF4FF"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(95.2% 0.036 318.9)",
+          "$description": "Fuchsia backgrounds",
+          "$originalHex": "#FAE8FF"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(90.3% 0.073 319.6)",
+          "$description": "Fuchsia highlights",
+          "$originalHex": "#F5D0FE"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(83.3% 0.132 321.4)",
+          "$description": "Fuchsia accents, fun",
+          "$originalHex": "#F0ABFC"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(74.8% 0.207 322.2)",
+          "$description": "Bright fuchsia, party",
+          "$originalHex": "#E879F9"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(66.7% 0.259 322.1)",
+          "$description": "Fuchsia-500 - playful base",
+          "$originalHex": "#D946EF"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(59.1% 0.257 322.9)",
+          "$description": "Primary fuchsia - vibrant",
+          "$originalHex": "#C026D3"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(51.8% 0.226 323.9)",
+          "$description": "Dark fuchsia text",
+          "$originalHex": "#A21CAF"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(45.2% 0.192 324.6)",
+          "$description": "Dark fuchsia surfaces",
+          "$originalHex": "#86198F"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(40.1% 0.160 325.6)",
+          "$description": "Very dark fuchsia",
+          "$originalHex": "#701A75"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(29.3% 0.131 325.7)",
+          "$description": "Darkest fuchsia - deep",
+          "$originalHex": "#4A044E"
+        }
       }
     },
     "pink": {
       "description": "Warm, friendly, feminine, caring - approachable pink",
       "usage": "Healthcare, feminine brands, caring services, love themes",
       "shades": {
-        "50": { "$type": "color", "$value": "#FDF2F8", "$description": "Lightest pink - caring backgrounds" },
-        "100": { "$type": "color", "$value": "#FCE7F3", "$description": "Pink backgrounds" },
-        "200": { "$type": "color", "$value": "#FBCFE8", "$description": "Pink highlights" },
-        "300": { "$type": "color", "$value": "#F9A8D4", "$description": "Pink accents, caring" },
-        "400": { "$type": "color", "$value": "#F472B6", "$description": "Bright pink, love" },
-        "500": { "$type": "color", "$value": "#EC4899", "$description": "Pink-500 - friendly base" },
-        "600": { "$type": "color", "$value": "#DB2777", "$description": "Primary pink - healthcare" },
-        "700": { "$type": "color", "$value": "#BE185D", "$description": "Dark pink text" },
-        "800": { "$type": "color", "$value": "#9D174D", "$description": "Dark pink surfaces" },
-        "900": { "$type": "color", "$value": "#831843", "$description": "Very dark pink" },
-        "950": { "$type": "color", "$value": "#500724", "$description": "Darkest pink - deep" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(97.1% 0.014 343.2)",
+          "$description": "Lightest pink - caring backgrounds",
+          "$originalHex": "#FDF2F8"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(94.8% 0.028 342.3)",
+          "$description": "Pink backgrounds",
+          "$originalHex": "#FCE7F3"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(89.9% 0.059 343.2)",
+          "$description": "Pink highlights",
+          "$originalHex": "#FBCFE8"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(82.3% 0.110 346.0)",
+          "$description": "Pink accents, caring",
+          "$originalHex": "#F9A8D4"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(72.5% 0.175 349.8)",
+          "$description": "Bright pink, love",
+          "$originalHex": "#F472B6"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(65.6% 0.212 354.3)",
+          "$description": "Pink-500 - friendly base",
+          "$originalHex": "#EC4899"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(59.2% 0.218 0.6)",
+          "$description": "Primary pink - healthcare",
+          "$originalHex": "#DB2777"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(52.5% 0.199 4.0)",
+          "$description": "Dark pink text",
+          "$originalHex": "#BE185D"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(45.9% 0.170 3.8)",
+          "$description": "Dark pink surfaces",
+          "$originalHex": "#9D174D"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(40.8% 0.144 2.4)",
+          "$description": "Very dark pink",
+          "$originalHex": "#831843"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(28.4% 0.105 3.9)",
+          "$description": "Darkest pink - deep",
+          "$originalHex": "#500724"
+        }
       }
     },
     "rose": {
       "description": "Soft, elegant, romantic - sophisticated warm pink",
       "usage": "Romance, beauty, elegant feminine, soft aesthetics",
       "shades": {
-        "50": { "$type": "color", "$value": "#FFF1F2", "$description": "Lightest rose - romantic backgrounds" },
-        "100": { "$type": "color", "$value": "#FFE4E6", "$description": "Rose backgrounds, love" },
-        "200": { "$type": "color", "$value": "#FECDD3", "$description": "Rose highlights" },
-        "300": { "$type": "color", "$value": "#FDA4AF", "$description": "Rose accents, beauty" },
-        "400": { "$type": "color", "$value": "#FB7185", "$description": "Bright rose, romance" },
-        "500": { "$type": "color", "$value": "#F43F5E", "$description": "Rose-500 - elegant base" },
-        "600": { "$type": "color", "$value": "#E11D48", "$description": "Primary rose - passion" },
-        "700": { "$type": "color", "$value": "#BE123C", "$description": "Dark rose text" },
-        "800": { "$type": "color", "$value": "#9F1239", "$description": "Dark rose surfaces" },
-        "900": { "$type": "color", "$value": "#881337", "$description": "Very dark rose" },
-        "950": { "$type": "color", "$value": "#4C0519", "$description": "Darkest rose - deep romance" }
+        "50": {
+          "$type": "color",
+          "$value": "oklch(96.9% 0.015 12.4)",
+          "$description": "Lightest rose - romantic backgrounds",
+          "$originalHex": "#FFF1F2"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "oklch(94.1% 0.030 12.6)",
+          "$description": "Rose backgrounds, love",
+          "$originalHex": "#FFE4E6"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "oklch(89.2% 0.056 10.0)",
+          "$description": "Rose highlights",
+          "$originalHex": "#FECDD3"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "oklch(81.0% 0.106 11.6)",
+          "$description": "Rose accents, beauty",
+          "$originalHex": "#FDA4AF"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "oklch(71.9% 0.169 13.4)",
+          "$description": "Bright rose, romance",
+          "$originalHex": "#FB7185"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "oklch(64.5% 0.215 16.4)",
+          "$description": "Rose-500 - elegant base",
+          "$originalHex": "#F43F5E"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "oklch(58.6% 0.222 17.6)",
+          "$description": "Primary rose - passion",
+          "$originalHex": "#E11D48"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "oklch(51.4% 0.198 16.9)",
+          "$description": "Dark rose text",
+          "$originalHex": "#BE123C"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "oklch(45.5% 0.171 13.7)",
+          "$description": "Dark rose surfaces",
+          "$originalHex": "#9F1239"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "oklch(41.0% 0.150 10.3)",
+          "$description": "Very dark rose",
+          "$originalHex": "#881337"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "oklch(27.1% 0.101 12.1)",
+          "$description": "Darkest rose - deep romance",
+          "$originalHex": "#4C0519"
+        }
       }
     }
   },
   "semanticMapping": {
     "light": {
-      "text-default": { "$type": "alias", "$value": "{slate.900}", "$description": "Primary text on light surfaces" },
-      "text-muted": { "$type": "alias", "$value": "{slate.500}", "$description": "Secondary/muted text" },
-      "text-inverted": { "$type": "alias", "$value": "{white}", "$description": "Text on dark surfaces" },
-      "surface-default": { "$type": "alias", "$value": "{white}", "$description": "Default surface background" },
-      "surface-raised": { "$type": "alias", "$value": "{slate.50}", "$description": "Elevated surfaces, cards" },
-      "surface-sunken": { "$type": "alias", "$value": "{slate.100}", "$description": "Depressed surfaces, inputs" },
-      "border-default": { "$type": "alias", "$value": "{slate.200}", "$description": "Default border color" },
-      "border-subtle": { "$type": "alias", "$value": "{slate.100}", "$description": "Subtle dividers" },
-      "interactive-primary": { "$type": "alias", "$value": "{blue.600}", "$description": "Primary interactive elements" },
-      "interactive-primary-hover": { "$type": "alias", "$value": "{blue.700}", "$description": "Primary hover state" },
-      "interactive-secondary": { "$type": "alias", "$value": "{slate.600}", "$description": "Secondary interactive" },
-      "status-success": { "$type": "alias", "$value": "{green.600}", "$description": "Success states" },
-      "status-warning": { "$type": "alias", "$value": "{amber.500}", "$description": "Warning states" },
-      "status-error": { "$type": "alias", "$value": "{red.600}", "$description": "Error states" },
-      "status-info": { "$type": "alias", "$value": "{blue.500}", "$description": "Info states" }
+      "text-default": {
+        "$type": "alias",
+        "$value": "{slate.900}",
+        "$description": "Primary text on light surfaces"
+      },
+      "text-muted": {
+        "$type": "alias",
+        "$value": "{slate.500}",
+        "$description": "Secondary/muted text"
+      },
+      "text-inverted": {
+        "$type": "alias",
+        "$value": "{white}",
+        "$description": "Text on dark surfaces"
+      },
+      "surface-default": {
+        "$type": "alias",
+        "$value": "{white}",
+        "$description": "Default surface background"
+      },
+      "surface-raised": {
+        "$type": "alias",
+        "$value": "{slate.50}",
+        "$description": "Elevated surfaces, cards"
+      },
+      "surface-sunken": {
+        "$type": "alias",
+        "$value": "{slate.100}",
+        "$description": "Depressed surfaces, inputs"
+      },
+      "border-default": {
+        "$type": "alias",
+        "$value": "{slate.200}",
+        "$description": "Default border color"
+      },
+      "border-subtle": {
+        "$type": "alias",
+        "$value": "{slate.100}",
+        "$description": "Subtle dividers"
+      },
+      "interactive-primary": {
+        "$type": "alias",
+        "$value": "{blue.600}",
+        "$description": "Primary interactive elements"
+      },
+      "interactive-primary-hover": {
+        "$type": "alias",
+        "$value": "{blue.700}",
+        "$description": "Primary hover state"
+      },
+      "interactive-secondary": {
+        "$type": "alias",
+        "$value": "{slate.600}",
+        "$description": "Secondary interactive"
+      },
+      "status-success": {
+        "$type": "alias",
+        "$value": "{green.600}",
+        "$description": "Success states"
+      },
+      "status-warning": {
+        "$type": "alias",
+        "$value": "{amber.500}",
+        "$description": "Warning states"
+      },
+      "status-error": {
+        "$type": "alias",
+        "$value": "{red.600}",
+        "$description": "Error states"
+      },
+      "status-info": {
+        "$type": "alias",
+        "$value": "{blue.500}",
+        "$description": "Info states"
+      }
     },
     "dark": {
-      "text-default": { "$type": "alias", "$value": "{slate.50}", "$description": "Primary text on dark surfaces" },
-      "text-muted": { "$type": "alias", "$value": "{slate.400}", "$description": "Secondary/muted text in dark mode" },
-      "text-inverted": { "$type": "alias", "$value": "{slate.950}", "$description": "Text on light surfaces in dark mode" },
-      "surface-default": { "$type": "alias", "$value": "{slate.950}", "$description": "Dark mode background" },
-      "surface-raised": { "$type": "alias", "$value": "{slate.900}", "$description": "Elevated surfaces in dark mode" },
-      "surface-sunken": { "$type": "alias", "$value": "{slate.950}", "$description": "Depressed surfaces in dark mode" },
-      "border-default": { "$type": "alias", "$value": "{slate.800}", "$description": "Dark mode borders" },
-      "border-subtle": { "$type": "alias", "$value": "{slate.900}", "$description": "Subtle dividers in dark mode" },
-      "interactive-primary": { "$type": "alias", "$value": "{blue.500}", "$description": "Primary interactive in dark mode (brighter)" },
-      "interactive-primary-hover": { "$type": "alias", "$value": "{blue.400}", "$description": "Primary hover in dark mode" },
-      "interactive-secondary": { "$type": "alias", "$value": "{slate.500}", "$description": "Secondary interactive in dark mode" },
-      "status-success": { "$type": "alias", "$value": "{green.500}", "$description": "Success states in dark mode" },
-      "status-warning": { "$type": "alias", "$value": "{amber.400}", "$description": "Warning states in dark mode" },
-      "status-error": { "$type": "alias", "$value": "{red.500}", "$description": "Error states in dark mode" },
-      "status-info": { "$type": "alias", "$value": "{blue.400}", "$description": "Info states in dark mode" }
+      "text-default": {
+        "$type": "alias",
+        "$value": "{slate.50}",
+        "$description": "Primary text on dark surfaces"
+      },
+      "text-muted": {
+        "$type": "alias",
+        "$value": "{slate.400}",
+        "$description": "Secondary/muted text in dark mode"
+      },
+      "text-inverted": {
+        "$type": "alias",
+        "$value": "{slate.950}",
+        "$description": "Text on light surfaces in dark mode"
+      },
+      "surface-default": {
+        "$type": "alias",
+        "$value": "{slate.950}",
+        "$description": "Dark mode background"
+      },
+      "surface-raised": {
+        "$type": "alias",
+        "$value": "{slate.900}",
+        "$description": "Elevated surfaces in dark mode"
+      },
+      "surface-sunken": {
+        "$type": "alias",
+        "$value": "{slate.950}",
+        "$description": "Depressed surfaces in dark mode"
+      },
+      "border-default": {
+        "$type": "alias",
+        "$value": "{slate.800}",
+        "$description": "Dark mode borders"
+      },
+      "border-subtle": {
+        "$type": "alias",
+        "$value": "{slate.900}",
+        "$description": "Subtle dividers in dark mode"
+      },
+      "interactive-primary": {
+        "$type": "alias",
+        "$value": "{blue.500}",
+        "$description": "Primary interactive in dark mode (brighter)"
+      },
+      "interactive-primary-hover": {
+        "$type": "alias",
+        "$value": "{blue.400}",
+        "$description": "Primary hover in dark mode"
+      },
+      "interactive-secondary": {
+        "$type": "alias",
+        "$value": "{slate.500}",
+        "$description": "Secondary interactive in dark mode"
+      },
+      "status-success": {
+        "$type": "alias",
+        "$value": "{green.500}",
+        "$description": "Success states in dark mode"
+      },
+      "status-warning": {
+        "$type": "alias",
+        "$value": "{amber.400}",
+        "$description": "Warning states in dark mode"
+      },
+      "status-error": {
+        "$type": "alias",
+        "$value": "{red.500}",
+        "$description": "Error states in dark mode"
+      },
+      "status-info": {
+        "$type": "alias",
+        "$value": "{blue.400}",
+        "$description": "Info states in dark mode"
+      }
     }
   },
   "themePresets": {
