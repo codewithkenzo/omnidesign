@@ -11,7 +11,7 @@ const messageVariants = cva(
       role: {
         user: "bg-primary text-inverted ml-auto rounded-br-sm",
         assistant: "bg-surface-raised border border-default rounded-bl-sm",
-        system: "bg-amber-500/10 border border-amber-500/20 text-amber-900 dark:text-amber-100",
+        system: "bg-status-warning-subtle border border-status-warning text-status-warning dark:text-status-warning",
       },
       size: {
         default: "max-w-[85%]",
@@ -114,7 +114,7 @@ export function ChatMessage({
             title="Copy message"
           >
             {copied ? (
-              <svg className="w-4 h-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-4 h-4 text-status-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             ) : (

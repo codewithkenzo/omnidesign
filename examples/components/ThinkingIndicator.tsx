@@ -143,7 +143,7 @@ export function ProgressSteps({ steps, currentStep, className }: ProgressStepsPr
             <div
               className={cn(
                 "w-6 h-6 rounded-full flex items-center justify-center text-xs font-medium transition-all",
-                isComplete && "bg-green-500 text-white",
+                isComplete && "bg-status-success text-inverted",
                 isCurrent && "bg-primary text-inverted animate-pulse",
                 isPending && "bg-surface-sunken text-muted border border-subtle"
               )}

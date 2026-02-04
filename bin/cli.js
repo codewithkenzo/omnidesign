@@ -138,8 +138,7 @@ function getOpenCodePaths(global = false) {
   return {
     configPath: path.join(baseDir, 'skills', 'omnidesign', 'SKILL.md'),
     configFile: path.relative(process.cwd(), path.join(baseDir, 'skills', 'omnidesign', 'SKILL.md')),
-    baseDir,
-    configJsonPath: path.join(baseDir, 'config.json')
+    baseDir
   };
 }
 
@@ -424,17 +423,6 @@ async function installOpenCodeSkill(skillsDir, packageDir, global) {
   if (fs.existsSync(skillMdSource)) {
     fs.copyFileSync(skillMdSource, skillMdTarget);
     console.log(chalk.gray(`  Created: ${path.relative(process.cwd(), skillMdTarget)}`));
-  }
-  
-  let config = { plugins: [] };
-  if (fs.existsSync(paths.configJsonPath)) {
-    config = JSON.parse(fs.readFileSync(paths.configJsonPath, 'utf8'));
-  }
-  
-  if (!config.plugins.includes('omnidesign')) {
-    config.plugins.push('omnidesign');
-    fs.writeFileSync(paths.configJsonPath, JSON.stringify(config, null, 2));
-    console.log(chalk.gray(`  Updated: ${path.relative(process.cwd(), paths.configJsonPath)}`));
   }
 }
 

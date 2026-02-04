@@ -29,8 +29,8 @@ const statusBadgeVariants = cva(
   {
     variants: {
       status: {
-        online: 'bg-green-500/15 text-green-600',
-        busy: 'bg-amber-500/15 text-amber-600',
+        online: 'bg-status-online-subtle text-status-online',
+        busy: 'bg-status-busy-subtle text-status-busy',
         offline: 'bg-surface-sunken text-muted',
       },
     },
@@ -92,9 +92,9 @@ export function AgentCard({
             <span
               className={cn(
                 'w-2 h-2 rounded-full',
-                status === 'online' && 'bg-green-500',
-                status === 'busy' && 'bg-amber-500',
-                status === 'offline' && 'bg-gray-400'
+                status === 'online' && 'bg-status-online',
+                status === 'busy' && 'bg-status-busy',
+                status === 'offline' && 'bg-status-offline'
               )}
               aria-hidden="true"
             />

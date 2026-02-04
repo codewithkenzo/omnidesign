@@ -55,9 +55,59 @@
   --color-interactive-primary: oklch(54.6% 0.215 262.9);
   --color-interactive-primary-hover: oklch(48.8% 0.217 264.4);
   --color-interactive-secondary: oklch(97.0% 0.000 0.0);
+  /* Status: Success (online) */
   --color-status-success: oklch(72.3% 0.192 149.6);
+  --color-status-success-bg: oklch(72.3% 0.192 149.6 / 15%);
+  --color-status-success-text: oklch(62.7% 0.170 149.2);
+  --color-status-success-text-dark: oklch(82.3% 0.150 149.6);
+  --color-status-success-border: oklch(72.3% 0.192 149.6 / 30%);
+  
+  /* Status: Warning (busy) */
   --color-status-warning: oklch(76.9% 0.165 70.1);
+  --color-status-warning-bg: oklch(76.9% 0.165 70.1 / 15%);
+  --color-status-warning-text: oklch(66.6% 0.157 58.3);
+  --color-status-warning-text-dark: oklch(86.9% 0.130 70.1);
+  --color-status-warning-border: oklch(76.9% 0.165 70.1 / 20%);
+  
+  /* Status: Error */
   --color-status-error: oklch(63.7% 0.208 25.3);
+  --color-status-error-bg: oklch(63.7% 0.208 25.3 / 15%);
+  --color-status-error-text: oklch(57.7% 0.215 27.3);
+  --color-status-error-text-dark: oklch(73.7% 0.180 25.3);
+  --color-status-error-border: oklch(63.7% 0.208 25.3 / 30%);
+  
+  /* Status: Info */
   --color-status-info: oklch(54.6% 0.215 262.9);
+  --color-status-info-bg: oklch(54.6% 0.215 262.9 / 15%);
+  --color-status-info-text: oklch(48.8% 0.217 264.4);
+  --color-status-info-text-dark: oklch(71.4% 0.143 254.6);
+  --color-status-info-border: oklch(54.6% 0.215 262.9 / 30%);
+  
+  /* Status: Neutral (offline) */
+  --color-status-neutral: oklch(71.5% 0.000 0.0);
+  --color-status-neutral-bg: oklch(71.5% 0.000 0.0 / 15%);
+  --color-status-neutral-text: oklch(43.9% 0.000 0.0);
+  --color-status-neutral-text-dark: oklch(71.5% 0.000 0.0);
+  --color-status-neutral-border: oklch(71.5% 0.000 0.0 / 30%);
+  
+  /* Status Aliases */
+  --color-status-online: var(--color-status-success);
+  --color-status-online-bg: var(--color-status-success-bg);
+  --color-status-online-text: var(--color-status-success-text);
+  --color-status-online-text-dark: var(--color-status-success-text-dark);
+  --color-status-online-border: var(--color-status-success-border);
+  
+  --color-status-busy: var(--color-status-warning);
+  --color-status-busy-bg: var(--color-status-warning-bg);
+  --color-status-busy-text: var(--color-status-warning-text);
+  --color-status-busy-text-dark: var(--color-status-warning-text-dark);
+  --color-status-busy-border: var(--color-status-warning-border);
+  
+  --color-status-offline: var(--color-status-neutral);
+  --color-status-offline-bg: var(--color-status-neutral-bg);
+  --color-status-offline-text: var(--color-status-neutral-text);
+  --color-status-offline-text-dark: var(--color-status-neutral-text-dark);
+  --color-status-offline-border: var(--color-status-neutral-border);
+  
   --color-focus-ring: oklch(54.6% 0.215 262.9);
 }

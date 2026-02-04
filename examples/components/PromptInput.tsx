@@ -11,7 +11,7 @@ const tokenCounterVariants = cva(
     variants: {
       status: {
         normal: "text-muted",
-        warning: "text-amber-600",
+        warning: "text-status-warning",
         error: "text-red-600",
       },
     },

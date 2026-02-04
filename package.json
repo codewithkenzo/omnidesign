@@ -1,9 +1,17 @@
 {
   "name": "omnidesign",
   "version": "1.0.0",
-  "description": "",
+  "description": "Universal Design System with Agent Skills format - 25 themes, 39 fonts, OKLCH colors",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build:tokens && npm run build:themes",
+    "build:tokens": "node scripts/build-tokens.js",
+    "build:themes": "npx tsx scripts/generate-theme.ts",
+    "build:palettes": "node scripts/generate-palettes.js && node scripts/generate-palette-svgs.js",
+    "convert:colors": "npx tsx scripts/convert-colors.ts",
+    "validate": "node scripts/validate-tokens.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run validate && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

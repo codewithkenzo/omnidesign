@@ -84,24 +84,260 @@
   },
   "status": {
     "success": {
-      "$type": "color",
-      "$value": "{color.green.500}",
-      "$description": "Success state color"
+      "default": {
+        "$type": "color",
+        "$value": "{color.green.500}",
+        "$description": "Success state color - icons, indicators"
+      },
+      "bg": {
+        "$type": "color",
+        "$value": "{color.green.500}/15",
+        "$description": "Success background with transparency"
+      },
+      "bg-solid": {
+        "$type": "color",
+        "$value": "{color.green.500}",
+        "$description": "Success solid background"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.green.600}",
+        "$description": "Success text color"
+      },
+      "text-dark": {
+        "$type": "color",
+        "$value": "{color.green.400}",
+        "$description": "Success text color for dark mode"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.green.500}/30",
+        "$description": "Success border with transparency"
+      }
     },
     "warning": {
-      "$type": "color",
-      "$value": "{color.amber.500}",
-      "$description": "Warning state color"
+      "default": {
+        "$type": "color",
+        "$value": "{color.amber.500}",
+        "$description": "Warning state color - icons, indicators"
+      },
+      "bg": {
+        "$type": "color",
+        "$value": "{color.amber.500}/15",
+        "$description": "Warning background with transparency"
+      },
+      "bg-solid": {
+        "$type": "color",
+        "$value": "{color.amber.500}",
+        "$description": "Warning solid background"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.amber.600}",
+        "$description": "Warning text color"
+      },
+      "text-dark": {
+        "$type": "color",
+        "$value": "{color.amber.400}",
+        "$description": "Warning text color for dark mode"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.amber.500}/20",
+        "$description": "Warning border with transparency"
+      }
     },
     "error": {
-      "$type": "color",
-      "$value": "{color.red.500}",
-      "$description": "Error state color"
+      "default": {
+        "$type": "color",
+        "$value": "{color.red.500}",
+        "$description": "Error state color - icons, indicators"
+      },
+      "bg": {
+        "$type": "color",
+        "$value": "{color.red.500}/15",
+        "$description": "Error background with transparency"
+      },
+      "bg-solid": {
+        "$type": "color",
+        "$value": "{color.red.500}",
+        "$description": "Error solid background"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.red.600}",
+        "$description": "Error text color"
+      },
+      "text-dark": {
+        "$type": "color",
+        "$value": "{color.red.400}",
+        "$description": "Error text color for dark mode"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.red.500}/30",
+        "$description": "Error border with transparency"
+      }
     },
     "info": {
-      "$type": "color",
-      "$value": "{color.blue.500}",
-      "$description": "Info state color"
+      "default": {
+        "$type": "color",
+        "$value": "{color.blue.500}",
+        "$description": "Info state color - icons, indicators"
+      },
+      "bg": {
+        "$type": "color",
+        "$value": "{color.blue.500}/15",
+        "$description": "Info background with transparency"
+      },
+      "bg-solid": {
+        "$type": "color",
+        "$value": "{color.blue.500}",
+        "$description": "Info solid background"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.blue.600}",
+        "$description": "Info text color"
+      },
+      "text-dark": {
+        "$type": "color",
+        "$value": "{color.blue.400}",
+        "$description": "Info text color for dark mode"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.blue.500}/30",
+        "$description": "Info border with transparency"
+      }
+    },
+    "neutral": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.neutral.400}",
+        "$description": "Neutral/offline state color"
+      },
+      "bg": {
+        "$type": "color",
+        "$value": "{color.neutral.400}/15",
+        "$description": "Neutral background with transparency"
+      },
+      "bg-solid": {
+        "$type": "color",
+        "$value": "{color.neutral.400}",
+        "$description": "Neutral solid background"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.neutral.600}",
+        "$description": "Neutral text color"
+      },
+      "text-dark": {
+        "$type": "color",
+        "$value": "{color.neutral.400}",
+        "$description": "Neutral text color for dark mode"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.neutral.400}/30",
+        "$description": "Neutral border with transparency"
+      }
+    },
+    "busy": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.amber.500}",
+        "$description": "Busy state color (alias for warning)"
+      },
+      "bg": {
+        "$type": "color",
+        "$value": "{color.amber.500}/15",
+        "$description": "Busy background with transparency"
+      },
+      "bg-solid": {
+        "$type": "color",
+        "$value": "{color.amber.500}",
+        "$description": "Busy solid background"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.amber.600}",
+        "$description": "Busy text color"
+      },
+      "text-dark": {
+        "$type": "color",
+        "$value": "{color.amber.400}",
+        "$description": "Busy text color for dark mode"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.amber.500}/20",
+        "$description": "Busy border with transparency"
+      }
+    },
+    "online": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.green.500}",
+        "$description": "Online state color (alias for success)"
+      },
+      "bg": {
+        "$type": "color",
+        "$value": "{color.green.500}/15",
+        "$description": "Online background with transparency"
+      },
+      "bg-solid": {
+        "$type": "color",
+        "$value": "{color.green.500}",
+        "$description": "Online solid background"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.green.600}",
+        "$description": "Online text color"
+      },
+      "text-dark": {
+        "$type": "color",
+        "$value": "{color.green.400}",
+        "$description": "Online text color for dark mode"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.green.500}/30",
+        "$description": "Online border with transparency"
+      }
+    },
+    "offline": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.neutral.400}",
+        "$description": "Offline state color (alias for neutral)"
+      },
+      "bg": {
+        "$type": "color",
+        "$value": "{color.neutral.400}/15",
+        "$description": "Offline background with transparency"
+      },
+      "bg-solid": {
+        "$type": "color",
+        "$value": "{color.neutral.400}",
+        "$description": "Offline solid background"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.neutral.600}",
+        "$description": "Offline text color"
+      },
+      "text-dark": {
+        "$type": "color",
+        "$value": "{color.neutral.400}",
+        "$description": "Offline text color for dark mode"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.neutral.400}/30",
+        "$description": "Offline border with transparency"
+      }
     }
   },
   "focus": {

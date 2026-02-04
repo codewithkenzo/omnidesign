@@ -25,7 +25,7 @@ const actionButtonVariants = cva(
     variants: {
       state: {
         default: "bg-transparent border-default text-muted hover:bg-surface-raised hover:border-strong hover:text-default",
-        success: "bg-green-500/15 border-green-500/30 text-green-600",
+        success: "bg-status-success-subtle border-status-success text-status-success",
       },
     },
     defaultVariants: {
